@@ -5,15 +5,15 @@
     margin: 0 200px;
  }
 
- h3 {
+.Slider h3 {
     color: white;
     text-shadow: 2px 2px 2px black;
     font-weight: bold;
     line-height: 0;
- }
+}
 
- .Slider img {
+.Slider img {
     border-radius: 50px;
     height: 213px;
     width: 340.8px;
- }
+}
