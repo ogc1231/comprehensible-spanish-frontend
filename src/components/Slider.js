@@ -1,3 +1,4 @@
+import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
 import styles from "../styles/Slider.module.css";
 import ar from "../assets/ar.png";
