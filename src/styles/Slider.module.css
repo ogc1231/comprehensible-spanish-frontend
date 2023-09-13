@@ -1,0 +1,10 @@
+ .Slider {
+    text-align: center;
+    background-color: black;
+ }
+
+ img {
+    border-radius: 50px;
+    height: 320px;
+    width: 512px;
+ }
