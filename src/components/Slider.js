@@ -57,14 +57,14 @@ function Slider() {
       <Carousel.Item interval={2000}>
       <img src={cr} alt="ar"/>
         <Carousel.Caption>
-          <h3>Costa Rica</h3>
+          <h3 className={styles.Textb}>Costa Rica</h3>
         </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item interval={2000}>
       <img src={cu} alt="ar"/>
         <Carousel.Caption>
-          <h3>Cuba</h3>
+          <h3 className={styles.Text}>Cuba</h3>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -99,7 +99,7 @@ function Slider() {
       <Carousel.Item interval={2000}>
       <img src={gu} alt="ar"/>
         <Carousel.Caption>
-          <h3>Guatemala</h3>
+          <h3 className={styles.Textb}>Guatemala</h3>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -113,7 +113,7 @@ function Slider() {
       <Carousel.Item interval={2000}>
       <img src={me} alt="ar"/>
         <Carousel.Caption>
-          <h3>Mexico</h3>
+          <h3 className={styles.Textb}>Mexico</h3>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -141,7 +141,7 @@ function Slider() {
       <Carousel.Item interval={2000}>
       <img src={pe} alt="ar"/>
         <Carousel.Caption>
-          <h3>Peru</h3>
+          <h3 className={styles.Textb}>Peru</h3>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -155,7 +155,7 @@ function Slider() {
       <Carousel.Item interval={2000}>
       <img src={ur} alt="ar"/>
         <Carousel.Caption>
-          <h3>Uruguay</h3>
+          <h3 className={styles.Text}>Uruguay</h3>
         </Carousel.Caption>
       </Carousel.Item>
 

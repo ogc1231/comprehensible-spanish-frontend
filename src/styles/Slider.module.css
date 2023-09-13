@@ -17,3 +17,13 @@
     height: 213px;
     width: 340.8px;
 }
+
+.Slider .Text {
+    color: orange;
+    text-shadow: 2px 2px black;
+}
+
+.Slider .Textb {
+    color: black;
+    text-shadow: none;
+}

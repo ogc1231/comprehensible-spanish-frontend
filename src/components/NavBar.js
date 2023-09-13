@@ -10,7 +10,10 @@ const NavBar = () => {
       <Container>
         <NavLink to="/">
           <Navbar.Brand>
-            <img src={logo} alt="logo" height="45" />
+            <div className={styles.Name}>
+              <img src={logo} alt="logo" height="45" />
+              <h3 className={styles.NameTitle}>Comprensible Spanish</h3>
+            </div>
           </Navbar.Brand>
         </NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
