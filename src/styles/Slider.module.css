@@ -1,7 +1,8 @@
  .Slider {
     text-align: center;
     background-color: black;
-    padding: 20px 10px 40px 20px;
+    padding: 20px 0 40px 0;
+    margin: 0 200px;
  }
 
  h3 {
