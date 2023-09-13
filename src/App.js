@@ -1,9 +1,21 @@
+import styles from "./App.module.css";
+import NavBar from "./components/NavBar";
+import Container from "react-bootstrap/Container";
+import { Route, Switch } from "react-router-dom";
 import Slider from "./components/Slider";
 
 function App() {
   return (
-    <div className="App">
-      {/* <Slider /> */}
+    <div className={styles.App}>
+      <NavBar />
+      <Container className={styles.Main}>
+        <Switch>
+          <Route exact path="/" render={() => <Slider />} />
+          <Route exact path="/signin" render={() => <h1>Sign in</h1>} />
+          <Route exact path="/signup" render={() => <h1>Sign up</h1>} />
+          <Route render={() => <p>Page not found!</p>} />
+        </Switch>
+      </Container>
     </div>
   );
 }

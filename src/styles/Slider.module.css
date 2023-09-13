@@ -1,16 +1,18 @@
  .Slider {
     text-align: center;
     background-color: black;
+    padding: 20px 10px 40px 20px;
  }
 
  h3 {
     color: white;
     text-shadow: 2px 2px 2px black;
     font-weight: bold;
+    line-height: 0;
  }
 
- img {
+ .Slider img {
     border-radius: 50px;
-    height: 320px;
-    width: 512px;
+    height: 213px;
+    width: 340.8px;
  }
