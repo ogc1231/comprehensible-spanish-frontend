@@ -3,6 +3,12 @@
     background-color: black;
  }
 
+ h3 {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+ }
+
  img {
     border-radius: 50px;
     height: 320px;
