@@ -10,8 +10,10 @@ function CountryDropdown() {
       </Dropdown.Toggle>
 
       <Dropdown.Menu className={styles.Menu}>
+        <Dropdown.Item href="#/action-0">Mixed</Dropdown.Item>
         <Dropdown.Item href="#/action-1">Argentina</Dropdown.Item>
         <Dropdown.Item href="#/action-2">Bolivia</Dropdown.Item>
+        <Dropdown.Item href="#/action-ca">Canary Islands</Dropdown.Item>
         <Dropdown.Item href="#/action-3">Chile</Dropdown.Item>
         <Dropdown.Item href="#/action-4">Colombia</Dropdown.Item>
         <Dropdown.Item href="#/action-5">Costa Rica</Dropdown.Item>
