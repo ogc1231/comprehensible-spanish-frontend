@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
@@ -13,6 +13,9 @@ import appStyles from "../../App.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import Asset from "../../components/Asset";
 import { Image } from "react-bootstrap";
+
+import { useHistory } from "react-router";
+import { axiosReq } from "../../api/axiosDefaults";
 
 function ResourceCreateForm() {
 
@@ -29,6 +32,9 @@ function ResourceCreateForm() {
   });
   const { title, description, image, resource_url, country_filter, difficulty_level_filter, resource_type_filter } = resourceData;
 
+  const imageInput = useRef(null);
+  const history = useHistory();
+
   const handleChange = (event) => {
     setResourceData({
       ...resourceData,
@@ -43,6 +49,29 @@ function ResourceCreateForm() {
         ...resourceData,
         image: URL.createObjectURL(event.target.files[0]),
       });
+    }
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData();
+
+    formData.append("title", title);
+    formData.append("description", description);
+    formData.append("image", imageInput.current.files[0]);
+    formData.append("resource_url", resource_url);
+    formData.append("country_filter", country_filter);
+    formData.append("difficulty_level_filter", difficulty_level_filter);
+    formData.append("resource_type_filter", resource_type_filter);
+
+    try {
+      const { data } = await axiosReq.post("/resources/", formData);
+      history.push(`/resources/${data.id}`);
+    } catch (err) {
+      console.log(err);
+      if (err.response?.status !== 401) {
+        setErrors(err.response?.data);
+      }
     }
   };
 
@@ -75,11 +104,12 @@ function ResourceCreateForm() {
           type="text"
           name="resource_url"
           value={resource_url}
+          onChange={handleChange}
         />
       </Form.Group>
 
       <Form.Group>
-        <select aria-label="Country" name="country_filter" id="country_filter" required >
+        <select aria-label="Country" name="country_filter" id="country_filter" required onChange={handleChange}>
           <option value={country_filter} selected disabled>Country</option>
           <option value="mixed">Mixed</option>
           <option value="argentina">Argentina</option>
@@ -107,7 +137,7 @@ function ResourceCreateForm() {
       </Form.Group>
 
       <Form.Group>
-        <select aria-label="Level" name="difficulty_level_filter" id="difficulty_level_filter" required>
+        <select aria-label="Level" name="difficulty_level_filter" id="difficulty_level_filter" required onChange={handleChange}>
           <option value={difficulty_level_filter} selected disabled>Level</option>
           <option value="learner">Learner</option>
           <option value="easy_native">Easy Native</option>
@@ -116,7 +146,7 @@ function ResourceCreateForm() {
       </Form.Group>
 
       <Form.Group>
-        <select aria-label="Resource Type" name="resource_type_filter"  id="resource_type_filter" required>
+        <select aria-label="Resource Type" name="resource_type_filter"  id="resource_type_filter" required onChange={handleChange}>
           <option value={resource_type_filter} selected disabled>Resource Type</option>
           <option value="podcast">Podcast/Audio</option>
           <option value="youtube">YouTube/Video</option>
@@ -136,7 +166,7 @@ function ResourceCreateForm() {
   );
 
   return (
-    <Form>
+    <Form onSubmit={handleSubmit}>
       <Row>
         <Col className="py-2 p-0 p-md-2" md={7} lg={8}>
           <Container
@@ -173,6 +203,7 @@ function ResourceCreateForm() {
                   id="image-upload"
                   accept="image/*"
                   onChange={handleChangeImage}
+                  ref={imageInput}
                 />
             </Form.Group>
             <div className="d-md-none">{textFields}</div>
