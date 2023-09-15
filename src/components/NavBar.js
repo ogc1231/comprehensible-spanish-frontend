@@ -83,10 +83,7 @@ const NavBar = () => {
       <Container>
         <NavLink to="/">
           <Navbar.Brand>
-            <div className={styles.Name}>
-              <img src={logo} alt="logo" height="45" />
-              <h3 className={styles.NameTitle}>Comprensible Spanish</h3>
-            </div>
+            <img src={logo} alt="logo" height="45" />
           </Navbar.Brand>
         </NavLink>
         {currentUser && addResourceIcon}

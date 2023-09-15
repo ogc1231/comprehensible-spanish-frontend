@@ -10,13 +10,3 @@
   .Active i {
     color: #2142b2;
   }
-
-  .Name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .NameTitle {
-    padding: 10px 0 0 10px;
-  }
