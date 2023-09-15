@@ -16,6 +16,7 @@ import { Image } from "react-bootstrap";
 
 import { useHistory } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
+import Alert from "react-bootstrap/Alert";
 
 function ResourceCreateForm() {
 
@@ -87,6 +88,12 @@ function ResourceCreateForm() {
           onChange={handleChange}
         />
       </Form.Group>
+      {errors?.title?.map((message, idx) => (
+        <Alert variant="warning" key={idx}>
+          {message}
+        </Alert>
+      ))}
+
       <Form.Group>
         <Form.Label>Description</Form.Label>
         <Form.Control
@@ -97,6 +104,11 @@ function ResourceCreateForm() {
           onChange={handleChange}
         />
       </Form.Group>
+      {errors?.description?.map((message, idx) => (
+        <Alert variant="warning" key={idx}>
+          {message}
+        </Alert>
+      ))}
 
       <Form.Group>
         <Form.Label>URL</Form.Label>
@@ -107,6 +119,11 @@ function ResourceCreateForm() {
           onChange={handleChange}
         />
       </Form.Group>
+      {errors?.resource_url?.map((message, idx) => (
+        <Alert variant="warning" key={idx}>
+          {message}
+        </Alert>
+      ))}
 
       <Form.Group>
         <select aria-label="Country" name="country_filter" id="country_filter" required onChange={handleChange}>
@@ -135,6 +152,11 @@ function ResourceCreateForm() {
           <option value="venezuela">Venezuela</option>
        </select>
       </Form.Group>
+      {errors?.country_filter?.map((message, idx) => (
+        <Alert variant="warning" key={idx}>
+          {message}
+        </Alert>
+      ))}
 
       <Form.Group>
         <select aria-label="Level" name="difficulty_level_filter" id="difficulty_level_filter" required onChange={handleChange}>
@@ -144,6 +166,11 @@ function ResourceCreateForm() {
           <option value="native">Native</option>
        </select>
       </Form.Group>
+      {errors?.difficulty_level_filter?.map((message, idx) => (
+        <Alert variant="warning" key={idx}>
+          {message}
+        </Alert>
+      ))}
 
       <Form.Group>
         <select aria-label="Resource Type" name="resource_type_filter"  id="resource_type_filter" required onChange={handleChange}>
@@ -152,6 +179,11 @@ function ResourceCreateForm() {
           <option value="youtube">YouTube/Video</option>
        </select>
       </Form.Group>
+      {errors?.content?.map((message, idx) => (
+        <Alert variant="warning" key={idx}>
+          {message}
+        </Alert>
+      ))}
 
       <Button
         className={`${btnStyles.Button} ${btnStyles.Blue}`}
@@ -206,6 +238,11 @@ function ResourceCreateForm() {
                   ref={imageInput}
                 />
             </Form.Group>
+            {errors?.image?.map((message, idx) => (
+              <Alert variant="warning" key={idx}>
+                {message}
+              </Alert>
+            ))}
             <div className="d-md-none">{textFields}</div>
           </Container>
         </Col>
