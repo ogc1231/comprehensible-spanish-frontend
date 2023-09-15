@@ -22,8 +22,12 @@ function ResourceCreateForm() {
     title: "",
     description: "",
     image: "",
+    resource_url: "",
+    country_filter: "",
+    difficulty_level_filter: "",
+    resource_type_filter: "",
   });
-  const { title, description, image } = resourceData;
+  const { title, description, image, resource_url, country_filter, difficulty_level_filter, resource_type_filter } = resourceData;
 
   const handleChange = (event) => {
     setResourceData({
@@ -70,11 +74,12 @@ function ResourceCreateForm() {
         <Form.Control
           type="text"
           name="resource_url"
+          value={resource_url}
         />
       </Form.Group>
 
       <Form.Group>
-        <select aria-label="Country" name="country_filter" id="country_filter" required >
+        <select aria-label="Country" name="country_filter" value={country_filter} id="country_filter" required >
           <option value="" selected disabled>Country</option>
           <option value="mixed">Mixed</option>
           <option value="argentina">Argentina</option>
@@ -102,7 +107,7 @@ function ResourceCreateForm() {
       </Form.Group>
 
       <Form.Group>
-        <select aria-label="Level" name="difficulty_level_filter" id="difficulty_level_filter" required>
+        <select aria-label="Level" name="difficulty_level_filter" value={difficulty_level_filter} id="difficulty_level_filter" required>
           <option value="" selected disabled>Level</option>
           <option value="learner">Learner</option>
           <option value="easy_native">Easy Native</option>
@@ -111,7 +116,7 @@ function ResourceCreateForm() {
       </Form.Group>
 
       <Form.Group>
-        <select aria-label="Resource Type" name="resource_type_filter" id="resource_type_filter" required>
+        <select aria-label="Resource Type" name="resource_type_filter" value={resource_type_filter} id="resource_type_filter" required>
           <option value="" selected disabled>Resource Type</option>
           <option value="podcast">Podcast/Audio</option>
           <option value="youtube">YouTube/Video</option>
