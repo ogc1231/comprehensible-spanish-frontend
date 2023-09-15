@@ -79,8 +79,8 @@ function ResourceCreateForm() {
       </Form.Group>
 
       <Form.Group>
-        <select aria-label="Country" name="country_filter" value={country_filter} id="country_filter" required >
-          <option value="" selected disabled>Country</option>
+        <select aria-label="Country" name="country_filter" id="country_filter" required >
+          <option value={country_filter} selected disabled>Country</option>
           <option value="mixed">Mixed</option>
           <option value="argentina">Argentina</option>
           <option value="Bolivia">Bolivia</option>
@@ -107,8 +107,8 @@ function ResourceCreateForm() {
       </Form.Group>
 
       <Form.Group>
-        <select aria-label="Level" name="difficulty_level_filter" value={difficulty_level_filter} id="difficulty_level_filter" required>
-          <option value="" selected disabled>Level</option>
+        <select aria-label="Level" name="difficulty_level_filter" id="difficulty_level_filter" required>
+          <option value={difficulty_level_filter} selected disabled>Level</option>
           <option value="learner">Learner</option>
           <option value="easy_native">Easy Native</option>
           <option value="native">Native</option>
@@ -116,8 +116,8 @@ function ResourceCreateForm() {
       </Form.Group>
 
       <Form.Group>
-        <select aria-label="Resource Type" name="resource_type_filter" value={resource_type_filter} id="resource_type_filter" required>
-          <option value="" selected disabled>Resource Type</option>
+        <select aria-label="Resource Type" name="resource_type_filter"  id="resource_type_filter" required>
+          <option value={resource_type_filter} selected disabled>Resource Type</option>
           <option value="podcast">Podcast/Audio</option>
           <option value="youtube">YouTube/Video</option>
        </select>
