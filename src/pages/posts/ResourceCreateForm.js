@@ -74,7 +74,7 @@ function ResourceCreateForm() {
       </Form.Group>
 
       <Form.Group>
-        <select aria-label="Default select example" required>
+        <select aria-label="Country" name="country_filter" id="country_filter" required >
           <option value="" selected disabled>Country</option>
           <option value="mixed">Mixed</option>
           <option value="argentina">Argentina</option>
@@ -102,7 +102,7 @@ function ResourceCreateForm() {
       </Form.Group>
 
       <Form.Group>
-        <select aria-label="Default select example" required>
+        <select aria-label="Level" name="difficulty_level_filter" id="difficulty_level_filter" required>
           <option value="" selected disabled>Level</option>
           <option value="learner">Learner</option>
           <option value="easy_native">Easy Native</option>
@@ -111,8 +111,8 @@ function ResourceCreateForm() {
       </Form.Group>
 
       <Form.Group>
-        <select aria-label="Default select example" required>
-          <option value="" selected disabled>Resource Level</option>
+        <select aria-label="Resource Type" name="resource_type_filter" id="resource_type_filter" required>
+          <option value="" selected disabled>Resource Type</option>
           <option value="podcast">Podcast/Audio</option>
           <option value="youtube">YouTube/Video</option>
        </select>
