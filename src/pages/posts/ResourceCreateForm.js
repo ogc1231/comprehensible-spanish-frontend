@@ -20,7 +20,7 @@ function ResourceCreateForm() {
 
   const [resourceData, setResourceData] = useState({
     title: "",
-    content: "",
+    description: "",
     image: "",
   });
   const { title, description, image } = resourceData;
@@ -64,7 +64,60 @@ function ResourceCreateForm() {
           onChange={handleChange}
         />
       </Form.Group>
-      
+
+      <Form.Group>
+        <Form.Label>URL</Form.Label>
+        <Form.Control
+          type="text"
+          name="resource_url"
+        />
+      </Form.Group>
+
+      <Form.Group>
+        <select aria-label="Default select example" required>
+          <option value="" selected disabled>Country</option>
+          <option value="mixed">Mixed</option>
+          <option value="argentina">Argentina</option>
+          <option value="Bolivia">Bolivia</option>
+          <option value="canary_islands">Canary Islands</option>
+          <option value="chile">Chile</option>
+          <option value="colombia">Colombia</option>
+          <option value="costa_rica">Costa Rica</option>
+          <option value="cuba">Cuba</option>
+          <option value="dominican_republic">Dominican Republic</option>
+          <option value="ecuador">Ecuador</option>
+          <option value="el_salvador">El Salvador</option>
+          <option value="equatorial_guinea">Equatorial Guinea</option>
+          <option value="guatemala">Guatemala</option>
+          <option value="honduras">Honduras</option>
+          <option value="mexico">Mexico</option>
+          <option value="nicaragua">Nicaragua</option>
+          <option value="panama">Panama</option>
+          <option value="paraguay">Paraguay</option>
+          <option value="peru">Peru</option>
+          <option value="spain">Spain</option>
+          <option value="uruguay">Uruguay</option>
+          <option value="venezuela">Venezuela</option>
+       </select>
+      </Form.Group>
+
+      <Form.Group>
+        <select aria-label="Default select example" required>
+          <option value="" selected disabled>Level</option>
+          <option value="learner">Learner</option>
+          <option value="easy_native">Easy Native</option>
+          <option value="native">Native</option>
+       </select>
+      </Form.Group>
+
+      <Form.Group>
+        <select aria-label="Default select example" required>
+          <option value="" selected disabled>Resource Level</option>
+          <option value="podcast">Podcast/Audio</option>
+          <option value="youtube">YouTube/Video</option>
+       </select>
+      </Form.Group>
+
       <Button
         className={`${btnStyles.Button} ${btnStyles.Blue}`}
         onClick={() => {}}
