@@ -18,7 +18,7 @@ function App() {
         <Switch>
           <Route exact path="/" render={() =>
           <div>
-            <Slider />
+            {/* <Slider /> */}
             <UnifiedDropdown />
           </div>
           } />
