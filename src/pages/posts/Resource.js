@@ -23,7 +23,7 @@ const Resource = (props) => {
     favourites_count,
     description,
     resourcePage,
-    setResources
+    setResources,
   } = props;
 
   const currentUser = useCurrentUser();
@@ -75,7 +75,7 @@ const Resource = (props) => {
           </div>
         </Media>
       </Card.Body>
-      <Link to={`/posts/${id}`}>
+      <Link to={`/resources/${id}`}>
         <Card.Img src={image} alt={title} />
       </Link>
       <Card.Body>
