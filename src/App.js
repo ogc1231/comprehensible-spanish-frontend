@@ -9,6 +9,7 @@ import "./api/axiosDefaults";
 import SignUpForm from "./pages/auth/SignUpForm";
 import SignInForm from "./pages/auth/SignInForm";
 import ResourceCreateForm from "./pages/posts/ResourceCreateForm";
+import ResourcePage from "./pages/posts/ResourcePage";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route exact path="/signin" render={() => <SignInForm />} />
           <Route exact path="/signup" render={() => <SignUpForm />} />
           <Route exact path="/resources/create" render={() => <ResourceCreateForm />} />
+          <Route exact path="/resources/:id" render={() => <ResourcePage />} />
           <Route render={() => <p>Page not found!</p>} />
         </Switch>
       </Container>
