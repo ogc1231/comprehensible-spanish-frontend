@@ -16,6 +16,7 @@ import { axiosReq } from "../../api/axiosDefaults";
 import NoResults from "../../assets/no-results.png";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { fetchMoreData } from "../../utils/utils";
+import UnifiedDropdown from "../../components/UnifiedDropdown";
 
 
 function ResourcesPage({ message, filter = "" }) {
@@ -48,9 +49,9 @@ function ResourcesPage({ message, filter = "" }) {
   }, [filter, query, pathname]);
 
   return (
+    
     <Row className="h-100">
       <Col className="py-2 p-0 p-lg-2" lg={8}>
-        <p>Popular profiles mobile</p>
         <i className={`fas fa-search ${styles.SearchIcon}`} />
         <Form
           className={styles.SearchBar}
@@ -64,7 +65,7 @@ function ResourcesPage({ message, filter = "" }) {
             placeholder="Search resources"
           />
         </Form>
-
+        <UnifiedDropdown />
 
         {hasLoaded ? (
           <>
