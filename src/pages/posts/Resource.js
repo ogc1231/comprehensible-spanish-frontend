@@ -5,6 +5,7 @@ import { Card, Media, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Avatar from "../../components/Avatar";
 import { axiosRes } from "../../api/axiosDefaults";
+import { MoreDropdown } from "../../components/MoreDropdown";
 
 const Resource = (props) => {
   const {
@@ -71,7 +72,11 @@ const Resource = (props) => {
           </Link>
           <div className="d-flex align-items-center">
             <span>{updated_at}</span>
-            {is_owner && resourcePage && "..."}
+            {is_owner && resourcePage && 
+              <MoreDropdown
+                // handleEdit={handleEdit}
+                // handleDelete={handleDelete}
+              />}
           </div>
         </Media>
       </Card.Body>
