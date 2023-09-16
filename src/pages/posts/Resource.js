@@ -31,12 +31,28 @@ const Resource = (props) => {
 
   const handleFavourite = async () => {
     try {
-      const { data } = await axiosRes.resource("/favourites/", { resource: id });
+      const { data } = await axiosRes.post("/favourites/", { resource: id });
       setResources((prevResources) => ({
         ...prevResources,
         results: prevResources.results.map((resource) => {
           return resource.id === id
             ? { ...resource, favourites_count: resource.favourites_count + 1, favourite_id: data.id }
+            : resource;
+        }),
+      }));
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const handleUnfavourite = async () => {
+    try {
+      await axiosRes.delete(`/favourites/${favourite_id}/`);
+      setResources((prevResources) => ({
+        ...prevResources,
+        results: prevResources.results.map((resource) => {
+          return resource.id === id
+            ? { ...resource, favourites_count: resource.favourites_count - 1, favourite_id: null }
             : resource;
         }),
       }));
@@ -82,7 +98,7 @@ const Resource = (props) => {
               <i className="far fa-heart" />
             </OverlayTrigger>
           ) : favourite_id ? (
-            <span onClick={() => {}}>
+            <span onClick={handleUnfavourite}>
               <i className={`fas fa-heart ${styles.Heart}`} />
             </span>
           ) : currentUser ? (
