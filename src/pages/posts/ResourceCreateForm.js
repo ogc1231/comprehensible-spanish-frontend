@@ -130,7 +130,7 @@ function ResourceCreateForm() {
           <option value={country_filter} selected disabled>Country</option>
           <option value="mixed">Mixed</option>
           <option value="argentina">Argentina</option>
-          <option value="Bolivia">Bolivia</option>
+          <option value="bolivia">Bolivia</option>
           <option value="canary_islands">Canary Islands</option>
           <option value="chile">Chile</option>
           <option value="colombia">Colombia</option>
