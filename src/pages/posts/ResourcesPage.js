@@ -14,6 +14,8 @@ import { useLocation } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 
 import NoResults from "../../assets/no-results.png";
+import InfiniteScroll from "react-infinite-scroll-component";
+import { fetchMoreData } from "../../utils/utils";
 
 
 function ResourcesPage({ message, filter = "" }) {
@@ -67,9 +69,15 @@ function ResourcesPage({ message, filter = "" }) {
         {hasLoaded ? (
           <>
             {resources.results.length ? (
-              resources.results.map((resource) => (
-                <Resource key={resource.id} {...resource} setResources={setResources} />
-              ))
+              <InfiniteScroll
+                children={resources.results.map((resource) => (
+                  <Resource key={resource.id} {...resource} setResources={setResources} />
+                ))}
+                dataLength={resources.results.length}
+                loader={<Asset spinner />}
+                hasMore={!!resources.next}
+                next={() => fetchMoreData(resources, setResources)}
+              />
             ) : (
               <Container className={appStyles.Content}>
                 <Asset src={NoResults} message={message} />
