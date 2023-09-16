@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../../styles/Resource.module.css";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import { Card, Media, OverlayTrigger, Tooltip } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import Avatar from "../../components/Avatar";
 import { axiosRes } from "../../api/axiosDefaults";
 import { MoreDropdown } from "../../components/MoreDropdown";
@@ -29,6 +29,20 @@ const Resource = (props) => {
 
   const currentUser = useCurrentUser();
   const is_owner = currentUser?.username === owner;
+  const history = useHistory();
+
+  const handleEdit = () => {
+    history.push(`/resources/${id}/edit`);
+  };
+
+  const handleDelete = async () => {
+    try {
+      await axiosRes.delete(`/resources/${id}/`);
+      history.goBack();
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
   const handleFavourite = async () => {
     try {
@@ -74,8 +88,8 @@ const Resource = (props) => {
             <span>{updated_at}</span>
             {is_owner && resourcePage && 
               <MoreDropdown
-                // handleEdit={handleEdit}
-                // handleDelete={handleDelete}
+                handleEdit={handleEdit}
+                handleDelete={handleDelete}
               />}
           </div>
         </Media>
