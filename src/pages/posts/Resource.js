@@ -4,8 +4,9 @@ import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import { Card, Media, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Avatar from "../../components/Avatar";
+import { axiosRes } from "../../api/axiosDefaults";
 
-const Post = (props) => {
+const Resource = (props) => {
   const {
     id,
     owner,
@@ -22,10 +23,27 @@ const Post = (props) => {
     favourites_count,
     description,
     resourcePage,
+    setResources
   } = props;
 
   const currentUser = useCurrentUser();
   const is_owner = currentUser?.username === owner;
+
+  const handleFavourite = async () => {
+    try {
+      const { data } = await axiosRes.resource("/favourites/", { resource: id });
+      setResources((prevResources) => ({
+        ...prevResources,
+        results: prevResources.results.map((resource) => {
+          return resource.id === id
+            ? { ...resource, favourites_count: resource.favourites_count + 1, favourite_id: data.id }
+            : resource;
+        }),
+      }));
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
   return (
     <Card className={styles.Resource}>
@@ -68,10 +86,8 @@ const Post = (props) => {
               <i className={`fas fa-heart ${styles.Heart}`} />
             </span>
           ) : currentUser ? (
-            <span onClick={() => {}}>
-                <OverlayTrigger placement="top" overlay={<Tooltip>Click to add to favourites!</Tooltip>}>
-                    <i className={`far fa-heart ${styles.HeartOutline}`} />
-                </OverlayTrigger>
+            <span onClick={handleFavourite}>
+                <i className={`far fa-heart ${styles.HeartOutline}`} />
             </span>
           ) : (
             <OverlayTrigger
@@ -88,4 +104,4 @@ const Post = (props) => {
   );
 };
 
-export default Post;
+export default Resource;
