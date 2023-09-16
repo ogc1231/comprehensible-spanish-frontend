@@ -15,6 +15,7 @@ import { axiosReq } from "../../api/axiosDefaults";
 
 import NoResults from "../../assets/no-results.png";
 
+
 function ResourcesPage({ message, filter = "" }) {
   const [resources, setResources] = useState({ results: [] });
   const [hasLoaded, setHasLoaded] = useState(false);
@@ -34,7 +35,14 @@ function ResourcesPage({ message, filter = "" }) {
     };
 
     setHasLoaded(false);
-    fetchResources();
+    const timer = setTimeout(() => {
+        fetchResources();
+    }, 1000);
+
+    return () => {
+        clearTimeout(timer);
+      };
+
   }, [filter, query, pathname]);
 
   return (
