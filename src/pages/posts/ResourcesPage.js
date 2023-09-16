@@ -17,7 +17,7 @@ import NoResults from "../../assets/no-results.png";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { fetchMoreData } from "../../utils/utils";
 import UnifiedDropdown from "../../components/UnifiedDropdown";
-import PopularResources from "../favourites/PopularResources";
+// import PopularResources from "../favourites/PopularResources";
 
 function ResourcesPage({ message, filter = "" }) {
   const [resources, setResources] = useState({ results: [] });
@@ -92,7 +92,8 @@ function ResourcesPage({ message, filter = "" }) {
         )}
       </Col>
       <Col md={4} className="d-none d-lg-block p-0 p-lg-2">
-        <PopularResources />
+        {/* <PopularResources /> */}
+        <p>Popular Resources</p>
       </Col>
     </Row>
   );
