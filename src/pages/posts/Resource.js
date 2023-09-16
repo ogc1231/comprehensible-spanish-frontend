@@ -89,7 +89,8 @@ const Resource = (props) => {
         {country_filter && <Card.Text>{country_filter}</Card.Text>}
         {resource_type_filter && <Card.Text>{resource_type_filter}</Card.Text>}
         {difficulty_level_filter && <Card.Text>{difficulty_level_filter}</Card.Text>}
-        <div className={styles.ResourceBar}>
+        {/* styling? */}
+        <div className={styles.ResourceBar}> 
           {is_owner ? (
             <OverlayTrigger
               placement="top"

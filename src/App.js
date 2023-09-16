@@ -10,9 +10,14 @@ import SignUpForm from "./pages/auth/SignUpForm";
 import SignInForm from "./pages/auth/SignInForm";
 import ResourceCreateForm from "./pages/posts/ResourceCreateForm";
 import ResourcePage from "./pages/posts/ResourcePage";
+import ResourcesPage from "./pages/posts/ResourcesPage";
+import { useCurrentUser } from "./contexts/CurrentUserContext";
 
 
 function App() {
+  const currentUser = useCurrentUser();
+  const profile_id = currentUser?.profile_id || "";
+
   return (
     <div className={styles.App}>
       <NavBar />
@@ -24,6 +29,17 @@ function App() {
             <UnifiedDropdown />
           </div>
           } />
+          <Route exact path="/resources" render={() => <ResourcesPage message="No results found. Adjust the search keyword."/>} />
+          <Route
+            exact
+            path="/favourites"
+            render={() => (
+              <ResourcesPage
+                message="No results found. Adjust the search keyword or favourite a post."
+                filter={`favourites__owner__profile=${profile_id}&ordering=-favourites__created_at&`}
+              />
+            )}
+          />
           <Route exact path="/signin" render={() => <SignInForm />} />
           <Route exact path="/signup" render={() => <SignUpForm />} />
           <Route exact path="/resources/create" render={() => <ResourceCreateForm />} />
