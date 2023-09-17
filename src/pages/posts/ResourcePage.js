@@ -32,8 +32,7 @@ function ResourcePage() {
 
   return (
     <Row className="h-100">
-      <Col className="py-2 p-0 p-lg-2" lg={8}>
-        <p>Popular profiles for mobile</p>
+      <Col className="py-2 p-0 p-lg-2" lg={8} >
         <Resource {...resource.results[0]} setPosts={setResource} resourcePage />
         <Container className={appStyles.Content}>
           Comments/////////
