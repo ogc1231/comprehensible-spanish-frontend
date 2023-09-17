@@ -1,6 +1,5 @@
 import styles from "./App.module.css";
 import NavBar from "./components/NavBar";
-import FilterDropdown from "./components/FilterDropdown";
 
 import Container from "react-bootstrap/Container";
 import { Route, Switch } from "react-router-dom";
@@ -26,7 +25,7 @@ function App() {
       <NavBar />
       <Container className={styles.Main}>
         <Switch>
-          <Route exact path="/" render={() =><FilterDropdown />} />
+          <Route exact path="/" render={() =>{}} />
           <Route exact path="/resources" render={() => <ResourcesPage message="No results found. Adjust the search keyword."/>} />
           <Route
             exact
