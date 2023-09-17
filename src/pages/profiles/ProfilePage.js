@@ -15,9 +15,15 @@ import {
   useProfileData,
   useSetProfileData,
 } from "../../contexts/ProfileDataContext";
+import { Button } from "react-bootstrap";
+import InfiniteScroll from "react-infinite-scroll-component";
+import Resource from "../posts/Resource";
+import { fetchMoreData } from "../../utils/utils";
+import NoResults from "../../assets/no-results.png";
 
 function ProfilePage() {
   const [hasLoaded, setHasLoaded] = useState(false);
+  const [profileResources, setProfileResources] = useState({ results: [] });
   const { id } = useParams();
   const setProfileData = useSetProfileData();
   const { pageProfile } = useProfileData();
@@ -26,13 +32,16 @@ function ProfilePage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const [{ data: pageProfile }] = await Promise.all([
-          axiosReq.get(`/profiles/${id}/`),
-        ]);
+        const [{ data: pageProfile }, { data: profileResources }] =
+          await Promise.all([
+            axiosReq.get(`/profiles/${id}/`),
+            axiosReq.get(`/resources/?owner__profile=${id}`),
+          ]);
         setProfileData((prevState) => ({
           ...prevState,
           pageProfile: { results: [pageProfile] },
         }));
+        setProfileResources(profileResources);
         setHasLoaded(true);
       } catch (err) {
         console.log(err);
@@ -72,8 +81,24 @@ function ProfilePage() {
   const mainProfilePosts = (
     <>
       <hr />
-      <p className="text-center">Profile owner's posts</p>
+      <p className="text-center">Resources added by {profile?.owner}</p>
       <hr />
+      {profileResources.results.length ? (
+        <InfiniteScroll
+          children={profileResources.results.map((resource) => (
+            <Resource key={resource.id} {...resource} setPosts={setProfileResources} />
+          ))}
+          dataLength={profileResources.results.length}
+          loader={<Asset spinner />}
+          hasMore={!!profileResources.next}
+          next={() => fetchMoreData(profileResources, setProfileResources)}
+        />
+      ) : (
+        <Asset
+          src={NoResults}
+          message={`No results found, ${profile?.owner} hasn't added any resources yet.`}
+        />
+      )}
     </>
   );
 
