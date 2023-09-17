@@ -1,7 +1,7 @@
 .Resource {
     background-color: #ffffff;
     border: 1px solid #dadadf;
-    border-radius: 2px;
+    border-radius: 8px;
     margin-bottom: 16px;
     text-align: center;
   }
@@ -21,10 +21,6 @@
   
   .HeartOutline:hover {
     color: #f85032;
-  }
-
-  .Hide {
-    display: none;
   }
 
   .Level1,
