@@ -24,14 +24,14 @@ function ResourceCreateForm() {
 
   const [resourceData, setResourceData] = useState({
     title: "",
-    description: "",
+    desc: "",
     image: "",
     resource_url: "",
     country_filter: "",
     difficulty_level_filter: "",
     resource_type_filter: "",
   });
-  const { title, description, image, resource_url, country_filter, difficulty_level_filter, resource_type_filter } = resourceData;
+  const { title, desc, image, resource_url, country_filter, difficulty_level_filter, resource_type_filter } = resourceData;
 
   const imageInput = useRef(null);
   const history = useHistory();
@@ -58,7 +58,7 @@ function ResourceCreateForm() {
     const formData = new FormData();
 
     formData.append("title", title);
-    formData.append("description", description);
+    formData.append("desc", desc);
     formData.append("image", imageInput.current.files[0]);
     formData.append("resource_url", resource_url);
     formData.append("country_filter", country_filter);
@@ -99,12 +99,12 @@ function ResourceCreateForm() {
         <Form.Control
           as="textarea"
           rows={6}
-          name="description"
-          value={description}
+          name="desc"
+          value={desc}
           onChange={handleChange}
         />
       </Form.Group>
-      {errors?.description?.map((message, idx) => (
+      {errors?.desc?.map((message, idx) => (
         <Alert variant="warning" key={idx}>
           {message}
         </Alert>

@@ -22,7 +22,7 @@ const Resource = (props) => {
     difficulty_level_filter,
     favourite_id,
     favourites_count,
-    description,
+    desc,
     resourcePage,
     setResources,
   } = props;
@@ -99,7 +99,7 @@ const Resource = (props) => {
       </Link>
       <Card.Body>
         {title && <Card.Title className="text-center">{title}</Card.Title>}
-        {description && <Card.Text>{description}</Card.Text>}
+        {desc && <Card.Text>{desc}</Card.Text>}
         {resource_url && 
         <Card.Text>
             <a href={resource_url} target="_blank" rel="noreferrer">{resource_url}</a>

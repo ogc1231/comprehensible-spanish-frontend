@@ -22,14 +22,14 @@ function ResourceEditForm() {
 
   const [resourceData, setResourceData] = useState({
     title: "",
-    description: "",
+    desc: "",
     image: "",
     resource_url: "",
     country_filter: "",
     difficulty_level_filter: "",
     resource_type_filter: "",
   });
-  const { title, description, image, resource_url, country_filter, difficulty_level_filter, resource_type_filter } = resourceData;
+  const { title, desc, image, resource_url, country_filter, difficulty_level_filter, resource_type_filter } = resourceData;
 
   const imageInput = useRef(null);
   const history = useHistory();
@@ -39,9 +39,9 @@ function ResourceEditForm() {
     const handleMount = async () => {
       try {
         const { data } = await axiosReq.get(`/resources/${id}/`);
-        const { title, description, image, is_owner, resource_url, country_filter, difficulty_level_filter, resource_type_filter } = data;
+        const { title, desc, image, is_owner, resource_url, country_filter, difficulty_level_filter, resource_type_filter } = data;
 
-        is_owner ? setResourceData({ title, description, image, resource_url, country_filter, difficulty_level_filter, resource_type_filter }) : history.push("/resources");
+        is_owner ? setResourceData({ title, desc, image, resource_url, country_filter, difficulty_level_filter, resource_type_filter }) : history.push("/resources");
       } catch (err) {
         console.log(err);
       }
@@ -73,7 +73,7 @@ function ResourceEditForm() {
     const formData = new FormData();
 
     formData.append("title", title);
-    formData.append("description", description);
+    formData.append("desc", desc);
     if (imageInput?.current?.files[0]) {
         formData.append("image", imageInput.current.files[0]);
       }
@@ -116,12 +116,12 @@ function ResourceEditForm() {
         <Form.Control
           as="textarea"
           rows={6}
-          name="description"
-          value={description}
+          name="desc"
+          value={desc}
           onChange={handleChange}
         />
       </Form.Group>
-      {errors?.description?.map((message, idx) => (
+      {errors?.desc?.map((message, idx) => (
         <Alert variant="warning" key={idx}>
           {message}
         </Alert>
