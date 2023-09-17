@@ -81,7 +81,7 @@ const Resource = (props) => {
 
   return (
     <Card className={styles.Resource}>
-      <Card.Body>
+      <Card.Body> 
         <Media className="align-items-center justify-content-between">
           <Link to={`/profiles/${profile_id}`}>
             <Avatar src={profile_image} height={55} />
@@ -111,9 +111,9 @@ const Resource = (props) => {
         {country_filter && <Card.Text className={styles.Country}>{country_filter}</Card.Text>}
         {resource_type_filter === 'youtube' && <Card.Text className={styles.Type1}>{resource_type_filter}</Card.Text>}
         {resource_type_filter === 'podcast' && <Card.Text className={styles.Type2}>{resource_type_filter}</Card.Text>}
-        {difficulty_level_filter === 'learner' && <Card.Text className={styles.Level1}><img src={level1} alt="logo" height="20" />{difficulty_level_filter}</Card.Text>}
-        {difficulty_level_filter === 'easy_native' && <Card.Text className={styles.Level2}><img src={level2} alt="logo" height="20" />{difficulty_level_filter}</Card.Text>}
-        {difficulty_level_filter === 'native' && <Card.Text className={styles.Level3}><img src={level3} alt="logo" height="20" />{difficulty_level_filter}</Card.Text>}
+        {difficulty_level_filter === 'learner' && <Card.Text className={styles.Level1}><img src={level1} alt="logo" />{difficulty_level_filter}</Card.Text>}
+        {difficulty_level_filter === 'easy_native' && <Card.Text className={styles.Level2}><img src={level2} alt="logo" />{difficulty_level_filter}</Card.Text>}
+        {difficulty_level_filter === 'native' && <Card.Text className={styles.Level3}><img src={level3} alt="logo" />{difficulty_level_filter}</Card.Text>}
         {/* styling? */}
         <div className={styles.ResourceBar}> 
           {is_owner ? (

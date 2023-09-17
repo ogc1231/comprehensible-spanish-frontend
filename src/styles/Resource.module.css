@@ -23,38 +23,58 @@
     color: #f85032;
   }
 
-  .Level1 {
+  .Hide {
+    display: none;
+  }
+
+  .Level1,
+  .Level2, 
+  .Level3,
+  .Type1,
+  .Type2 {
     color: black;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0.2rem 0.3rem;
+    text-transform: capitalize;
+    width: 130px;
+  }
+
+  .Level1 img,
+  .Level2 img , 
+  .Level3 img{
+    padding-bottom: 1px;
+    height: 18px;
+  }
+
+  .Level1 {
     background-color: #0ed4d4;
-    border-radius: 12px;
   }
 
   .Level2 {
-    color: black;
     background-color: #ff7f3c;
-    border-radius: 12px;
   }
 
   .Level3 {
-    color: black;
     background-color: #ff2e65;
-    border-radius: 12px;
   }
 
   .Type1 {
-    color: black;
     background-color: lightgreen;
-    border-radius: 12px;
   }
 
   .Type2 {
-    color: black;
     background-color: lightskyblue;
-    border-radius: 12px;
   }
 
   .Country {
     color: white;
     background-color: black;
-    border-radius: 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 0.2rem 0.3rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    width: 130px;
   }
