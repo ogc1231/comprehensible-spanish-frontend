@@ -16,8 +16,6 @@ import { axiosReq } from "../../api/axiosDefaults";
 import NoResults from "../../assets/no-results.png";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { fetchMoreData } from "../../utils/utils";
-import UnifiedDropdown from "../../components/UnifiedDropdown";
-// import PopularResources from "../favourites/PopularResources";
 
 function ResourcesPage({ message, filter = "" }) {
   const [resources, setResources] = useState({ results: [] });
@@ -50,8 +48,9 @@ function ResourcesPage({ message, filter = "" }) {
 
   return (
     
-    <Row className="h-100">
-      <Col className="py-2 p-0 p-lg-2" lg={8}>
+    <Row className="h-100" >
+      
+      <Col className="py-2 p-0 p-lg-2" lg={11}>
         <i className={`fas fa-search ${styles.SearchIcon}`} />
         <Form
           className={styles.SearchBar}
@@ -65,7 +64,7 @@ function ResourcesPage({ message, filter = "" }) {
             placeholder="Search resources"
           />
         </Form>
-        <UnifiedDropdown />
+        
 
         {hasLoaded ? (
           <>
@@ -91,8 +90,7 @@ function ResourcesPage({ message, filter = "" }) {
           </Container>
         )}
       </Col>
-      <Col md={4} className="d-none d-lg-block p-0 p-lg-2">
-        {/* <PopularResources /> */}
+      <Col md={2} className="d-none d-lg-block p-0 p-lg-2">
         <p>Popular Resources</p>
       </Col>
     </Row>

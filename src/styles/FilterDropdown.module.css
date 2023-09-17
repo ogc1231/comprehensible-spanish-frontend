@@ -1,0 +1,10 @@
+.Menu {
+    max-height: 200px;
+    overflow-y: scroll;
+  }
+
+.FilterDesign .Toggle {
+    padding: 0;
+    margin: 0;
+    font-size: 1px;
+}
