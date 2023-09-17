@@ -22,3 +22,39 @@
   .HeartOutline:hover {
     color: #f85032;
   }
+
+  .Level1 {
+    color: black;
+    background-color: #0ed4d4;
+    border-radius: 12px;
+  }
+
+  .Level2 {
+    color: black;
+    background-color: #ff7f3c;
+    border-radius: 12px;
+  }
+
+  .Level3 {
+    color: black;
+    background-color: #ff2e65;
+    border-radius: 12px;
+  }
+
+  .Type1 {
+    color: black;
+    background-color: lightgreen;
+    border-radius: 12px;
+  }
+
+  .Type2 {
+    color: black;
+    background-color: lightskyblue;
+    border-radius: 12px;
+  }
+
+  .Country {
+    color: white;
+    background-color: black;
+    border-radius: 12px;
+  }

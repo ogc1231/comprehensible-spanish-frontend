@@ -6,6 +6,9 @@ import { Link, useHistory } from "react-router-dom";
 import Avatar from "../../components/Avatar";
 import { axiosRes } from "../../api/axiosDefaults";
 import { MoreDropdown } from "../../components/MoreDropdown";
+import level1 from "../../assets/level1.png";
+import level2 from "../../assets/level2.png";
+import level3 from "../../assets/level3.png";
 
 const Resource = (props) => {
   const {
@@ -105,9 +108,12 @@ const Resource = (props) => {
             <a href={resource_url} target="_blank" rel="noreferrer">{resource_url}</a>
         </Card.Text>
         }
-        {country_filter && <Card.Text>{country_filter}</Card.Text>}
-        {resource_type_filter && <Card.Text>{resource_type_filter}</Card.Text>}
-        {difficulty_level_filter && <Card.Text>{difficulty_level_filter}</Card.Text>}
+        {country_filter && <Card.Text className={styles.Country}>{country_filter}</Card.Text>}
+        {resource_type_filter === 'youtube' && <Card.Text className={styles.Type1}>{resource_type_filter}</Card.Text>}
+        {resource_type_filter === 'podcast' && <Card.Text className={styles.Type2}>{resource_type_filter}</Card.Text>}
+        {difficulty_level_filter === 'learner' && <Card.Text className={styles.Level1}><img src={level1} alt="logo" height="20" />{difficulty_level_filter}</Card.Text>}
+        {difficulty_level_filter === 'easy_native' && <Card.Text className={styles.Level2}><img src={level2} alt="logo" height="20" />{difficulty_level_filter}</Card.Text>}
+        {difficulty_level_filter === 'native' && <Card.Text className={styles.Level3}><img src={level3} alt="logo" height="20" />{difficulty_level_filter}</Card.Text>}
         {/* styling? */}
         <div className={styles.ResourceBar}> 
           {is_owner ? (

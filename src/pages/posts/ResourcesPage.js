@@ -70,7 +70,7 @@ function ResourcesPage({ message, filter = "" }) {
         {hasLoaded ? (
           <>
             {resources.results.length ? (
-              <InfiniteScroll
+              <InfiniteScroll className={styles.ResourceLayout}
                 children={resources.results.map((resource) => (
                   <Resource key={resource.id} {...resource} setResources={setResources} />
                 ))}

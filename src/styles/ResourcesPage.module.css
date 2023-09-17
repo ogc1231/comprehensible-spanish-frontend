@@ -16,3 +16,9 @@
     cursor: default;
     color: #cfced3;
   }
+
+.ResourceLayout {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
