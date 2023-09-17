@@ -18,7 +18,20 @@
   }
 
 .ResourceLayout {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 500px) {
+  .ResourceLayout { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 800px) {
+  .ResourceLayout { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1000px) {
+  .ResourceLayout { grid-template-columns: repeat(4, 1fr); }
 }
