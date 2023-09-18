@@ -81,22 +81,6 @@ const Resource = (props) => {
 
   return (
     <Card className={styles.Resource}>
-      <Card.Body> 
-        <Media className="align-items-center justify-content-between">
-          <Link to={`/profiles/${profile_id}`}>
-            <Avatar src={profile_image} height={55} />
-            {owner}
-          </Link>
-          <div className="d-flex align-items-center">
-            <span>{updated_at}</span>
-            {is_owner && resourcePage && 
-              <MoreDropdown
-                handleEdit={handleEdit}
-                handleDelete={handleDelete}
-              />}
-          </div>
-        </Media>
-      </Card.Body>
       <Link to={`/resources/${id}`}>
         <Card.Img src={image} alt={title} />
       </Link>
@@ -141,6 +125,22 @@ const Resource = (props) => {
           )}
           {favourites_count}
         </div>
+      </Card.Body>
+      <Card.Body className={styles.ResourceProfile}> 
+        <Media className="align-items-center justify-content-between">
+          <Link to={`/profiles/${profile_id}`}>
+            <Avatar src={profile_image} height={25} />
+            {owner}
+          </Link>
+          <div className="d-flex align-items-center">
+            <span>{updated_at}</span>
+            {is_owner && resourcePage && 
+              <MoreDropdown
+                handleEdit={handleEdit}
+                handleDelete={handleDelete}
+              />}
+          </div>
+        </Media>
       </Card.Body>
     </Card>
   );

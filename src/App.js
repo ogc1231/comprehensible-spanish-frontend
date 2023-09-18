@@ -15,7 +15,7 @@ import ProfilePage from "./pages/profiles/ProfilePage";
 import UsernameForm from "./pages/profiles/UsernameForm";
 import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
-import CountryFilter from "./components/CountryFilter";
+import LogoutModal from "./components/LogoutModal";
 
 function App() {
   const currentUser = useCurrentUser();
@@ -26,7 +26,7 @@ function App() {
       <NavBar />
       <Container className={styles.Main}>
         <Switch>
-          <Route exact path="/" render={() => <CountryFilter />} />
+          <Route exact path="/" render={() => <LogoutModal />} />
           <Route exact path="/resources" render={() => <ResourcesPage message="No results found. Adjust the search keyword."/>} />
           <Route
             exact
