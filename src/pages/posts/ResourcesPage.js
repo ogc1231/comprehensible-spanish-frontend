@@ -16,6 +16,7 @@ import { axiosReq } from "../../api/axiosDefaults";
 import NoResults from "../../assets/no-results.png";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { fetchMoreData } from "../../utils/utils";
+import CountryFilter from "../../components/CountryFilter";
 
 function ResourcesPage({ message, filter = "" }) {
   const [resources, setResources] = useState({ results: [] });
@@ -64,6 +65,7 @@ function ResourcesPage({ message, filter = "" }) {
             placeholder="Search resources"
           />
         </Form>
+        <CountryFilter />
         
 
         {hasLoaded ? (
