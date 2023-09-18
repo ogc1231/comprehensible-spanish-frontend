@@ -62,6 +62,7 @@ function CountryDropdown() {
         <Dropdown.Item href="#/action-14">Nicaragua</Dropdown.Item>
         <Dropdown.Item href="#/action-15">Panama</Dropdown.Item>
         <Dropdown.Item href="#/action-16">Paraguay</Dropdown.Item>
+        <Dropdown.Item href="#/action-171">Puerto Rico</Dropdown.Item>
         <Dropdown.Item href="#/action-17">Peru</Dropdown.Item>
         <Dropdown.Item href="#/action-18">Spain</Dropdown.Item>
         <Dropdown.Item href="#/action-19">Uruguay</Dropdown.Item>

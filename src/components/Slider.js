@@ -140,6 +140,13 @@ function Slider() {
 
       <Carousel.Item interval={3000}>
       <div className={styles.Flag}>
+        <img src={rico} alt="puerto rico"/>
+        <h3 className={styles.FlagFont}>Puerto Rico</h3>
+      </div>
+      </Carousel.Item>
+
+      <Carousel.Item interval={3000}>
+      <div className={styles.Flag}>
         <img src={pe} alt="peru"/>
         <h3 className={styles.FlagFont}>Peru</h3>
       </div>

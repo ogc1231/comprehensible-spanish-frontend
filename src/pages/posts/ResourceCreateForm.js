@@ -147,6 +147,7 @@ function ResourceCreateForm() {
           <option value="nicaragua">Nicaragua</option>
           <option value="panama">Panama</option>
           <option value="paraguay">Paraguay</option>
+          <option value="puerto_rico">Puerto Rico</option>
           <option value="peru">Peru</option>
           <option value="spain">Spain</option>
           <option value="uruguay">Uruguay</option>
