@@ -64,6 +64,13 @@ const NavBar = () => {
       <NavLink
         className={styles.NavLink}
         activeClassName={styles.Active}
+        to="/resources"
+      >
+        <i className="fas fa-stream"></i>Resources
+      </NavLink>
+      <NavLink
+        className={styles.NavLink}
+        activeClassName={styles.Active}
         to="/signin"
       >
         <i className="fas fa-sign-in-alt"></i>Sign in
