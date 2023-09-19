@@ -17,6 +17,7 @@ import NoResults from "../../assets/no-results.png";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { fetchMoreData } from "../../utils/utils";
 import PopularResources from "./PopularResources";
+import { useCurrentUser } from "../../contexts/CurrentUserContext";
 
 function ResourcesPage({ message, filter = "" }) {
   const [resources, setResources] = useState({ results: [] });
@@ -24,6 +25,7 @@ function ResourcesPage({ message, filter = "" }) {
   const { pathname } = useLocation();
 
   const [query, setQuery] = useState("");
+  const currentUser = useCurrentUser();
 
   useEffect(() => {
     const fetchResources = async () => {
@@ -45,7 +47,7 @@ function ResourcesPage({ message, filter = "" }) {
         clearTimeout(timer);
       };
 
-  }, [filter, query, pathname]);
+  }, [filter, query, pathname, currentUser]);
 
   return (
     
