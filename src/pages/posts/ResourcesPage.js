@@ -16,6 +16,7 @@ import { axiosReq } from "../../api/axiosDefaults";
 import NoResults from "../../assets/no-results.png";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { fetchMoreData } from "../../utils/utils";
+import PopularResources from "./PopularResources";
 
 function ResourcesPage({ message, filter = "" }) {
   const [resources, setResources] = useState({ results: [] });
@@ -50,7 +51,7 @@ function ResourcesPage({ message, filter = "" }) {
     
     <Row className="h-100" >
       
-      <Col className="py-2 p-0 p-lg-2" lg={12}>
+      <Col className="py-2 p-0 p-lg-2" lg={10}>
         <i className={`fas fa-search ${styles.SearchIcon}`} />
         <Form
           className={styles.SearchBar}
@@ -91,7 +92,7 @@ function ResourcesPage({ message, filter = "" }) {
         )}
       </Col>
       <Col md={2} className="d-none d-lg-block p-0 p-lg-2">
-        <p>Popular Resources</p>
+        <PopularResources />
       </Col>
     </Row>
   );

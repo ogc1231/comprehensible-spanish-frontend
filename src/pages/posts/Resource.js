@@ -138,7 +138,7 @@ const Resource = (props) => {
           ) : (
             <OverlayTrigger
               placement="top"
-              overlay={<Tooltip>Login to add to favourites!</Tooltip>}
+              overlay={<Tooltip>Sign in to add to favourites!</Tooltip>}
             >
               <i className="far fa-heart" />
             </OverlayTrigger>
