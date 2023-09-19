@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap'
 import { axiosReq } from "../../api/axiosDefaults";
 import { useCurrentUser } from '../../contexts/CurrentUserContext';
 import Asset from "../../components/Asset";
+import PopularResource from './PopularResource';
 
 const PopularResources = () => {
     const [resourceData, setResourceData] = useState({
@@ -36,7 +37,7 @@ const PopularResources = () => {
                 <>
                     <p>Popular Resources</p>
                     {popularResources.results.map((resource) => (
-                        <p key={resource.id}>{resource.owner}</p>
+                        <PopularResource key={resource.id} resource={resource} />
                     ))}
                 </>
             ):(
