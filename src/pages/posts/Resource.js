@@ -102,11 +102,22 @@ const Resource = (props) => {
         <div className={styles.ResourceBar}> 
           {favourite_id ? (
             <span onClick={handleUnfavourite}>
-              <i className={`fas fa-heart ${styles.Heart}`} />
+              <OverlayTrigger
+              placement="top"
+              overlay={<Tooltip>Remove from favourites!</Tooltip>}
+              >
+                <i className={`fas fa-heart ${styles.Heart}`} />
+              </OverlayTrigger>
+              
             </span>
           ) : currentUser ? (
             <span onClick={handleFavourite}>
+              <OverlayTrigger
+              placement="top"
+              overlay={<Tooltip>Add to favourites!</Tooltip>}
+              >
                 <i className={`far fa-heart ${styles.HeartOutline}`} />
+              </OverlayTrigger>
             </span>
           ) : (
             <OverlayTrigger
