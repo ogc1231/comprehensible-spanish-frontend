@@ -146,8 +146,6 @@ const Resource = (props) => {
           {favourites_count}
         </div>
       </Card.Body>
-      
-      
     </Card>
   );
 };
