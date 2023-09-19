@@ -100,14 +100,7 @@ const Resource = (props) => {
         {difficulty_level_filter === 'native' && <Card.Text className={styles.Level3}><img src={level3} alt="logo" />{difficulty_level_filter}</Card.Text>}
         {/* styling? */}
         <div className={styles.ResourceBar}> 
-          {is_owner ? (
-            <OverlayTrigger
-              placement="top"
-              overlay={<Tooltip>You can't favourite your own resource!</Tooltip>}
-            >
-              <i className="far fa-heart" />
-            </OverlayTrigger>
-          ) : favourite_id ? (
+          {favourite_id ? (
             <span onClick={handleUnfavourite}>
               <i className={`fas fa-heart ${styles.Heart}`} />
             </span>
