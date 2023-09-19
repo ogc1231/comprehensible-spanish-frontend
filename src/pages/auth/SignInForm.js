@@ -17,6 +17,7 @@ import appStyles from "../../App.module.css";
 
 import { useSetCurrentUser } from "../../contexts/CurrentUserContext";
 import { useRedirect } from "../../hooks/useRedirect";
+import signin from "../../assets/signin.jpg";
 
 function SignInForm() {
   const setCurrentUser = useSetCurrentUser();
@@ -110,11 +111,11 @@ function SignInForm() {
       </Col>
       <Col
         md={6}
-        className={`my-auto d-none d-md-block p-2 ${styles.SignInCol}`}
+        className={`my-auto d-none d-md-block p-3 ${styles.SignInCol}`}
       >
         <Image
           className={`${appStyles.FillerImage}`}
-          src={"https://codeinstitute.s3.amazonaws.com/AdvancedReact/hero.jpg"}
+          src={signin}
         />
       </Col>
     </Row>
