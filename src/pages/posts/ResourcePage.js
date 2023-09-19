@@ -8,6 +8,7 @@ import appStyles from "../../App.module.css";
 import { useParams } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import Resource from "./Resource";
+import PopularResources from "./PopularResources";
 
 function ResourcePage() {
   const { id } = useParams();
@@ -39,7 +40,7 @@ function ResourcePage() {
         </Container>
       </Col>
       <Col lg={5} className="d-none d-lg-block p-0 p-lg-2">
-        Popular Resources
+        <PopularResources />
       </Col>
     </Row>
   );
