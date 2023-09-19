@@ -81,13 +81,29 @@ const Resource = (props) => {
 
   return (
     <Card className={styles.Resource}>
+      {resourcePage && <Card.Body className={styles.ResourceProfile}> 
+        <Media className="align-items-center justify-content-between">
+          <Link to={`/profiles/${profile_id}`}>
+            <Avatar src={profile_image} height={25} />
+            {owner}
+          </Link>
+          <div className="d-flex align-items-center">
+            <span>{updated_at}</span>
+            {is_owner && resourcePage && 
+              <MoreDropdown
+                handleEdit={handleEdit}
+                handleDelete={handleDelete}
+              />}
+          </div>
+        </Media>
+      </Card.Body>}
       <Link to={`/resources/${id}`}>
         <Card.Img src={image} alt={title} />
       </Link>
       <Card.Body>
         {title && <Card.Title className="text-center">{title}</Card.Title>}
-        {desc && <Card.Text>{desc}</Card.Text>}
-        {resource_url && 
+        {resourcePage && <Card.Text>{desc}</Card.Text>}
+        {resourcePage && 
         <Card.Text>
             <a href={resource_url} target="_blank" rel="noreferrer">Link</a>
         </Card.Text>
@@ -130,22 +146,8 @@ const Resource = (props) => {
           {favourites_count}
         </div>
       </Card.Body>
-      <Card.Body className={styles.ResourceProfile}> 
-        <Media className="align-items-center justify-content-between">
-          <Link to={`/profiles/${profile_id}`}>
-            <Avatar src={profile_image} height={25} />
-            {owner}
-          </Link>
-          <div className="d-flex align-items-center">
-            <span>{updated_at}</span>
-            {is_owner && resourcePage && 
-              <MoreDropdown
-                handleEdit={handleEdit}
-                handleDelete={handleDelete}
-              />}
-          </div>
-        </Media>
-      </Card.Body>
+      
+      
     </Card>
   );
 };
