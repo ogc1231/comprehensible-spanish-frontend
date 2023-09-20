@@ -30,6 +30,8 @@
   .Level1,
   .Level2, 
   .Level3,
+  .Level4,
+  .Level5,
   .Type1,
   .Type2 {
     color: black;
@@ -44,9 +46,13 @@
 
   .Level1 img,
   .Level2 img , 
-  .Level3 img{
+  .Level3 img,
+  .Level4 img,
+  .Level5 img{
     padding-bottom: 1px;
+    padding-right: 2px;
     height: 18px;
+    border-bottom: none;
   }
 
   .Level1 {
@@ -59,6 +65,14 @@
 
   .Level3 {
     background-color: #ff2e65;
+  }
+
+  .Level4 {
+    background-color: #c800c8;
+  }
+
+  .Level5 {
+    background-color: #24db36;
   }
 
   .Type1 {
