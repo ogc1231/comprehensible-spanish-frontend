@@ -79,7 +79,7 @@ function ProfilePage() {
   const mainProfilePosts = (
     <>
       <hr />
-      <p className="text-center">Resources added by {profile?.owner}</p>
+      <p className='text-center'>Resources added by {profile?.owner}</p>
       <hr />
       {profileResources.results.length ? (
         <InfiniteScroll
@@ -93,6 +93,7 @@ function ProfilePage() {
         />
       ) : (
         <Asset
+          className={styles.SearchImg}
           src={NoResults}
           message={`No results found, ${profile?.owner} hasn't added any resources yet.`}
         />

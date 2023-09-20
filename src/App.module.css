@@ -17,6 +17,10 @@
   border: 1px solid #dadadf;
 }
 
+.Content img {
+  height: 4rem;
+}
+
 .FillerImage {
   object-fit: cover;
   height: 100%;

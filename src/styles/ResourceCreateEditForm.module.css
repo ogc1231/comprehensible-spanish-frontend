@@ -1,12 +1,14 @@
 .Container {
     min-height: 343px;
   }
+
   .UploadImg {
     border: 3px solid black;
     width: 50%;
     margin: 0 auto;
     border-radius: 8px;
   }
+  
   .UploadImg img {
     height: 4rem;
   }
