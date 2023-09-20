@@ -10,7 +10,7 @@ const PopularResource = (props) => {
     return (
         <div className='my-3 d-flex align-items-center'>
             <div>
-                <Link className='align-self-center' to={`/resources/${id}`}>
+                <Link className={`align-self-center ${styles.Name}`} to={`/resources/${id}`}>
                     <Avatar src={resource.image} height={imageSize}/>
                 </Link>
             </div>

@@ -2,4 +2,7 @@
     border-radius: 50%;
     margin: 0 8px 0 8px;
     object-fit: cover;
+    /* border: 0.05rem solid black; */
+    height: 50px;
+    width: 50px;
 }
