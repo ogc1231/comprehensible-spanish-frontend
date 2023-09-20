@@ -21,6 +21,7 @@ import pe from "../assets/pe.png";
 import pr from "../assets/pr.png";
 import ur from "../assets/ur.png";
 import ve from "../assets/ve.png";
+import rico from "../assets/rico.png";
 
 function Slider() {
   return (

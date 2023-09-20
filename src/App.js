@@ -17,6 +17,7 @@ import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
 import LogoutModal from "./components/LogoutModal";
 import CountryFilter from "./components/CountryFilter";
+import Slider from "./components/Slider";
 import NotFound from "./components/NotFound";
 
 function App() {
@@ -28,7 +29,12 @@ function App() {
       <NavBar />
       <Container className={styles.Main}>
         <Switch>
-          <Route exact path="/" render={() => <div><LogoutModal /><CountryFilter /></div>} />
+          <Route exact path="/" render={() => 
+          <div>
+            <LogoutModal />
+            <CountryFilter />
+            <Slider />
+            </div>} />
           <Route exact path="/resources" render={() => <ResourcesPage message="No results found. Adjust the search keyword."/>} />
           <Route
             exact

@@ -1,7 +1,7 @@
 .Slider {
     text-align: center;
     background-color: black;
-    padding: 20px 0 40px 0;
+    padding: 50px 0 50px 0;
     margin: 0 100px;
  }
 
@@ -9,7 +9,7 @@
     color: white;
     text-shadow: 2px 2px 2px black;
     font-weight: bold;
-    line-height: 0;
+    padding-top: 10px;
 }
 
 .Slider img {
@@ -30,7 +30,7 @@
 
 .Flag {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
     padding: 0 80px;
 }
