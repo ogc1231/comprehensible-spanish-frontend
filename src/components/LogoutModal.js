@@ -11,20 +11,20 @@ function LogoutModal() {
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
+        Log Out
       </Button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Do you want to Log Out?</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+        <Modal.Body>Click log out button below to confirm</Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
           <Button variant="primary" onClick={handleClose}>
-            Save Changes
+            Log Out
           </Button>
         </Modal.Footer>
       </Modal>

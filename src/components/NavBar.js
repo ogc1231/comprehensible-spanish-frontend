@@ -7,6 +7,7 @@ import { useCurrentUser, useSetCurrentUser } from "../contexts/CurrentUserContex
 import Avatar from "./Avatar";
 import axios from "axios";
 import useClickOutsideToggle from "../hooks/useClickOutsideToggle";
+// import LogoutModal from "./../components/LogoutModal";
 
 const NavBar = () => {
   const currentUser = useCurrentUser();
