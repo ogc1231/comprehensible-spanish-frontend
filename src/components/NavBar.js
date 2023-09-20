@@ -1,5 +1,5 @@
-import React from "react";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import React, { useState } from "react";
+import { Navbar, Container, Nav, Button, Modal } from "react-bootstrap";
 import logo from "../assets/logo.png";
 import styles from "../styles/NavBar.module.css";
 import { NavLink } from "react-router-dom";
@@ -7,13 +7,16 @@ import { useCurrentUser, useSetCurrentUser } from "../contexts/CurrentUserContex
 import Avatar from "./Avatar";
 import axios from "axios";
 import useClickOutsideToggle from "../hooks/useClickOutsideToggle";
-// import LogoutModal from "./../components/LogoutModal";
 
 const NavBar = () => {
   const currentUser = useCurrentUser();
   const setCurrentUser = useSetCurrentUser();
 
   const { expanded, setExpanded, ref } = useClickOutsideToggle();
+
+  const [showModal, setShowModal] = useState()
+  const handleClose = () => setShowModal(false);
+  const handleShow = () => setShowModal(true);
 
   const handleSignOut = async () => {
     try {
@@ -22,6 +25,7 @@ const NavBar = () => {
     } catch (err) {
       console.log(err);
     }
+    handleClose();
   };
 
   const addResourceIcon = (
@@ -49,15 +53,27 @@ const NavBar = () => {
       >
         <i className="fas fa-heart"></i>Favourites
       </NavLink>
-      <NavLink className={styles.NavLink} to="/" onClick={handleSignOut}>
-        <i className="fas fa-sign-out-alt"></i>Log out
-      </NavLink>
+      <Button onClick={handleShow}>Log Out</Button>
       <NavLink
         className={styles.NavLink}
         to={`/profiles/${currentUser?.profile_id}`}
       >
         <Avatar src={currentUser?.profile_image} text="Profile" height={40} />
       </NavLink>
+      <Modal show={showModal} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Do you want to Log Out?</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Click log out button below to confirm</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleSignOut}>
+            Log Out
+          </Button>
+        </Modal.Footer>
+      </Modal>
   </>;
 
   const loggedOutIcons = (
