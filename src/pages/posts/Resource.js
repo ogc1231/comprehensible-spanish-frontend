@@ -102,7 +102,7 @@ const Resource = (props) => {
       <Link to={`/resources/${id}`}>
         <Card.Img src={image} alt={title} />
       </Link>
-      <Card.Body>
+      <Card.Body className={styles.ResourceBar}>
         {title && <Card.Title className="text-center">{title}</Card.Title>}
         {resourcePage && <Card.Text>{desc}</Card.Text>}
         {resourcePage && 
@@ -118,8 +118,7 @@ const Resource = (props) => {
         {difficulty_level_filter === 'advanced' && <Card.Text className={styles.Level3}><img src={level3} alt="advanced logo" />{difficulty_level_filter}</Card.Text>}
         {difficulty_level_filter === 'easy_native' && <Card.Text className={styles.Level4}><img src={level4} alt="easy native logo" />{difficulty_level_filter}</Card.Text>}
         {difficulty_level_filter === 'adv_native' && <Card.Text className={styles.Level5}><img src={level5} alt="advanced native logo" />{difficulty_level_filter}</Card.Text>}
-        {/* styling? */}
-        <div className={styles.ResourceBar}> 
+        <div > 
           {favourite_id ? (
             <span onClick={handleUnfavourite}>
               <OverlayTrigger
