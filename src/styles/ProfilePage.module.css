@@ -4,10 +4,21 @@
     width: 120px;
     margin: 4px;
   }
+
+  .Name {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+  }
   
   @media screen and (max-width: 991px) {
     .ProfileImage {
       width: 250px;
       height: 250px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .Name {
+      font-size: 1rem;
     }
   }

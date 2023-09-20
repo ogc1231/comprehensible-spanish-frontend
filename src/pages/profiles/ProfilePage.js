@@ -63,16 +63,12 @@ function ProfilePage() {
           />
         </Col>
         <Col lg={6}>
-          <h3 className="m-2">{profile?.owner}</h3>
+          <h3 className={`m-2 ${styles.Name}`}>{profile?.owner}</h3>
           <Row className="justify-content-center no-gutters">
             <Col xs={3} className="my-2">
               <div>{profile?.resources_count}</div>
               <div>resources</div>
             </Col>
-            {/* <Col xs={3} className="my-2">
-              <div>{profile?.favourites_count}</div>
-              <div>favourites</div>
-            </Col> */}
           </Row>
         </Col>
         {profile?.content && <Col className="p-3">{profile.content}</Col>}
@@ -106,7 +102,7 @@ function ProfilePage() {
 
   return (
     <Row>
-      <Col className="py-2 p-0 p-lg-2" lg={8}>
+      <Col className="py-2 pd-2 p-lg-2" lg={8}>
         <Container className={appStyles.Content}>
           {hasLoaded ? (
             <>
