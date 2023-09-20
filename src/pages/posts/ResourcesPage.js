@@ -19,6 +19,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import { fetchMoreData } from "../../utils/utils";
 import PopularResources from "./PopularResources";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
+// import CountryFilter from "../../components/CountryFilter";
 
 function ResourcesPage({ message, filter = "" }) {
   const [resources, setResources] = useState({ results: [] });
@@ -68,6 +69,48 @@ function ResourcesPage({ message, filter = "" }) {
             placeholder="Search resources"
           />
         </Form>
+        
+        <select onChange={(e) => setQuery(e.target.value)}>
+        <option value="">All Countries</option>
+        <option value="mixed">Mixed</option>
+        <option value="argentina">Argentina</option>
+        <option value="bolivia">Bolivia</option>
+        <option value="canary_islands">Canary Islands</option>
+        <option value="chile">Chile</option>
+        <option value="colombia">Colombia</option>
+        <option value="costa_rica">Costa Rica</option>
+        <option value="cuba">Cuba</option>
+        <option value="dominican_republic">Dominican Republic</option>
+        <option value="ecudaor">Ecuador</option>
+        <option value="el_salvador">El Salvador</option>
+        <option value="equatorial_guinea">Equatorial Guinea</option>
+        <option value="guatemala">Guatemala</option>
+        <option value="honduras">Honduras</option>
+        <option value="mexico">Mexico</option>
+        <option value="nicaragua">Nicaragua</option>
+        <option value="panama">Panama</option>
+        <option value="paraguay">Paraguay</option>
+        <option value="puerto_rico">Puerto Rico</option>
+        <option value="peru">Peru</option>
+        <option value="spain">Spain</option>
+        <option value="uruguay">Uruguay</option>
+        <option value="venezuela">Venezuela</option>
+      </select>
+
+      <select onChange={(e) => setQuery(e.target.value)}>
+        <option value="">All Levels</option>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+        <option value="easy_native">Easy Native</option>
+        <option value="adv_native">Advanced Native</option>
+      </select>
+
+      <select onChange={(e) => setQuery(e.target.value)}>
+        <option value="">All Media Types</option>
+        <option value="podcast">Podcasts</option>
+        <option value="youtube">YouTube</option>
+      </select>
         
 
         {hasLoaded ? (
