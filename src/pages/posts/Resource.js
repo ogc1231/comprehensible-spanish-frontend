@@ -100,7 +100,7 @@ const Resource = (props) => {
         </Media>
       </Card.Body>}
       <Link to={`/resources/${id}`}>
-        <Card.Img src={image} alt={title} />
+        <Card.Img src={image} alt={title} className={styles.ResourceImg}/>
       </Link>
       <Card.Body className={styles.ResourceBar}>
         {title && <Card.Title className="text-center">{title}</Card.Title>}

@@ -10,6 +10,7 @@ import Asset from "../../components/Asset";
 
 import appStyles from "../../App.module.css";
 import styles from "../../styles/ResourcesPage.module.css";
+import ntstyles from "../../styles/NotFound.module.css";
 import { useLocation } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 
@@ -82,7 +83,7 @@ function ResourcesPage({ message, filter = "" }) {
                 next={() => fetchMoreData(resources, setResources)}
               />
             ) : (
-              <Container className={appStyles.Content}>
+              <Container className={`${appStyles.Content} ${ntstyles.NoResults}`}>
                 <Asset src={NoResults} message={message} />
               </Container>
             )}

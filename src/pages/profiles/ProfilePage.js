@@ -93,8 +93,8 @@ function ProfilePage() {
         />
       ) : (
         <Asset
-          className={styles.SearchImg}
           src={NoResults}
+          height={250}
           message={`No results found, ${profile?.owner} hasn't added any resources yet.`}
         />
       )}
