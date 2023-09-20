@@ -1,3 +1,46 @@
 .NotFound {
     margin-top: 25vh;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .NotFound img {
+    height: 150px;
+    width: 150px;;
+  }
+
+  .NotFoundBtn {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background-color: #2142b2;
+    align-self: center;
+    border-radius: 10px;
+    border-color: transparent;
+    padding: .5rem 1.5rem;
+    min-width: 75px;
+  }
+
+  .NotFoundBtn:hover {
+    color: white;
+    opacity: 0.9;
+    border-color: transparent;
+    cursor: pointer;
+  }
+  
+  .NotFoundBtn:hover:active {
+    background-color: #2142b2 !important;
+    color: white;
+  }
+  
+  .NotFoundBtn:active {
+    background-color: #2142b2 !important;
+    color: white;
+  }
+  
+  .NotFoundBtn:focus {
+    background-color: #2142b2;
+    color: white;
   }

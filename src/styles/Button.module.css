@@ -7,6 +7,7 @@
     margin-left: 2px;
     margin-right: 2px;
     min-width: 75px;
+    text-align: center;
   }
   
   .Button:hover {
@@ -21,6 +22,7 @@
   
   .Button:active {
     background-color: #2142b2 !important;
+    color: #ffffff;
   }
   
   .Button:focus {
@@ -64,6 +66,5 @@
   }
   
   .Bright {
-    background-color: #2ed9ff;
-    color: #2142b2;
+    color: #ffffff;
   }
