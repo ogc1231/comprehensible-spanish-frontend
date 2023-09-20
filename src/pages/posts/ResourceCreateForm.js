@@ -166,7 +166,8 @@ function ResourceCreateForm() {
           <option value="beginner">Beginner</option>
           <option value="intermediate">Intermediate</option>
           <option value="advanced">Advanced</option>
-          <option value="native">Native</option>
+          <option value="easy_native">Easy Native</option>
+          <option value="adv_native">Advanced Native</option>
        </select>
       </Form.Group>
       {errors?.difficulty_level_filter?.map((message, idx) => (

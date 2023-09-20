@@ -9,6 +9,8 @@ import { MoreDropdown } from "../../components/MoreDropdown";
 import level1 from "../../assets/level1.png";
 import level2 from "../../assets/level2.png";
 import level3 from "../../assets/level3.png";
+import level4 from "../../assets/level4.png";
+import level5 from "../../assets/level5.png";
 
 const Resource = (props) => {
   const {
@@ -111,10 +113,11 @@ const Resource = (props) => {
         {country_filter && <Card.Text className={styles.Country}>{country_filter}</Card.Text>}
         {resource_type_filter === 'youtube' && <Card.Text className={styles.Type1}>{resource_type_filter}</Card.Text>}
         {resource_type_filter === 'podcast' && <Card.Text className={styles.Type2}>{resource_type_filter}</Card.Text>}
-        {difficulty_level_filter === 'beginner' && <Card.Text className={styles.Level1}><img src={level1} alt="logo" />{difficulty_level_filter}</Card.Text>}
-        {difficulty_level_filter === 'intermediate' && <Card.Text className={styles.Level2}><img src={level2} alt="logo" />{difficulty_level_filter}</Card.Text>}
-        {difficulty_level_filter === 'advanced' && <Card.Text className={styles.Level3}><img src={level3} alt="logo" />{difficulty_level_filter}</Card.Text>}
-        {difficulty_level_filter === 'native' && <Card.Text className={styles.Level3}><img src={level3} alt="logo" />{difficulty_level_filter}</Card.Text>}
+        {difficulty_level_filter === 'beginner' && <Card.Text className={styles.Level1}><img src={level1} alt="beginner logo" />{difficulty_level_filter}</Card.Text>}
+        {difficulty_level_filter === 'intermediate' && <Card.Text className={styles.Level2}><img src={level2} alt="intermediatelogo" />{difficulty_level_filter}</Card.Text>}
+        {difficulty_level_filter === 'advanced' && <Card.Text className={styles.Level3}><img src={level3} alt="advanced logo" />{difficulty_level_filter}</Card.Text>}
+        {difficulty_level_filter === 'easy_native' && <Card.Text className={styles.Level4}><img src={level4} alt="easy native logo" />{difficulty_level_filter}</Card.Text>}
+        {difficulty_level_filter === 'adv_native' && <Card.Text className={styles.Level5}><img src={level5} alt="advanced native logo" />{difficulty_level_filter}</Card.Text>}
         {/* styling? */}
         <div className={styles.ResourceBar}> 
           {favourite_id ? (

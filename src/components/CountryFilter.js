@@ -14,7 +14,7 @@ const data = [
     "resource_url": "https://open.spotify.com/show/4xOM98A8Es30eGevw6tYwe?si=be82f2c190c84725",
     "country_filter": "venezuela",
     "resource_type_filter": "podcast",
-    "difficulty_level_filter": "native",
+    "difficulty_level_filter": "easy_native",
     "favourite_id": null,
     "favourites_count": 1
   },
@@ -48,7 +48,7 @@ const data = [
     "resource_url": "https://open.spotify.com/show/2KYyAGSPNJKUKCuqURpDuV?si=a2064023f6a74646",
     "country_filter": "mexico",
     "resource_type_filter": "podcast",
-    "difficulty_level_filter": "learner",
+    "difficulty_level_filter": "intermediate",
     "favourite_id": null,
     "favourites_count": 1
   }
