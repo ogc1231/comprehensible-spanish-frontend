@@ -1,7 +1,7 @@
 ---
 name: 'Issue: User Story Template'
 about: 'User story template '
-title: ''
+title: 'USER STORY :'
 labels: ''
 assignees: ogc1231
 
