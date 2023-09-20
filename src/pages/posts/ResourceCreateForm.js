@@ -220,7 +220,7 @@ function ResourceCreateForm() {
                       htmlFor="image-upload"
                     >
                       Change the image
-                    </Form.Label>
+                    </Form.Label> 
                   </div>
                 </>
                 ) : (
