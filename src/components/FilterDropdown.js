@@ -13,9 +13,10 @@ function LevelDropdown() {
         </Dropdown.Toggle>
   
         <Dropdown.Menu>
-          <Dropdown.Item href="#/action-1">Learner</Dropdown.Item>
-          <Dropdown.Item href="#/action-2">Easy Native</Dropdown.Item>
-          <Dropdown.Item href="#/action-3">Native</Dropdown.Item>
+          <Dropdown.Item href="#/action-1">Beginnner</Dropdown.Item>
+          <Dropdown.Item href="#/action-2">Intermediate</Dropdown.Item>
+          <Dropdown.Item href="#/action-3">Advanced</Dropdown.Item>
+          <Dropdown.Item href="#/action-4">Native</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
     );

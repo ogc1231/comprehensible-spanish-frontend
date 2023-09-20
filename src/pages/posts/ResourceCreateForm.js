@@ -163,8 +163,9 @@ function ResourceCreateForm() {
       <Form.Group>
         <select aria-label="Level" name="difficulty_level_filter" id="difficulty_level_filter" required onChange={handleChange}>
           <option value={difficulty_level_filter} selected disabled>Level</option>
-          <option value="learner">Learner</option>
-          <option value="easy_native">Easy Native</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
           <option value="native">Native</option>
        </select>
       </Form.Group>
