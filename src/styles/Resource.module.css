@@ -2,7 +2,7 @@
     background-color: rgb(248, 248, 248);
     border: none;
     border-radius: 10px;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
     text-align: center;
   }
 
@@ -44,6 +44,7 @@
     text-transform: capitalize;
     width: 130px;
     margin: 0 auto;
+    border: 1px solid black;
   }
 
   .Level1 img,
@@ -75,6 +76,11 @@
 
   .Level5 {
     background-color: #24db36;
+  }
+
+  .Type1, .Type2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   .Type1 {
