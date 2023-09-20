@@ -53,7 +53,7 @@ const NavBar = () => {
       >
         <i className="fas fa-heart"></i>Favourites
       </NavLink>
-      <Button onClick={handleShow}>Log Out</Button>
+      <Button className={styles.LogOut} onClick={handleShow}><i className="fas fa-sign-in-alt"></i>Log out</Button>
       <NavLink
         className={styles.NavLink}
         to={`/profiles/${currentUser?.profile_id}`}

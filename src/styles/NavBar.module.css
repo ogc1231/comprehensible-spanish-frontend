@@ -3,12 +3,37 @@
     border: 1px solid #dadadf;
   }
   
-  .NavLink {
+  .NavLink,
+  .LogOut {
     padding: 5px;
     display: flex;
     align-items: center;
   }
   
-  .Active i {
+  .Active i,
+  .LogOut i,
+  .LogOut {
     color: #2142b2;
   }
+
+.LogOut,
+.LogOut i {
+  background: none;
+  border: none;
+  color: #555;
+}
+
+.LogOut i {
+  color: #cfced3;
+}
+
+.LogOut:hover,
+.LogOut:active,
+.LogOut:focus,
+.LogOut i:hover,
+.LogOut i:active
+ {
+  background: none;
+  border: none;
+  color: #2142b2
+}
