@@ -17,7 +17,7 @@ import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
 import Slider from "./components/Slider";
 import NotFound from "./components/NotFound";
-import ContactForm from "./components/ContactForm";
+import ContactForm from "./pages/contact/ContactForm";
 
 function App() {
   const currentUser = useCurrentUser();
