@@ -34,7 +34,7 @@ function ResourcePage() {
   return (
     <Row className="h-100">
       <Col className="py-2 pd-2 p-lg-2" lg={5} >
-        <Resource {...resource.results[0]} setPosts={setResource} resourcePage />
+        <Resource {...resource.results[0]} setResources={setResource} resourcePage />
         <Container className={appStyles.Content}>
           Comments/////////
         </Container>
