@@ -19,8 +19,8 @@
   },
   "scripts": {
     "heroku-prebuild": "npm install -g serve",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts build --openssl-legacy-provider build",
+    "build": "react-scripts build --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
