@@ -71,7 +71,7 @@ function ResourcesPage({ message, filter = "" }) {
         </Form>
         
         <select onChange={(e) => setQuery(e.target.value)}>
-        <option value="">All Countries</option>
+        <option value="">All Dialects</option>
         <option value="mixed">Mixed</option>
         <option value="argentina">Argentina</option>
         <option value="bolivia">Bolivia</option>

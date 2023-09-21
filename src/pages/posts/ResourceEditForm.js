@@ -143,8 +143,8 @@ function ResourceEditForm() {
       ))}
 
       <Form.Group>
-        <select aria-label="Country" name="country_filter" id="country_filter" required onChange={handleChange}>
-          <option value={country_filter} selected disabled>Country</option>
+        <select aria-label="dialect" name="country_filter" id="country_filter" required onChange={handleChange}>
+          <option value={country_filter} selected disabled>Dialect</option>
           <option value="mixed">Mixed</option>
           <option value="argentina">Argentina</option>
           <option value="bolivia">Bolivia</option>
