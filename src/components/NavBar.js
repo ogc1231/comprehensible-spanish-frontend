@@ -53,13 +53,6 @@ const NavBar = () => {
       >
         <i className="fas fa-heart"></i>Favourites
       </NavLink>
-      <NavLink
-        className={styles.NavLink}
-        activeClassName={styles.Active}
-        to="/contact"
-      >
-        <i className="fa-solid fa-envelope"></i>Contact
-      </NavLink>
       <Button className={styles.LogOut} onClick={handleShow}><i className="fas fa-sign-in-alt"></i>Log out</Button>
       <NavLink
         className={styles.NavLink}
@@ -69,7 +62,7 @@ const NavBar = () => {
       </NavLink>
       <Modal show={showModal} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Do you want to log out?</Modal.Title>
+          <Modal.Title>Do you want to Log Out?</Modal.Title>
         </Modal.Header>
         <Modal.Body>Click log out button below to confirm</Modal.Body>
         <Modal.Footer>
