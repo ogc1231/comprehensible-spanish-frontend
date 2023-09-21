@@ -20,7 +20,6 @@ function ResourcePage() {
           axiosReq.get(`/resources/${id}`),
         ]);
         setResource({ results: [resource] });
-        // console.log(resource);
       } catch (err) {
         console.log(err);
       }
