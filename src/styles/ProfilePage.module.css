@@ -1,13 +1,13 @@
 .ProfileImage {
     object-fit: cover;
-    height: 120px;
-    width: 120px;
+    height: 80px;
+    width: 80px;
     margin: 4px;
   }
 
   .Name {
     padding-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   
   @media screen and (max-width: 991px) {
