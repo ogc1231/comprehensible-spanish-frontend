@@ -49,7 +49,7 @@ function ResourcesPage({ message, filter = "" }) {
 
   return (
     
-    <Row className="h-100" >
+    <Row className="h-100">
       
       <Col className="py-2 pd-2 p-lg-2" lg={10}>
         <i className={`fas fa-search ${styles.SearchIcon}`} />
@@ -114,7 +114,7 @@ function ResourcesPage({ message, filter = "" }) {
             {resources.results.length ? (
               <InfiniteScroll className={styles.ResourceLayout}
                 children={resources.results.map((resource) => (
-                  <Resource key={resource.id} {...resource} setResources={setResources} />
+                  <Resource key={resource.id} {...resource} setResources={setResources} className={styles.ResourcesContainer}/>
                 ))}
                 dataLength={resources.results.length}
                 loader={<Asset spinner />}
@@ -122,7 +122,7 @@ function ResourcesPage({ message, filter = "" }) {
                 next={() => fetchMoreData(resources, setResources)}
               />
             ) : (
-              <Container className={`${appStyles.Content} ${ntstyles.NoResults}`}>
+              <Container className={`${appStyles.Content} ${ntstyles.NoResults} ${styles.ResourcesContainer}`}>
                 <Asset src={NoResults} message={message} />
               </Container>
             )}
