@@ -23,6 +23,7 @@ import ur from "../assets/ur.png";
 import ve from "../assets/ve.png";
 import rico from "../assets/rico.png";
 
+
 function Slider() {
   return (
     <Carousel className={styles.Slider}>

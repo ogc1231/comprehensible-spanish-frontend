@@ -1,7 +1,10 @@
 import React from "react";
 import styles from "../../styles/Resource.module.css";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
-import { Card, Media, OverlayTrigger, Tooltip } from "react-bootstrap";
+import Card from "react-bootstrap/Card";
+import Media from "react-bootstrap/Media";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Tooltip from "react-bootstrap/Tooltip";
 import { Link, useHistory } from "react-router-dom";
 import Avatar from "../../components/Avatar";
 import { axiosRes } from "../../api/axiosDefaults";
@@ -11,6 +14,7 @@ import level2 from "../../assets/level2.png";
 import level3 from "../../assets/level3.png";
 import level4 from "../../assets/level4.png";
 import level5 from "../../assets/level5.png";
+
 
 const Resource = (props) => {
   const {

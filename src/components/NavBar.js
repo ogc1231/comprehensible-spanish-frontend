@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-import { Navbar, Container, Nav, Button, Modal } from "react-bootstrap";
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav ";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 import logo from "../assets/logo.png";
 import styles from "../styles/NavBar.module.css";
 import { NavLink } from "react-router-dom";
@@ -7,6 +11,7 @@ import { useCurrentUser, useSetCurrentUser } from "../contexts/CurrentUserContex
 import Avatar from "./Avatar";
 import axios from "axios";
 import useClickOutsideToggle from "../hooks/useClickOutsideToggle";
+
 
 const NavBar = () => {
   const currentUser = useCurrentUser();

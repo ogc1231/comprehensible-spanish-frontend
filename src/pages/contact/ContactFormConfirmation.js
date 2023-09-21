@@ -2,12 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import styles from "../../styles/ContactFormConfirmation.module.css";
 import appStyles from "../../App.module.css";
-
-import {
-  Col,
-  Row,
-  Container,
-} from "react-bootstrap";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container";
 import { useRedirect } from "../../hooks/useRedirect";
 
 
@@ -17,12 +14,9 @@ const ContactFormConfirmation = () => {
   const navigate = useHistory();
   useEffect(() => {
     const interval = setInterval(() => {
-      // update the state after 1000ms
       setCount((currentCount) => currentCount - 1);
     }, 1000);
-    // when count is 0, navigate
     count === 0 && navigate.push("/");
-    // clean up the interval
     return () => clearInterval(interval);
   }, [count, navigate]);
 

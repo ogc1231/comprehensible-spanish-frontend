@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
-
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
-
 import appStyles from "../../App.module.css";
 import { useParams } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import Resource from "./Resource";
 import PopularResources from "./PopularResources";
+
 
 function ResourcePage() {
   const { id } = useParams();

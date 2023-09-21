@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { Container } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container '
 import { axiosReq } from "../../api/axiosDefaults";
 import { useCurrentUser } from '../../contexts/CurrentUserContext';
 import Asset from "../../components/Asset";
 import PopularResource from './PopularResource';
+
 
 const PopularResources = () => {
     const [resourceData, setResourceData] = useState({

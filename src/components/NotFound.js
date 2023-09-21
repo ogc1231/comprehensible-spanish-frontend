@@ -3,6 +3,7 @@ import notfound404 from "../assets/notfound404.png";
 import styles from "../styles/NotFound.module.css";
 import Asset from "./Asset";
 
+
 const NotFound = () => {
   return (
     <div className={styles.NotFound}>

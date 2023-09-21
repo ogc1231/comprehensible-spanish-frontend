@@ -1,6 +1,7 @@
 import styles from "./App.module.css";
 import NavBar from "./components/NavBar";
-
+// import Slider from "./components/Slider";
+import NotFound from "./components/NotFound";
 import Container from "react-bootstrap/Container";
 import { Route, Switch } from "react-router-dom";
 import "./api/axiosDefaults";
@@ -15,10 +16,9 @@ import ProfilePage from "./pages/profiles/ProfilePage";
 import UsernameForm from "./pages/profiles/UsernameForm";
 import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
-import Slider from "./components/Slider";
-import NotFound from "./components/NotFound";
 import ContactForm from "./pages/contact/ContactForm";
 import ContactFormConfirmation from './pages/contact/ContactFormConfirmation';
+
 
 function App() {
   const currentUser = useCurrentUser();
