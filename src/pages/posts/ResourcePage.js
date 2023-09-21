@@ -30,14 +30,14 @@ function ResourcePage() {
 
 
   return (
-    <Row className="h-100">
+    <Row className="h-100 pt-4">
       <Col className="py-2 pd-2 p-lg-2" lg={5} >
         <Resource {...resource.results[0]} setResources={setResource} resourcePage />
         <Container className={appStyles.Content}>
           Comments/////////
         </Container>
       </Col>
-      <Col lg={5} className="d-none d-lg-block p-0 p-lg-2">
+      <Col lg={3} className="d-none d-lg-block p-0 p-lg-2">
         <PopularResources />
       </Col>
     </Row>
