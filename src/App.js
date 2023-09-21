@@ -18,6 +18,7 @@ import ProfileEditForm from "./pages/profiles/ProfileEditForm";
 import Slider from "./components/Slider";
 import NotFound from "./components/NotFound";
 import ContactForm from "./pages/contact/ContactForm";
+import ContactFormConfirmation from './pages/contact/ContactFormConfirmation';
 
 function App() {
   const currentUser = useCurrentUser();
@@ -41,6 +42,7 @@ function App() {
             )}
           />
           <Route exact path="/contact" render={() => <ContactForm />} />
+          <Route exact path="/confirmation" render={() => <ContactFormConfirmation />} />
           <Route exact path="/signin" render={() => <SignInForm />} />
           <Route exact path="/signup" render={() => <SignUpForm />} />
           <Route exact path="/resources/create" render={() => <ResourceCreateForm />} />
