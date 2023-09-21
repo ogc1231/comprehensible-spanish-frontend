@@ -102,7 +102,7 @@ function ProfilePage() {
 
   return (
     <Row>
-      <Col className="py-2 pd-2 p-lg-2" lg={8}>
+      <Col className="py-2 pd-2 p-lg-2" lg={5}>
         <Container className={appStyles.Content}>
           {hasLoaded ? (
             <>
@@ -114,7 +114,7 @@ function ProfilePage() {
           )}
         </Container>
       </Col>
-      <Col lg={4} className="d-none d-lg-block p-0 p-lg-2">
+      <Col lg={5} className="d-none d-lg-block p-0 p-lg-2">
         <PopularResources />
       </Col>
     </Row>
