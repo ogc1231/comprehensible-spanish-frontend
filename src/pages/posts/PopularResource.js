@@ -9,7 +9,7 @@ const PopularResource = (props) => {
     const {id} = resource;
 
     return (
-        <div className='my-3 d-flex align-items-center'>
+        <div className={`my-4 d-flex align-items-center ${styles.Pop}`}>
             <div>
                 <Link className={`align-self-center ${styles.Name}`} to={`/resources/${id}`}>
                     <Avatar src={resource.image} height={imageSize}/>

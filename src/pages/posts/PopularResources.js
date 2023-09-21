@@ -4,6 +4,7 @@ import { axiosReq } from "../../api/axiosDefaults";
 import { useCurrentUser } from '../../contexts/CurrentUserContext';
 import Asset from "../../components/Asset";
 import PopularResource from './PopularResource';
+import styles from "../../styles/PopularResources.module.css";
 
 
 const PopularResources = () => {
@@ -33,10 +34,10 @@ const PopularResources = () => {
       }, [currentUser]);
 
     return (
-        <Container>
+        <Container className={styles.PopContainer}>
             {popularResources.results.length ? (
                 <>
-                    <p>Popular Resources</p>
+                    <p className={styles.PopTitle}>Popular Resources</p>
                     {popularResources.results.map((resource) => (
                         <PopularResource key={resource.id} resource={resource} />
                     ))}

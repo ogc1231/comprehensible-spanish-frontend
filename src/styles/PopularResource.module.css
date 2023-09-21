@@ -1,4 +1,14 @@
+.Pop {
+    border-bottom: 1px solid black;
+    padding-bottom: 18px;
+}
+
+.Pop:last-child{
+    border-bottom: none;
+ }
+
 .Font {
     font-size: 0.8rem;
     font-weight: 500;
 }
+
