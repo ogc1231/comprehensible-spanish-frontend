@@ -29,7 +29,7 @@ function App() {
       <NavBar />
       <Container className={styles.Main}>
         <Switch>
-          <Route exact path="/" render={() =><Slider />} />
+          {/* <Route exact path="/" render={() =><Slider />} /> */}
           <Route exact path="/resources" render={() => <ResourcesPage message="No results found. Adjust the search keyword."/>} />
           <Route
             exact
