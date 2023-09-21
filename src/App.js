@@ -17,6 +17,7 @@ import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
 import Slider from "./components/Slider";
 import NotFound from "./components/NotFound";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   const currentUser = useCurrentUser();
@@ -39,6 +40,7 @@ function App() {
               />
             )}
           />
+          <Route exact path="/contact" render={() => <ContactForm />} />
           <Route exact path="/signin" render={() => <SignInForm />} />
           <Route exact path="/signup" render={() => <SignUpForm />} />
           <Route exact path="/resources/create" render={() => <ResourceCreateForm />} />
