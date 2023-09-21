@@ -1,0 +1,23 @@
+.Row {
+    height: calc(100vh - 81px);
+    padding-top: 100px;
+  }
+
+.Container {
+    height: 900px;
+    margin: auto;
+    padding: 80px 15px 0 15px;
+    background-color: #D9F4C7;
+  }
+
+.Header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 19px;
+    padding-bottom: 10px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #A66A24;
+  }
