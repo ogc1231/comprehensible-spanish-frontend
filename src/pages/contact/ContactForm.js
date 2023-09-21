@@ -39,7 +39,7 @@ const ContactForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axiosReq.post("/contact/", contactFormData);
+      await axiosReq.post("/forms/", contactFormData);
       history.push("/confirmation");
     } catch (err) {
       setErrors(err.response?.data);
