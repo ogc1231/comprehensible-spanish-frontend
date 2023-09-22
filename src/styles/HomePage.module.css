@@ -1,12 +1,9 @@
-.HeroDiv {
-    width: 100%;
-    height: 100vh; 
+.Hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-
 .HeroImage {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    overflow-y:hidden;
+    width: 60%;
 }
