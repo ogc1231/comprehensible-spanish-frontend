@@ -51,7 +51,7 @@ function ResourcesPage({ message, filter = "" }) {
     
     <Row className="h-100">
       
-      <Col className="py-2 pd-2 p-lg-2" lg={10}>
+      <Col className={`py-2 pd-2 p-lg-2 mt-2 ${styles.ResourceCont}`} lg={10}>
         <i className={`fas fa-search ${styles.SearchIcon}`} />
         <Form
           className={styles.SearchBar}
@@ -66,48 +66,49 @@ function ResourcesPage({ message, filter = "" }) {
           />
         </Form>
         
-        <select onChange={(e) => setQuery(e.target.value)}>
-        <option value="">All Dialects</option>
-        <option value="mixed">Mixed</option>
-        <option value="argentina">Argentina</option>
-        <option value="bolivia">Bolivia</option>
-        <option value="canary_islands">Canary Islands</option>
-        <option value="chile">Chile</option>
-        <option value="colombia">Colombia</option>
-        <option value="costa_rica">Costa Rica</option>
-        <option value="cuba">Cuba</option>
-        <option value="dominican_republic">Dominican Republic</option>
-        <option value="ecudaor">Ecuador</option>
-        <option value="el_salvador">El Salvador</option>
-        <option value="equatorial_guinea">Equatorial Guinea</option>
-        <option value="guatemala">Guatemala</option>
-        <option value="honduras">Honduras</option>
-        <option value="mexico">Mexico</option>
-        <option value="nicaragua">Nicaragua</option>
-        <option value="panama">Panama</option>
-        <option value="paraguay">Paraguay</option>
-        <option value="puerto_rico">Puerto Rico</option>
-        <option value="peru">Peru</option>
-        <option value="spain">Spain</option>
-        <option value="uruguay">Uruguay</option>
-        <option value="venezuela">Venezuela</option>
-      </select>
+        <div className={`mb-3 ${styles.FilterCon}`}>
+          <select onChange={(e) => setQuery(e.target.value)} className={`${styles.Filters} ${styles.Country}`}>
+          <option value="">All Dialects</option>
+          <option value="mixed">Mixed</option>
+          <option value="argentina">Argentina</option>
+          <option value="bolivia">Bolivia</option>
+          <option value="canary_islands">Canary Islands</option>
+          <option value="chile">Chile</option>
+          <option value="colombia">Colombia</option>
+          <option value="costa_rica">Costa Rica</option>
+          <option value="cuba">Cuba</option>
+          <option value="dominican_republic">Dominican Republic</option>
+          <option value="ecudaor">Ecuador</option>
+          <option value="el_salvador">El Salvador</option>
+          <option value="equatorial_guinea">Equatorial Guinea</option>
+          <option value="guatemala">Guatemala</option>
+          <option value="honduras">Honduras</option>
+          <option value="mexico">Mexico</option>
+          <option value="nicaragua">Nicaragua</option>
+          <option value="panama">Panama</option>
+          <option value="paraguay">Paraguay</option>
+          <option value="puerto_rico">Puerto Rico</option>
+          <option value="peru">Peru</option>
+          <option value="spain">Spain</option>
+          <option value="uruguay">Uruguay</option>
+          <option value="venezuela">Venezuela</option>
+        </select>
 
-      <select onChange={(e) => setQuery(e.target.value)}>
-        <option value="">All Levels</option>
-        <option value="beginner">Beginner</option>
-        <option value="intermediate">Intermediate</option>
-        <option value="advanced">Advanced</option>
-        <option value="easy_native">Easy Native</option>
-        <option value="adv_native">Advanced Native</option>
-      </select>
+        <select onChange={(e) => setQuery(e.target.value)} className={` ${styles.Filters}  ${styles.Level}`}>
+          <option value="">All Levels</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+          <option value="easy_native">Easy Native</option>
+          <option value="adv_native">Advanced Native</option>
+        </select>
 
-      <select onChange={(e) => setQuery(e.target.value)}>
-        <option value="">All Media Types</option>
-        <option value="podcast">Podcasts</option>
-        <option value="youtube">YouTube</option>
-      </select>
-        
+        <select onChange={(e) => setQuery(e.target.value)} className={styles.Filters}>
+          <option value="">All Media Types</option>
+          <option value="podcast">Podcasts</option>
+          <option value="youtube">YouTube</option>
+        </select>
+      </div> 
 
         {hasLoaded ? (
           <>

@@ -22,6 +22,25 @@
   }
 
 
+  .FilterCon {
+    display: flex;
+    flex-direction: column;
+  }
+
+.Filters {
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
+  border-radius: 12px;
+  padding: .3rem .4rem;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.Country {
+  margin-top: 5px;
+}
+
 .ResourceLayout {
   max-width: 1200px;
   margin: 0 auto;
@@ -30,7 +49,26 @@
 }
 
 @media (min-width: 500px) {
-  .ResourceLayout { grid-template-columns: repeat(2, 1fr); }
+  .ResourceLayout { 
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .FilterCon {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    text-align: center;
+  }
+
+  .Filters {
+    margin: 0 auto;
+    text-align: center;
+    width: 31%;
+    border-radius: 12px;
+    padding: .3rem .4rem;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
 }
 
 @media (min-width: 800px) {
