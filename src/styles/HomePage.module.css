@@ -66,16 +66,17 @@
   @media (min-width: 999px) {
     .Hero {
         flex-direction: row;
+        align-items: normal;
     }
 
     .HeroDiv {
         text-align: center;
         font-size: 1.2rem;
-        
+        margin-top: 18%;
     }
 
     .HeroDiv h1 {
-        font-size: 2.5rem;
+        font-size: 2.7rem;
         font-weight: 500;
     }
 

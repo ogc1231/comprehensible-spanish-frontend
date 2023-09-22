@@ -8,7 +8,7 @@ const HomePage = () => {
       <div className={styles.HeroDiv}>
         <h1>Spanish Comprehensible Resources</h1>
         <p>A curated directory of Spanish Language resources to suit your needs whatever your level.</p>
-        <button className={styles.HeroBtn}>Explore Resources</button>
+        <a className={styles.HeroBtn} href='/resources' >Explore Resources</a>
       </div>
       <img src={hero1} alt='hero' className={styles.HeroImage}/>
     </div>
