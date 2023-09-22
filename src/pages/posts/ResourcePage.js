@@ -33,7 +33,7 @@ function ResourcePage() {
     <Row className="h-100 pt-4">
       <Col className="py-2 pd-2 p-lg-2" lg={5} >
         <Resource {...resource.results[0]} setResources={setResource} resourcePage />
-        <Container className={appStyles.Content}>
+        <Container className={`mt-2 ${appStyles.Content}`}>
           Comments/////////
         </Container>
       </Col>
