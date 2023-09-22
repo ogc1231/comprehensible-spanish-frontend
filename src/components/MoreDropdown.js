@@ -21,7 +21,7 @@ export const MoreDropdown = ({ handleEdit, handleDelete }) => {
       <Dropdown.Toggle as={ThreeDots} />
 
       <Dropdown.Menu
-        className="text-center"
+        className="text-center d-flex flex-column px-2"
         popperConfig={{ strategy: "fixed" }}
       >
         <Dropdown.Item
@@ -29,15 +29,16 @@ export const MoreDropdown = ({ handleEdit, handleDelete }) => {
           onClick={handleEdit}
           aria-label="edit"
         >
-          <i className="fas fa-edit" />
+          <i className="fas fa-edit" />Edit Resource
         </Dropdown.Item>
         <Dropdown.Item
           className={styles.DropdownItem}
           onClick={handleDelete}
           aria-label="delete"
         >
-          <i className="fas fa-trash-alt" />
+          <i className="fas fa-trash-alt" />Delete Resource
         </Dropdown.Item>
+        
       </Dropdown.Menu>
     </Dropdown>
   );
