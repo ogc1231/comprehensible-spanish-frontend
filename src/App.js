@@ -27,9 +27,9 @@ function App() {
   return (
     <div className={styles.App}>
       <NavBar />
-      <Container className={styles.Main}>
-        <Switch>
+      <Switch>
           <Route exact path="/" render={() =><HomePage />} />
+        <Container className={styles.Main}>
           <Route exact path="/resources" render={() => <ResourcesPage message="No results found. Adjust the search keyword."/>} />
           <Route
             exact
@@ -65,8 +65,8 @@ function App() {
             render={() => <ProfileEditForm />}
           />
           <Route render={() => <NotFound />} />
-        </Switch>
-      </Container>
+        </Container>
+      </Switch>
     </div>
   );
 }
