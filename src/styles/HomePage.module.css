@@ -1,9 +1,86 @@
 .Hero {
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
-    justify-content: space-between;
+    padding: 10px;
+    padding-right: 10px;
 }
 
 .HeroImage {
-    width: 60%;
+    width: 70%;
 }
+
+.HeroDiv {
+    margin-top: 2%;
+    text-align: center;
+    
+}
+
+.HeroDiv h1 {
+    font-size: 2rem;
+}
+
+.HeroBtn {
+    font-size: 1rem;
+    align-self: center;
+    border-radius: 100px;
+    border-color: transparent;
+    padding: 10px 20px;
+    margin-left: 2px;
+    margin-right: 2px;
+    min-width: 75px;
+    text-align: center;
+    background-color: #2142b2;
+    color: #ffffff;
+    /* padding: 10px 50px; */
+    width: 60%;
+  }
+  
+  .HeroBtn:hover {
+    opacity: 0.8;
+    border-color: transparent;
+    cursor: pointer;
+  }
+  
+  .HeroBtn:hover:active {
+    background-color: #2142b2 !important;
+  }
+  
+  .HeroBtn:active {
+    background-color: #2142b2 !important;
+    color: #ffffff;
+  }
+  
+  .HeroBtn:focus {
+    background-color: #2142b2;
+  }
+
+
+  @media (min-width: 770px) {
+    .HeroImage {
+        width: 50%;
+    }
+  }
+
+
+  @media (min-width: 999px) {
+    .Hero {
+        flex-direction: row;
+    }
+
+    .HeroDiv {
+        text-align: center;
+        font-size: 1.2rem;
+        
+    }
+
+    .HeroDiv h1 {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    .HeroImage {
+        width: 80%;
+    }
+    
+  }
