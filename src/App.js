@@ -1,6 +1,6 @@
 import styles from "./App.module.css";
 import NavBar from "./components/NavBar";
-// import Slider from "./components/Slider";
+import HomePage from "./pages/home/HomePage";
 import NotFound from "./components/NotFound";
 import Container from "react-bootstrap/Container";
 import { Route, Switch } from "react-router-dom";
@@ -29,7 +29,7 @@ function App() {
       <NavBar />
       <Container className={styles.Main}>
         <Switch>
-          {/* <Route exact path="/" render={() =><Slider />} /> */}
+          <Route exact path="/" render={() =><HomePage />} />
           <Route exact path="/resources" render={() => <ResourcesPage message="No results found. Adjust the search keyword."/>} />
           <Route
             exact
