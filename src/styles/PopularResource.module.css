@@ -12,3 +12,13 @@
     font-weight: 500;
 }
 
+@media (max-width: 1200px) {
+    .Font {
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+
+    .Name {
+        height: 20px;
+    }
+  }

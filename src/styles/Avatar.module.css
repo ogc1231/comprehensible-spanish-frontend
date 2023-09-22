@@ -6,3 +6,11 @@
     height: 50px;
     width: 50px;
 }
+
+@media (max-width: 1200px) {
+    .Avatar {
+        height: 38px;
+        width: 38px;
+        margin: 0 4px 0 4px;
+    }
+  }
