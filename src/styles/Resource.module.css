@@ -5,6 +5,11 @@
     text-align: center;
   }
 
+  .Resource:hover,
+  .Resource:active {
+    border: 3px solid black;
+  }
+
   .ResourceImg {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;

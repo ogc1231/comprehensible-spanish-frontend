@@ -35,6 +35,12 @@
   padding: .3rem .4rem;
   margin-bottom: 5px;
   font-weight: 500;
+  border: 1px solid black;
+}
+
+.Filters:hover,
+.Filters:active {
+  background-color: white;
 }
 
 .Country {
