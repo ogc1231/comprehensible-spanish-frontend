@@ -1,14 +1,14 @@
-.Button, .Button:hover {
+.Button {
     font-family: 'Readex Pro', sans-serif;
     border-radius: 20px;
-    background-color: #7c449e;
-    border-color: #7c449e;
+    background-color: #2142b2;
+    border-color: #2142b2;
     font-weight: 600;
 }
 
-.CancelButton, .CancelButton:hover {
+.CancelButton {
 background-color: white;
 border-radius: 20px;
-border-color: #7c449e;
-color: #7c449e;
+border-color: #2142b2;
+color: #2142b2;
 }
