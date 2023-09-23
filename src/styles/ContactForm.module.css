@@ -1,5 +1,4 @@
 .Contact{
-    /* margin-top: 80px; */
     padding-top: 30px;
     padding-bottom: 30px;
     font-weight: 500;
@@ -13,7 +12,7 @@
     height: 900px;
     margin: 0 auto;
     padding: 80px 15px 0 15px;
-    background-color: #D9F4C7;
+    background-color: #cfced3;
   }
 
 .Header {
