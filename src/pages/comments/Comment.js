@@ -7,7 +7,7 @@ import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import { axiosRes } from "../../api/axiosDefaults";
 import { MoreDropdown } from "../../components/MoreDropdown";
 import CommentEditForm from "./CommentEditForm";
-
+import ModalDelete from "../../components/ModalDelete";
 
 const Comment = (props) => {
   const { profile_id, profile_image, owner, updated_at, content, id, setResource, setComments } = props;
@@ -35,6 +35,12 @@ const Comment = (props) => {
     } catch (err) {}
   };
 
+  const showDeleteModal = (event) => {
+    setShow(true);
+  };
+
+  const [show, setShow] = useState(false);
+
   return (
     <>
       <hr />
@@ -61,10 +67,16 @@ const Comment = (props) => {
         {is_owner && !showEditForm && (
           <MoreDropdown
             handleEdit={() => setShowEditForm(true)}
-            handleDelete={handleDelete}
+            handleDelete={showDeleteModal}
           />
         )}
       </Media>
+      <ModalDelete
+        show={show}
+        handleClose={() => setShow(false)}
+        onConfirm={handleDelete}
+        title="comment"
+      />
     </>
   );
 };
