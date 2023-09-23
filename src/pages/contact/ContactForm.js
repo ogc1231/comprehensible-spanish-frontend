@@ -47,7 +47,7 @@ const ContactForm = () => {
     <Row className={styles.Contact}>
       <Col>
         <Container className={`${appStyles.Content} 'p-4' `}>
-          <h1 className={styles.Header}>Contact Us</h1>
+          <h2 className={styles.Header}>Contact Us</h2>
           <Form onSubmit={handleSubmit}>
             <Form.Group>
               <Form.Label>Name</Form.Label>
