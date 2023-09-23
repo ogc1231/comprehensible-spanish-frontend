@@ -8,6 +8,7 @@
     padding: 5px;
     display: flex;
     align-items: center;
+    font-weight: 500;
   }
   
   .Active i,
@@ -37,3 +38,11 @@
   border: none;
   color: #2142b2
 }
+
+@media (min-width: 1201px) {
+  .NavLink,
+  .LogOut {
+    font-size: 1.1rem;
+  }
+}
+
