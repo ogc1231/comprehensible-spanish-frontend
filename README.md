@@ -60,8 +60,13 @@ Example:
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
-I used [coolors.co](https://coolors.co/e84610-009fe3-4a4a4f-445261-d63649-e6ecf0-000000) to generate my colour palette.
+I used
+[coolors.co](https://coolors.co/ffffff-f8f8f8-e9e9ed-cfced3-212529-000000-f08080)
+[coolors.co](https://coolors.co/2142b2-87cefa-90ee90-0ed4d4-ff7f3c-ff2e65-ca37ca-24db36)
 
+ to generate my colour palette.
+
+![screenshot](documentation/coolors.png)
 ![screenshot](documentation/coolors.png)
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
