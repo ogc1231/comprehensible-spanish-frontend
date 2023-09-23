@@ -31,7 +31,6 @@ const NavBar = () => {
     } catch (err) {
       console.log(err);
     }
-    // handleClose();
   };
 
   const addResourceIcon = (
