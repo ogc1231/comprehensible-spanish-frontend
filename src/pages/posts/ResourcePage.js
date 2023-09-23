@@ -7,11 +7,17 @@ import { useParams } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import Resource from "./Resource";
 import PopularResources from "./PopularResources";
+import CommentCreateForm from "../comments/CommentCreateForm";
+import { useCurrentUser } from "../../contexts/CurrentUserContext";
 
 
 function ResourcePage() {
   const { id } = useParams();
   const [resource, setResource] = useState({ results: [] });
+
+  const currentUser = useCurrentUser();
+  const profile_image = currentUser?.profile_image;
+  const [comments, setComments] = useState({ results: [] });
 
   useEffect(() => {
     const handleMount = async () => {
@@ -34,7 +40,17 @@ function ResourcePage() {
       <Col className="py-2 pd-2 p-lg-2" lg={5} >
         <Resource {...resource.results[0]} setResources={setResource} resourcePage />
         <Container className={`mt-2 ${appStyles.Content}`}>
-          Comments/////////
+        {currentUser ? (
+          <CommentCreateForm
+            profile_id={currentUser.profile_id}
+            profileImage={profile_image}
+            resource={id}
+            setResource={setResource}
+            setComments={setComments}
+          />
+          ) : comments.results.length ? (
+            "Comments"
+          ) : null}
         </Container>
       </Col>
       <Col lg={3} className="d-none d-lg-block p-0 p-lg-2">
