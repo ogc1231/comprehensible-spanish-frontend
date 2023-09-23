@@ -13,14 +13,17 @@
 .HeroDiv {
     margin-top: 2%;
     text-align: center;
-    
+    margin-bottom: 50px;
 }
 
 .HeroDiv h1 {
     font-size: 2rem;
 }
 
-
+.HeroDiv p {
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
 
 .HeroBtn {
     font-size: 1rem;
@@ -34,7 +37,6 @@
     text-align: center;
     background-color: #2142b2;
     color: #ffffff;
-    /* padding: 10px 50px; */
     width: 60%;
   }
   
@@ -57,13 +59,11 @@
     background-color: #2142b2;
   }
 
-
   @media (min-width: 770px) {
     .HeroImage {
         width: 50%;
     }
   }
-
 
   @media (min-width: 999px) {
     .Hero {
@@ -75,6 +75,7 @@
         text-align: center;
         font-size: 1.2rem;
         margin-top: 17%;
+        margin-bottom: none;
     }
 
     .HeroDiv h1 {
@@ -88,5 +89,6 @@
 
     .HeroBtn {
       padding: 10px 50px;
+      font-size: 1.3rem;
     }
   }
