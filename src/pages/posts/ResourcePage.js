@@ -9,7 +9,7 @@ import Resource from "./Resource";
 import PopularResources from "./PopularResources";
 import CommentCreateForm from "../comments/CommentCreateForm";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
-
+import Comment from "../comments/Comment";
 
 function ResourcePage() {
   const { id } = useParams();
@@ -22,10 +22,12 @@ function ResourcePage() {
   useEffect(() => {
     const handleMount = async () => {
       try {
-        const [{ data: resource }] = await Promise.all([
+        const [{ data: resource }, { data: comments }] = await Promise.all([
           axiosReq.get(`/resources/${id}`),
+          axiosReq.get(`/comments/?resource=${id}`),
         ]);
         setResource({ results: [resource] });
+        setComments(comments);
       } catch (err) {
         console.log(err);
       }
@@ -51,6 +53,18 @@ function ResourcePage() {
           ) : comments.results.length ? (
             "Comments"
           ) : null}
+          {comments.results.length ? (
+            comments.results.map((comment) => (
+              <Comment 
+              key={comment.id} {...comment} 
+              setResource={setResource}
+              setComments={setComments}/>
+            ))
+          ) : currentUser ? (
+            <span>No comments yet, be the first to comment!</span>
+          ) : (
+            <span>No comments... yet</span>
+          )}
         </Container>
       </Col>
       <Col lg={3} className="d-none d-lg-block p-0 p-lg-2">
