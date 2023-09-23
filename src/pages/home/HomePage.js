@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from '../../components/Footer.js'
+
 import styles from "../../styles/HomePage.module.css";
 import hero1 from "../../assets/hero1.png"
 
@@ -14,7 +14,7 @@ const HomePage = () => {
         </div>
         <img src={hero1} alt='hero' className={styles.HeroImage}/>
       </div>
-      <Footer />
+      
     </div>
   )
 }
