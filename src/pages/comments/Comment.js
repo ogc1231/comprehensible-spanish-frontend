@@ -75,7 +75,9 @@ const Comment = (props) => {
         show={show}
         handleClose={() => setShow(false)}
         onConfirm={handleDelete}
-        title="comment"
+        title="delete this comment"
+        confirm="Delete"
+        name="delete"
       />
     </>
   );

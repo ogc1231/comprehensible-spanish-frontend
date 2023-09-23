@@ -166,7 +166,9 @@ const Resource = (props) => {
         show={show}
         handleClose={() => setShow(false)}
         onConfirm={handleDelete}
-        title="resource"
+        title="delete this resource"
+        confirm="Delete"
+        name="delete"
       />
     </>
   );
