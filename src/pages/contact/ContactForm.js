@@ -44,8 +44,7 @@ const ContactForm = () => {
   };
 
   return (    
-    <Row className={styles.Row}>
-      
+    <Row className={styles.Contact}>
       <Col>
         <Container className={`${appStyles.Content} 'p-4' `}>
           <h1 className={styles.Header}>Contact Us</h1>
@@ -55,6 +54,7 @@ const ContactForm = () => {
               <Form.Control
                 type="text"
                 name="name"
+                placeholder="example: Joe Smith"
                 value={name}
                 onChange={handleChange}
               />
@@ -70,6 +70,7 @@ const ContactForm = () => {
               <Form.Control
                 type="email"
                 name="email"
+                placeholder="example: j@smith.com"
                 value={email}
                 onChange={handleChange}
               />
@@ -85,11 +86,12 @@ const ContactForm = () => {
               <Form.Control
                 type="text"
                 name="subject"
+                placeholder="example: "
                 value={subject}
                 onChange={handleChange}
               />
             </Form.Group>
-            {errors.subject?.map((message, idx) => (
+            {errors.message?.map((message, idx) => (
               <Alert variant="warning" key={idx}>
                 {message}
               </Alert>
@@ -112,7 +114,7 @@ const ContactForm = () => {
             ))}
 
             <Button
-            className={btnStyles.Button}
+            className={`${btnStyles.Button} ${btnStyles.Width} ${btnStyles.Bright}`}
             type="submit"
             >
               Submit

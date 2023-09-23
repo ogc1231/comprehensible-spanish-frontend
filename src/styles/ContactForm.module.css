@@ -1,11 +1,17 @@
-.Row {
-    height: calc(100vh - 81px);
-    padding-top: 100px;
+.Contact{
+    /* margin-top: 80px; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 500;
   }
+
+.Contact h1{
+  padding-top: 30px;
+} 
 
 .Container {
     height: 900px;
-    margin: auto;
+    margin: 0 auto;
     padding: 80px 15px 0 15px;
     background-color: #D9F4C7;
   }
@@ -19,5 +25,11 @@
     text-align: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: #A66A24;
+    color: #212529;
   }
+
+@media (min-width: 600px) {
+  .Contact{margin-top: 70px;}}
+
+@media (min-width: 1000px) {
+    .Contact{margin-top: 80px;}}
