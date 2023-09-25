@@ -229,25 +229,18 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Home Page| Mobile | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/home_mobile.PNG) | Few warnings |
 | Add Resource Page | Desktop | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/add_resource_desktop.PNG) | Some minor warnings |
 | Home Page| Desktop | ![screenshot]() | Some minor warnings |
-
 | Add Resource Page | Mobile | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/add_resource_mobile.PNG) | Some minor warnings |
 | Add Resource Page | Desktop | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/add_resource_desktop.PNG) | Some minor warnings |
-
 | Resource Page | Mobile | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/resources_mobile.PNG) | Few warnings |
 | Resource Page | Desktop | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/resources_desktop.PNG) | Some minor warnings |
-
 | Favourites Page | Mobile | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/favourites_mobile.PNG) | Few warnings |
 | Favourites Page | Desktop | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/favourites_desktop.PNG) | Some minor warnings |
-
 | Contact Page | Mobile | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/contact_mobile.PNG) | Some minor warnings |
 | Contact Page | Desktop | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/contact_desktop.PNG) | Some minor warnings |
-
 | Profile Page | Mobile | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/profile_mobile.PNG) | Few warnings |
 | Profile Page | Desktop | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/profile_desktop.PNG) | Some minor warnings |
-
 | Sign In Page | Mobile | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signin_mobile.PNG) | Some minor warnings |
 | Sign In Page | Desktop | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signin_desktop.PNG) | Some minor warnings |
-
 | Sign Up Page | Mobile | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signup_mobile.PNG) | Some minor warnings |
 | Sign Up Page | Desktop | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signup_desktop.PNG) | Some minor warnings
 
