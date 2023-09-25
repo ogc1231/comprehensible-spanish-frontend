@@ -98,7 +98,7 @@ const Resource = (props) => {
         {resourcePage && <Card.Body className={styles.ResourceProfile}> 
           <Media className="align-items-center justify-content-between">
             <Link to={`/profiles/${profile_id}`}>
-              <Avatar src={profile_image} height={25} />
+              <Avatar src={profile_image} height={25} width={25}/>
               {owner}
             </Link>
             <div className="d-flex align-items-center">
@@ -112,7 +112,7 @@ const Resource = (props) => {
           </Media>
         </Card.Body>}
         <Link to={`/resources/${id}`}>
-          <Card.Img src={image} alt={title} className={styles.ResourceImg}/>
+          <Card.Img src={image} alt={title} className={styles.ResourceImg} height="" width="" />
         </Link>
         <Card.Body className={styles.ResourceBar}>
           {title && <Card.Title className="text-center">{title}</Card.Title>}
