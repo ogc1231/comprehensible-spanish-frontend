@@ -1,18 +1,15 @@
 # Testing
-
 Return back to the [README.md](README.md) file.
 
 ## Code Validation
 ### HTML
-
 I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| index.html | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcomp-spanish-frontend-811d88a7f64a.herokuapp.com%2F) | ![screenshot]
+| index.html | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcomp-spanish-frontend-811d88a7f64a.herokuapp.com%2F) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/App.module.png) | Pass: No Errors |
 
 ### CSS
-
 I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
 
 The css was copied from name.module.css and pasted directly into the validator and shows no errors. However when the live site link was used the validator showed parse errors caused by Boostrap and Fontawesome.
@@ -42,7 +39,6 @@ The css was copied from name.module.css and pasted directly into the validator a
 | SignInUpForm.module.css | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/SignInUpForm.module.png) | Pass: No Errors |
 
 ### JavaScript
-
 I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
@@ -85,7 +81,6 @@ Sample JS code validation documentation (tables are extremely helpful!):
 | x | x | x | repeat for all remaining JavaScript files |
 
 ## Browser Compatibility
-
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
 | Browser | Screenshot | Notes |
@@ -95,7 +90,6 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 | Edge | ![screenshot](documentation/browser-edge.png) | Works as expected |
 
 ## Responsiveness
-
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
 | Device | Screenshot | Notes |
@@ -106,7 +100,6 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | 2K Monitor | ![screenshot](documentation/responsive-4k.png) | Noticeable scaling issues |
 
 ## Lighthouse Audit
-
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 
 | Page | Size | Screenshot | Notes |
@@ -130,7 +123,6 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Sign Up Page | Desktop | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signup_desktop.PNG) | Some minor warnings
 
 ## Defensive Programming
-
 Defensive programming was manually tested with the below user acceptance testing:
 
 | Page | User Action | Expected Result | Pass/Fail | Comments |
@@ -271,7 +263,6 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Unauthenticated Users Tries to access non existent URL | Redirect The page you're looking for doesn't exist | Pass | |
 
 ## User Story Testing
-
 | User Story | Screenshot |
 | --- | --- |
 | As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature01.png) |
@@ -286,15 +277,12 @@ Defensive programming was manually tested with the below user acceptance testing
 | repeat for all remaining user stories | x |
 
 ## Automated Testing
-
 I have conducted a series of automated tests on my application.
 
 I fully acknowledge and understand that, in a real-world scenario, an extensive set of additional tests would be more comprehensive.
 
 ## Bugs
-
 **Fixed Bugs**
-
 All previously closed/fixed bugs can be tracked [here](https://github.com/ogc1231/comprehensible-spanish-frontend/issues?q=is%3Aissue+is%3Aclosed).
 
 | Bug | Status |
@@ -304,7 +292,6 @@ All previously closed/fixed bugs can be tracked [here](https://github.com/ogc123
 | [Django `TemplateDoesNotExist` at /appname/path appname/template_name.html](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/3) | Closed |
 
 **Open Issues**
-
 Any remaining open issues can be tracked [here](https://github.com/ogc1231/comprehensible-spanish-frontend/issues).
 
 | Bug | Status |
@@ -313,8 +300,6 @@ Any remaining open issues can be tracked [here](https://github.com/ogc1231/compr
 | [Python `E501 line too long` (93 > 79 characters)](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/5) | Open |
 
 ## Unfixed Bugs
-
-
 - On devices smaller than 375px, the page starts to have `overflow-x` scrolling.
 
     ![screenshot](documentation/unfixed-bug01.png)
