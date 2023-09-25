@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styles from "../../styles/HomePage.module.css";
-import hero1 from "../../assets/hero1.png"
+import hero1 from "../../assets/hero1.webp"
 
 const HomePage = () => {
   return (
