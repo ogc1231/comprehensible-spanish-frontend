@@ -156,6 +156,18 @@ Repeat for any addition wireframe pages you have.
 
 ![screenshot](documentation/feature02.png)
 
+- **Navbar Logged Out**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/navbar_logged_out.png)
+
+- **Navbar Logged In**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/navbar_logged_in.png)
+
 - **Add Resource Page**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
@@ -322,19 +334,19 @@ Repeat for any addition wireframe pages you have.
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-![screenshot](documentation/feature03.png)
+![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/dialect_dropdown.PNG)
 
 - **Resource Dropdown Level Filter**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-![screenshot](documentation/feature03.png)
+![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/levels_dropdown.PNG)
 
 - **Resource Dropdown Media Type Filter**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-![screenshot](documentation/feature03.png)
+![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/type_dropdown.PNG)
 
 - **Country Tag**
 
@@ -384,17 +396,17 @@ Repeat for any addition wireframe pages you have.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/adv_native_tag.png)
 
-- **Navbar Logged Out**
+- **Add Resource Button**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/navbar_logged_out.png)
+![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/add_resource_button.PNG)
 
-- **Navbar Logged In**
+- **Explore Resources Button**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/navbar_logged_in.png)
+![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/explore.PNG)
 
 ### Future Features
 
