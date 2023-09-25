@@ -86,12 +86,11 @@ const ContactForm = () => {
               <Form.Control
                 type="text"
                 name="subject"
-                placeholder="example: "
                 value={subject}
                 onChange={handleChange}
               />
             </Form.Group>
-            {errors.message?.map((message, idx) => (
+            {errors.subject?.map((message, idx) => (
               <Alert variant="warning" key={idx}>
                 {message}
               </Alert>
