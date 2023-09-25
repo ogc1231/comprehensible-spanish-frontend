@@ -304,8 +304,12 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Click on Favourites link in navbar | Redirection to Favourites page | Pass | |
 | | Click on Contact link in navbar | Redirection to Contact Form page | Pass | |
 | | Click on Log out link in navbar | Open Log Out Modal | Pass | |
+| | Click on Cancel Button in modal | Close Modal | Pass | |
+| | Click on X Button in modal | Close Modal | Pass | |
+| | Click on Log Out Button modal | Log Out user | Pass | |
 | | Click on Profile link in navbar | Redirection to Profile page | Pass | |
 | | Click on Explore Resources link on Home Page | Redirection to Resources page | Pass | |
+
 
 | Sign In Page | | | | |
 | | Click on Sign in button with both inputs empty | This field may not be blank alert appears | Pass | |
@@ -324,11 +328,6 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Click on Sign up button with a simple or common password | This password is too common alert appears | Pass | |
 | | Click on Sign up button with matching & secure passwords | Redirection to Sign in page | Pass | |
 | | Click on Already have an account? Sign in link | Redirection to Sign in page | Pass | |
-
-| Log Out Modal | | | | |
-| | Click on Cancel Button | Close Modal | Pass | |
-| | Click on X Button | Close Modal | Pass | |
-| | Click on Log Out Button | Log Out user | Pass | |
 
 | Add Resource Page | | | | |
 | | Click or tap to upload an image button | Opens file upload window | Pass | |
@@ -349,10 +348,82 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Level Dropdown  | Shows result containing the selected level keyword | Pass | |
 | | Media Type Dropdown  | Shows result containing the selected Media Type keyword | Pass | |
 | | Click on a resource  | Redirection the resource page for that resource | Pass | |
-| | Click on a Heart icon under resource if not yet favourited by used  | Adds resource to user's favourites page | Pass | |
-| | Click on a Heart icon under resource if already favourited by used  | Removes resource from user's favourites page | Pass | |
-| | Click on a Heart icon under resource if not logged in | Sign in to add to favourites! alert appears | Pass | |
+| | Click on Heart icon under resource if not yet favourited by used  | Adds resource to user's favourites page | Pass | |
+| | Click on Heart icon under resource if already favourited by used  | Removes resource from user's favourites page | Pass | |
+| | Click on Heart icon under resource if not logged in | Sign in to add to favourites! alert appears | Pass | |
 | | Click on a Popular Resource Icon | Redirection the resource page for that resource  | Pass | |
+
+| Individual Resource Page | | | | |
+| | Click on Profile icon/text | Redirection to profile page of user ho uploaded resource | Pass | |
+| | Click on Open Link link | Opens resource URL in a new tab | Pass | |
+| | Click on Three Dots icon on resource | Opens edit/delete dropdown | Pass | |
+| | Click on Edit icon | Redirect to resource edit page | Pass | |
+| | Click on Delete icon | Open Delete resource modal | Pass | |
+| | Click on Cancel Button | Close Modal | Pass | |
+| | Click on X Button | Close Modal | Pass | |
+| | Click on Delete Button | Delete resource | Pass | |
+| | Click on Heart icon under resource if not yet favourited by used  | Adds resource to user's favourites page | Pass | |
+| | Click on Heart icon under resource if already favourited by used  | Removes resource from user's favourites page | Pass | |
+| | Click on Heart icon under resource if not logged in | Sign in to add to favourites! alert appears | Pass | |
+| | Click on a Popular Resource Icon | Redirection the resource page for that resource  | Pass | |
+| | Click on a Post Button with empty comment | This field may not be blank alert appears | Pass | |
+| | Click on a Post Button with comment entered | Posts comment below | Pass | |
+| | Click on Three Dots icon on comment | Opens edit/delete dropdown | Pass | |
+| | Click on Edit icon | Can edit comment | Pass | |
+| | Click on Cancel Edit Button | Cancel comment editing | Pass | |
+| | Click on Save Edit Button | Saves editied comment | Pass | |
+| | Click on Delete Comment Icon | Open Delete comment modal | Pass | |
+| | Click on Cancel Button | Close Modal | Pass | |
+| | Click on X Button | Close Modal | Pass | |
+| | Click on Delete Button | Delete comment | Pass | |
+
+| Edit Resource Page | | | | |
+| | Click the change image button | Change/upload new resource image file | Pass | |
+| | Click cancel button | Redirection to previous page | Pass | |
+| | Click Update button with all information filled out except description | Redirection to resource page for the resource just created | Pass | |
+| | Empty Image input or non image file uploaded | The submitted data was not a file. Check the encoding type on the form alert appears | Pass | |
+| | Empty Title input | This field may not be blank alert appears | Pass | |
+| | Empty URL input | This field may not be blank alert appears | Pass | |
+| | Resource with same URL as previously created resource | resource with this resource url already exists alert appears | Pass | |
+| | No Dialect choosen in dropdown | Please select an item in the list alert appears | Pass | |
+| | No Level choosen in dropdown | Please select an item in the list alert appears | Pass | |
+| | No Resource Type choosen in dropdown | Please select an item in the list alert appears | Pass | |
+
+
+
+| Profile Page | | | | |
+| | Click on Three Dots icon on Profile Page | Opens edit profile dropdown | Pass | |
+| | Click on Edit Profile | Redirect to edit profile page | Pass | |
+| | Click on Change Username | Redirect edit username page | Pass | |
+| | Click on Change Password | Redirect edit password page  | Pass | |
+| | Click on a Resource | Redirection the resource page for that resource  | Pass | |
+| | Click on a Popular Resource Icon | Redirection the resource page for that resource  | Pass | |
+| | Click on Heart icon under resource if not yet favourited by used  | Adds resource to user's favourites page | Pass | |
+| | Click on Heart icon under resource if already favourited by used  | Removes resource from user's favourites page | Pass | |
+| | Click on Heart icon under resource if not logged in | Sign in to add to favourites! alert appears | Pass | |
+
+| Edit Profile Page | | | | |
+| | Click the change image button | Add/Change/upload new profile image file | Pass | |
+| | Click the cancel button | Undo changes and redirect to profile page | Pass | |
+| | Click the save button | Save changes and redirect to profile page | Pass | |
+
+| Change Username Page | | | | |
+| | Click the cancel button | Undo changes and redirect to profile page | Pass | |
+| | Click the save button with empty input | This field may not be blank alert appears | Pass | |
+| | Click the save button | Save changes and redirect to profile page | Pass | |
+
+| Change Password Page | | | | |
+| | Click the cancel button | Undo changes and redirect to profile page | Pass | |
+| | Click the save button with empty input | This field may not be blank alert appears | Pass | |
+| | Click the save button | Save changes and redirect to profile page | Pass | |
+
+| Contact Form Page | | | | |
+| | Submit with all inputs empty except subject | This field may not be blank alert appears | Pass | |
+| | Submit with subject over 50 characters | Ensure this field has no more than 50 characters alert appears | Pass | |
+| | Submit with all information inputed correctly | Redirect to confirmation page | Pass | |
+
+| Confirmation Page | | | | |
+| | Automatically redirect to Home page | Automatically redirect to Home page after 10 seconds | Pass | |
 
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
