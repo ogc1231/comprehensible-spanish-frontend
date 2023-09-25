@@ -2,14 +2,6 @@
 
 Return back to the [README.md](README.md) file.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you need to convince the assessors that you have conducted enough testing to legitimately believe that the site works well.
-Essentially, in this part, you should go over all of your project's features, and ensure that they all work as intended,
-with the project providing an easy and straightforward way for the users to achieve their goals.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ## Code Validation
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
@@ -152,95 +144,6 @@ Sample JS code validation documentation (tables are extremely helpful!):
 | quiz.js | ![screenshot](documentation/js-validation-quiz.png) | Unused variables from external files |
 | stripe_elements.js | ![screenshot](documentation/js-validation-stripe.png) | Undefined Stripe variable |
 | x | x | x | repeat for all remaining JavaScript files |
-
-### Python
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-The CI Python Linter can be used two different ways.
-- Copy/Paste your Python code directly into the linter.
-- As an API, using the "raw" URL appended to the linter URL.
-    - To find the "raw" URL, navigate to your file directly on the GitHub repo.
-    - On that page, GitHub provides a button on the right called "Raw" that you can click on.
-    - From that new page, copy the full URL, and paste it after the CI Python Linter URL (with a `/` separator).
-    - Check the example table below for a live demo.
-
-It's recommended to validate each file using the API URL.
-This will give you a custom URL which you can use on your testing documentation.
-It makes it easier to return back to a file to validate it again in the future.
-Use the steps above to generate your own custom URLs for each Python file.
-
-**IMPORTANT**: `E501 line too long` errors
-
-You must strive to fix any Python lines that are too long ( >80 characters ).
-In rare cases where you cannot break the lines [without breaking the functionality],
-then by adding `# noqa` to the end of those lines will ignore linting validation.
-
-`# noqa` = **NO Quality Assurance**
-
-**NOTE**: You must include 2 *spaces* before the `#`, and 1 *space* after the `#`.
-
-Do not use `# noqa` all over your project just to clear down validation errors!
-This can still cause a project to fail, for failing to fix actual PEP8 validation errors.
-
-Sometimes strings or variables get too long, or long `if` conditional statements.
-These are acceptable instances to use the `# noqa`.
-
-When trying to fix "line too long" errors, try to avoid using `/` to split lines.
-A better approach would be to use any type of opening bracket, and hit Enter just after that.
-
-Any opening bracket type will work: `(`, `[`, `{`.
-
-By using an opening bracket, Python knows where to appropriately indent the next line of code,
-without having to "guess" yourself and attempt to tab to the correct indentation level.
-
-Sample Python code validation documentation below (tables are extremely helpful!).
-
-**Note**: This gives examples of PP3 (Python-only), and Flask/Django files, so eliminate the ones not applicable to your own project.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
-
-| File | CI URL | Screenshot | Notes |
-| --- | --- | --- | --- |
-| run.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/comprehensible-spanish-frontend/main/run.py) | ![screenshot](documentation/py-validation-run.png) | W291 trailing whitespace |
-| settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/comprehensible-spanish-frontend/main/boutique-ado/settings.py) | ![screenshot](documentation/py-validation-settings.png) | E501 line too long |
-| Blog views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/comprehensible-spanish-frontend/main/blog/views.py) | ![screenshot](documentation/py-validation-blog-views.png) | Pass: No Errors |
-| Checkout urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/comprehensible-spanish-frontend/main/checkout/urls.py) | ![screenshot](documentation/py-validation-checkout-urls.png) | W292 no newline at end of file |
-| Profiles models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/comprehensible-spanish-frontend/main/profiles/models.py) | ![screenshot](documentation/py-validation-profiles-models.png) | Pass: No Errors |
-| x | x | x | repeat for all remaining Python files |
-
-**IMPORTANT**: Django settings.py
-
-The Django settings.py file comes with 4 lines that are quite long, and will throw the `E501 line too long` error.
-This is default behavior, but can be fixed by adding `# noqa` to the end of those lines.
-
-Example:
-
-```python
-AUTH_PASSWORD_VALIDATORS = [
-    {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",  # noqa
-    },
-]
-```
-
-**IMPORTANT**: migration and pycache files
-
-You do not have to ever validate files from the `migrations/` or `pycache/` folders!
-Ignore these `.py` files, and validate just the files that you've created or modified.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ## Browser Compatibility
 
@@ -385,37 +288,72 @@ Defensive programming was manually tested with the below user acceptance testing
 
 | Page | User Action | Expected Result | Pass/Fail | Comments |
 | --- | --- | --- | --- | --- |
-| Home Page | | | | |
+| Home Page - Logged Out | | | | |
 | | Click on Logo | Redirection to Home page | Pass | |
 | | Click on Home link in navbar | Redirection to Home page | Pass | |
-| Gallery Page | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| | Load gallery images | All images load as expected | Pass | |
-| Contact Page | | | | |
-| | Click on Contact link in navbar | Redirection to Contact page | Pass | |
-| | Enter first/last name | Field will accept freeform text | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter message in textarea | Field will accept freeform text | Pass | |
-| | Click the Submit button | Redirects user to form-dump | Pass | User must click 'Back' button to return |
-| Sign Up | | | | |
-| | Click on Sign Up button | Redirection to Sign Up page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password (twice) | Field will only accept password format | Pass | |
-| | Click on Sign Up button | Asks user to confirm email page | Pass | Email sent to user |
-| | Confirm email | Redirects user to blank Sign In page | Pass | |
-| Log In | | | | |
-| | Click on the Login link | Redirection to Login page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password | Field will only accept password format | Pass | |
-| | Click Login button | Redirects user to home page | Pass | |
-| Log Out | | | | |
-| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
-| | Click Confirm Logout button | Redirects user to home page | Pass | |
-| Profile | | | | |
-| | Click on Profile button | User will be redirected to the Profile page | Pass | |
-| | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
-| | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
-| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
+| | Click on Resources link in navbar | Redirection to Resources page | Pass | |
+| | Click on Sign in link in navbar | Redirection to Sign in page | Pass | |
+| | Click on Sign up link in navbar | Redirection to Sign up page | Pass | |
+| | Click on Explore Resources link on Homre Page | Redirection to Resources page | Pass | |
+
+| Home Page - Logged In | | | | |
+| | Click on Logo | Redirection to Home page | Pass | |
+| | Click on Home link in navbar | Redirection to Home page | Pass | |
+| | Click on Add Resources link in navbar | Redirection to Create Resource page | Pass | |
+| | Click on Resources link in navbar | Redirection to Resources page | Pass | |
+| | Click on Favourites link in navbar | Redirection to Favourites page | Pass | |
+| | Click on Contact link in navbar | Redirection to Contact Form page | Pass | |
+| | Click on Log out link in navbar | Open Log Out Modal | Pass | |
+| | Click on Profile link in navbar | Redirection to Profile page | Pass | |
+| | Click on Explore Resources link on Home Page | Redirection to Resources page | Pass | |
+
+| Sign In Page | | | | |
+| | Click on Sign in button with both inputs empty | This field may not be blank alert appears | Pass | |
+| | Click on Sign in button with password input empty | This field may not be blank alert appears | Pass | |
+| | Click on Sign in button with username input empty | Must include "username" and "password" alert appears | Pass | |
+| | Click on Sign in button with correct username & incorrect password | Unable to log in with provided credentials alert appears | Pass | |
+| | Click on Sign in button with correct username & correct password | Signs in user and Redirection to previous page before sign in | Pass | |
+| | Click on Don't have an account? Sign up now? link | Redirection to Sign Up page | Pass | |
+
+| Sign Up Page | | | | |
+| | Click on Sign up button with all inputs empty | This field may not be blank alert appears | Pass | |
+| | Click on Sign up button with password inputs empty | This field may not be blank alert appears | Pass | |
+| | Click on Sign up button with confirm password input empty | This field may not be blank alert appears | Pass | |
+| | Click on Sign up button with non matching passwords | The two password fields didn't match alert appears | Pass | |
+| | Click on Sign up button with password with less than 8 characters | This password is too short. It must contain at least 8 characters alert appears | Pass | |
+| | Click on Sign up button with a simple or common password | This password is too common alert appears | Pass | |
+| | Click on Sign up button with matching & secure passwords | Redirection to Sign in page | Pass | |
+| | Click on Already have an account? Sign in link | Redirection to Sign in page | Pass | |
+
+| Log Out Modal | | | | |
+| | Click on Cancel Button | Close Modal | Pass | |
+| | Click on X Button | Close Modal | Pass | |
+| | Click on Log Out Button | Log Out user | Pass | |
+
+| Add Resource Page | | | | |
+| | Click or tap to upload an image button | Opens file upload window | Pass | |
+| | Click cancel button | Redirection to previous page | Pass | |
+| | Click Create button with all information filled out except description | Redirection to resource page for the resource just created | Pass | |
+| | Empty Image input or non image file uploaded | The submitted data was not a file. Check the encoding type on the form alert appears | Pass | |
+| | Empty Title input | This field may not be blank alert appears | Pass | |
+| | Empty URL input | This field may not be blank alert appears | Pass | |
+| | Resource with same URL as previously created resource | resource with this resource url already exists alert appears | Pass | |
+| | No Dialect choosen in dropdown | Please select an item in the list alert appears | Pass | |
+| | No Level choosen in dropdown | Please select an item in the list alert appears | Pass | |
+| | No Resource Type choosen in dropdown | Please select an item in the list alert appears | Pass | |
+
+| Resources Page | | | | |
+| | Search bar search | Show results contain the search keyword | Pass | |
+| | Search bar search with non existent result | No results found. Adjust the search keyword. | Pass | |
+| | Dialect Dropdown | Shows result containing the selected dialect keyword | Pass | |
+| | Level Dropdown  | Shows result containing the selected level keyword | Pass | |
+| | Media Type Dropdown  | Shows result containing the selected Media Type keyword | Pass | |
+| | Click on a resource  | Redirection the resource page for that resource | Pass | |
+| | Click on a Heart icon under resource if not yet favourited by used  | Adds resource to user's favourites page | Pass | |
+| | Click on a Heart icon under resource if already favourited by used  | Removes resource from user's favourites page | Pass | |
+| | Click on a Heart icon under resource if not logged in | Sign in to add to favourites! alert appears | Pass | |
+| | Click on a Popular Resource Icon | Redirection the resource page for that resource  | Pass | |
+
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
