@@ -7,16 +7,9 @@ Return back to the [README.md](README.md) file.
 
 I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
 
-Unfortunately, pages that require a user to be logged-in and authenticated (CRUD functionality), will not work using this method, due to the fact that the HTML Validator (W3C) doesn't have access to login to those pages.
-
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fogc1231.github.io%2Fcomprehensible-spanish-frontend%2Findex.html) | ![screenshot](documentation/html-validation-home.png) | Section lacks header h2-h6 warning |
-| Contact | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fogc1231.github.io%2Fcomprehensible-spanish-frontend%2Fcontact.html) | ![screenshot](documentation/html-validation-contact.png) | obsolete iframe warnings |
-| Quiz | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fogc1231.github.io%2Fcomprehensible-spanish-frontend%2Fquiz.html) | ![screenshot](documentation/html-validation-quiz.png) | Pass: No Errors |
-| Add Blog | n/a | ![screenshot](documentation/html-validation-add-blog.png) | Duplicate IDs found, and fixed |
-| Checkout | n/a | ![screenshot](documentation/html-validation-checkout.png) | Pass: No Errors |
-| x | x | x | repeat for all remaining HTML files |
+| index.html | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcomp-spanish-frontend-811d88a7f64a.herokuapp.com%2F) | ![screenshot]
 
 ### CSS
 
