@@ -22,13 +22,44 @@ Unfortunately, pages that require a user to be logged-in and authenticated (CRUD
 
 I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
 
-The css was copied from style.css and pasted directly into the validator and shows no errors. However when the live site link was used the validator showed parse errors caused by Boostrap and Fontawesome.
+The css was copied from name.module.css and pasted directly into the validator and shows no errors. However when the live site link was used the validator showed parse errors caused by Boostrap and Fontawesome.
 
 | File | Jigsaw URL | Screenshot | Notes |
-| --- | --- | --- | --- |
-| style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fogc1231.github.io%2Fcomprehensible-spanish-frontend) | ![screenshot](documentation/css-validation-style.png) | Pass: No Errors |
-| checkout.css | n/a | ![screenshot](documentation/css-validation-checkout.png) | Pass: No Errors |
-| x | x | x | repeat for all remaining CSS files |
+| --- | --- | --- |
+| App.module.css | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/App.module.png) | Pass: No Errors |
+| Asset.module.css | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/Asset.module.png) | Pass: No Errors |
+| Avatar.module.css | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/Avatar.module.png) | Pass: No Errors |
+| Button.module.css | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/Button.module.png) | Pass: No Errors |
+| Comment.module.css | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/Comment.module.png) | Pass: No Errors |
+| CommentCreateEditForm.module.css | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/CommentCreateEditForm.module.png) | Pass: No Errors |
+| ContactForm.module.css | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/ContactForm.module.png) | Pass: No Errors |
+| ContactFormConfirmation.module.css | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/ContactFormConfirmation.module.png) | Pass: No Errors |
+
+| FilterDropdown.module.css | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/FilterDropdown.module.png) | Pass: No Errors |
+
+| HomePage.module.css | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/HomePage.module.png) | Pass: No Errors |
+
+| ModalAlert.module.css | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/ModalAlert.module.png) | Pass: No Errors |
+
+| MoreDropdown.module.css | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/MoreDropdown.module.png) | Pass: No Errors |
+
+| NavBar.module.css | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/NavBar.module.png) | Pass: No Errors |
+
+| NotFound.module.css | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/NotFound.module.png) | Pass: No Errors |
+
+| PopularResource.module.css | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/PopularResource.module.png) | Pass: No Errors |
+
+| PopularResources.module.css | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/PopularResources.module.png) | Pass: No Errors |
+
+| ProfilePage.module.css | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/ProfilePage.module.png) | Pass: No Errors |
+
+| Resource.module.css | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/Resource.module.png) | Pass: No Errors |
+
+| ResourceCreateEditForm.module.css | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/ResourceCreateEditForm.module.png) | Pass: No Errors |
+
+| ResourcesPage.module.css | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/ResourcesPage.module.png) | Pass: No Errors |
+
+| SignInUpForm.module.css | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/SignInUpForm.module.png) | Pass: No Errors |
 
 ### JavaScript
 
