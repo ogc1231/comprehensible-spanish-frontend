@@ -119,7 +119,7 @@ const Resource = (props) => {
           {resourcePage && <Card.Text>{desc}</Card.Text>}
           {resourcePage && 
           <Card.Text>
-              <a href={resource_url} target="_blank" rel="noreferrer">Link</a>
+              <a href={resource_url} target="_blank" rel="noreferrer">Open Link</a>
           </Card.Text>
           }
           {country_filter && <Card.Text className={styles.Country}>{country_filter}</Card.Text>}
