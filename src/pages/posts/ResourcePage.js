@@ -62,7 +62,7 @@ function ResourcePage() {
                 <Comment
                   key={comment.id}
                   {...comment}
-                  setPost={setResource}
+                  setResource={setResource}
                   setComments={setComments}
                 />
             ))}

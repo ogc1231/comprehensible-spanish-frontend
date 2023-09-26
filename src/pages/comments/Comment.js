@@ -12,9 +12,9 @@ import ModalDelete from "../../components/ModalDelete";
 const Comment = (props) => {
   const { profile_id, profile_image, owner, updated_at, content, id, setResource, setComments } = props;
 
+  const [showEditForm, setShowEditForm] = useState(false);
   const currentUser = useCurrentUser();
   const is_owner = currentUser?.username === owner;
-  const [showEditForm, setShowEditForm] = useState(false);
 
   const handleDelete = async () => {
     try {
@@ -32,7 +32,11 @@ const Comment = (props) => {
         ...prevComments,
         results: prevComments.results.filter((comment) => comment.id !== id),
       }));
-    } catch (err) {}
+    } catch (err) {
+      console.log(err);
+    }
+    setShow(false);
+    
   };
 
   const showDeleteModal = (event) => {
