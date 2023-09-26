@@ -138,127 +138,133 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 - **Favicon/Logo**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Used for website logo and favicon.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/logo-favicon.png)
 
 - **Home Page Logged Out**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - This is where the user will be brought to when first entering the website. The users eyes will be drawn to the hero section and the explore resources call to action, from the homepage a new user has access to the pages that don't require authentication such as resources, sign in and sign up pages.
 
-![screenshot](documentation/feature01.png)
+![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/home_signed_out.png)
 
 - **Home Page Logged In**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - From the homepage a authenticated user has access to the pages that require authentication such as add resource, favourites, contact, log out and profile pages.
 
-![screenshot](documentation/feature02.png)
+![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/home_signed_in.png)
 
 - **Navbar Logged Out**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Show links to pages available for non-authenticated users
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/navbar_logged_out.png)
 
 - **Navbar Logged In**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Show links to pages available for authenticated users
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/navbar_logged_in.png)
 
+- **Navbar Mobile**
+
+    - Nav bar collapse into a dropdown burger menu on mobile devices
+
+![screenshot]()
+
 - **Add Resource Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Authenticated user can create a new resource
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/add_resource_page.png)
 
 - **Resources Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Users can see all resources added by all users, filter resources by keywords or use the dropdown filters for specfic search and view most popular resources (resources that have been favourited the most times). Authenticated users can favourite and unfavourite resources.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/resources_page.png)
 
 - **Resource Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - User can view the full details of a resource including the resource URL and description. Authenticated user can post, delete and edit their own comments and view other user's comments. If the user is the resource owner they edit the resource.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/resource_page.png)
 
 - **Edit Resource Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - If user if the resources owner they can edit/update the resource if any information is incorrect.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/edit_resource_page.png)
 
 - **Favourites Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Authenticated users can favourite specific resources for easy access in the future. Functionality is the same as the resources page
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/favourites_page.png)
 
 - **Contact Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Authenticated users can contact the website admin with any queries they may have. 
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/contact_page.png)
 
 - **Confirmation Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Confirms the user that submitted the contact form that their message has successfully been submitted.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/confirmation_page.png)
 
 - **Profile Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Give more details on a specfic user and the resources they have created. Profile owner can edit their profile by pressing the three dot dropdown menu.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/profile_page.png)
 
 - **Sign Up Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Users without an account can sign up to access the full functionality of the website.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/signup_page.png)
 
 - **Sign In  Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Returning users can sign into their account.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/signin_page.png)
 
 - **Edit Profile Picture  Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - User can update their own profile picture.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/edit_profile_image_page.png)
 
 - **Change Profile Username  Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - User can update their own profile username.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/edit_profile_username_page.png)
 
 - **Change Profile Password  Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - User can update their own profile password.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/edit_profile_password_page.png)
 
 - **Log Out Modal**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Confirms user wants to log out of account incase of accidental press.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/logout_modal.png)
 
 - **Delete Resource Modal**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Confirms user wants to delete their resource incase of accidental press.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/delete_resource_modal.png)
 
 - **Delete Comment Modal**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Confirms user wants to delete their comment incase of accidental press.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/delete_comment_modal.png)
 
@@ -270,139 +276,139 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 - **Comment Dropdown**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Comment owner can edit or delete their comment.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/resource_dropdown.png)
 
 - **Resource Dropdown**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Resource owner can edit or delete their resource.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/resource_dropdown.png)
 
 - **Comment**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Authenicated user can comment under a resource.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/comment.png)
 
 - **Edit Comment**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Comment owner can edit & update their comment.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/comment_edit.png)
 
 - **Popular Resources**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - List of top ten most favourited resources for easy access.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/popular_resources.png)
 
 - **Favourite Button Logged Out**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Non-authenicated users can't favourite resources.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/add_to_favourites_logged_out.PNG)
 
 - **Favourite Button Add to Favourites**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Authenicated users can favourite resources which add them to the favourites page.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/add_to_favourites_logged_in.PNG)
 
 - **Favourite Button Remove from Favourites**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Authenicated users can unfavourite  prevoisly favourited resources which removes them from the favourites page.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/remove_from_favourites.PNG)
 
 - **Resource Search Bar**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Users can search by keyword for specfic resource. 
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/search_bar.png)
 
 - **Resource Dropdown Filters**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Users can search by dialect, level & Media type for resources suited to their needs.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/dropdown_filters.png)
 
 - **Resource Dropdown Dialect Filter**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Users can search by specfic dialect suited to their needs.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/dialect_dropdown.PNG)
 
 - **Resource Dropdown Level Filter**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Users can search by specfic level suited to their needs.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/levels_dropdown.PNG)
 
 - **Resource Dropdown Media Type Filter**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Users can search by specfic media type suited to their needs.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/type_dropdown.PNG)
 
 - **Country Tag**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - States what dialect/accent the resource has.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/country_tag.png)
 
 - **YouTube Tag**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - States the resource is a YouTube channel.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/youtube_tag.png)
 
 - **Podcast Tag**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - States the resource is a podcast.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/podcast_tag.png)
 
 - **Beginner Tag**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - States the resource is Beginner level.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/beg_tag.png)
 
 - **Intermediate Tag**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - States the resource is Intermediate level.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/inter_tag.png)
 
 - **Advanced Tag**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - States the resource is Advanced level.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/adv_tag.png)
 
 - **Easy Native Tag**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - States the resource is Easy Native level.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/easy_native_tag(1).png)
 
 - **Advanced Native Tag**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - States the resource is Advanced Native level.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/adv_native_tag.png)
 
 - **Add Resource Button**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Bring authenicated user to page where they can add a resource.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/add_resource_button.PNG)
 
 - **Explore Resources Button**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Bring user to resources page.
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/explore.PNG)
 
