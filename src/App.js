@@ -18,7 +18,6 @@ import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
 import ContactForm from "./pages/contact/ContactForm";
 import ContactFormConfirmation from './pages/contact/ContactFormConfirmation';
-// import Footer from './components/Footer.js'
 
 function App() {
   const currentUser = useCurrentUser();
@@ -29,12 +28,7 @@ function App() {
       <NavBar />
       <Container className={styles.Main}>
         <Switch>
-          <Route exact path="/" render={() =>
-            <>
-              <HomePage />
-              {/* <Footer /> */}
-            </>
-          } />
+          <Route exact path="/" render={() => <HomePage />} />
           <Route exact path="/resources" render={() => <ResourcesPage message="No results found. Adjust the search keyword."/>} />
           <Route
             exact
