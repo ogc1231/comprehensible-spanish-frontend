@@ -82,50 +82,50 @@ I used [coolors.co](https://coolors.co/ffffff-f8f8f8-e9e9ed-cfced3-212529-000000
 - As a site administrator, I should be able to ____________, so that I can ____________.
 
 ## Wireframes
-To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
+To follow best practice, wireframes were developed for mobile and desktop sizes to act as a design guide for the website.
 
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
 
 ### Home Page Wireframes
-
 | Size | Screenshot |
 | --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-home.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-home.png) |
+| Mobile | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/wireframes/homepage_mobile_wireframe.png) |
+| Desktop | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/wireframes/homepage_wireframe.png) |
 
 ### Resources/Favourites Page Wireframes
-
 | Size | Screenshot |
 | --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-about.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-about.png) |
+| Mobile | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/wireframes/resources_mobile_wireframe.png) |
+| Desktop | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/wireframes/resources_wireframe.png) |
 
-### Contact Page Wireframes
-
+### Resource Page Wireframes
 | Size | Screenshot |
 | --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-contact.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-contact.png) |
+| Mobile | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/wireframes/resource_mobile_wireframe.png) |
+| Desktop | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/wireframes/resource_wireframe.png) |
 
-### Signin/Signup Page Wireframes
-
+### Signin Page Wireframes
 | Size | Screenshot |
 | --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-contact.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-contact.png) |
+| Mobile | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/wireframes/signin_mobile_wireframe.png) |
+| Desktop | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/wireframes/signin_wireframe.png) |
 
-### Profile/Single Resource Page Wireframes
-
+### Signup Page Wireframes
 | Size | Screenshot |
 | --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-contact.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-contact.png) |
+| Mobile | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/wireframes/signout_mobile_wireframe.png) |
+| Desktop | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/wireframes/signup_wireframe.png) |
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+### Profile Page Wireframes
+| Size | Screenshot |
+| --- | --- |
+| Mobile | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/wireframes/profile_mobile_wireframe.png) |
+| Desktop | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/wireframes/profile_wireframe.png) |
 
-Repeat for any addition wireframe pages you have.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+### Modal Wireframes
+| Size | Screenshot |
+| --- | --- |
+| Mobile/Desktop | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/wireframes/modal_wireframe.png) |
 
 ## Features
 ### Existing Features
