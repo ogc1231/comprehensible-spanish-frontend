@@ -123,9 +123,9 @@ function ResourceCreateForm() {
         </Alert>
       ))}
 
-      <Form.Group>
+      {/* <Form.Group>
         <select aria-label="dialect" name="country_filter" id="country_filter" required onChange={handleChange}>
-          <option value={country_filter} selected disabled>Dialect</option>
+          <option value={country_filter} defaultValue disabled>Dialect</option>
           <option value="mixed">Mixed</option>
           <option value="argentina">Argentina</option>
           <option value="bolivia">Bolivia</option>
@@ -159,7 +159,7 @@ function ResourceCreateForm() {
 
       <Form.Group>
         <select aria-label="Level" name="difficulty_level_filter" id="difficulty_level_filter" required onChange={handleChange}>
-          <option value={difficulty_level_filter} selected disabled>Level</option>
+          <option value={difficulty_level_filter} defaultValue disabled>Level</option>
           <option value="beginner">Beginner</option>
           <option value="intermediate">Intermediate</option>
           <option value="advanced">Advanced</option>
@@ -175,7 +175,7 @@ function ResourceCreateForm() {
 
       <Form.Group>
         <select aria-label="Resource Type" name="resource_type_filter"  id="resource_type_filter" required onChange={handleChange}>
-          <option value={resource_type_filter} selected disabled>Resource Type</option>
+          <option value={resource_type_filter} defaultValue disabled>Resource Type</option>
           <option value="podcast">Podcast/Audio</option>
           <option value="youtube">YouTube/Video</option>
        </select>
@@ -184,7 +184,7 @@ function ResourceCreateForm() {
         <Alert variant="warning" key={idx}>
           {message}
         </Alert>
-      ))}
+      ))} */}
 
       <Button
         className={`${btnStyles.Button} ${btnStyles.Blue}`}
