@@ -180,7 +180,7 @@ function ResourceCreateForm() {
           <option value="youtube">YouTube/Video</option>
        </Form.Control>
       </Form.Group>
-      {errors?.content?.map((message, idx) => (
+      {errors?.resource_type_filter?.map((message, idx) => (
         <Alert variant="warning" key={idx}>
           {message}
         </Alert>
