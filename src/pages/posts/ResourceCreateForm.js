@@ -123,9 +123,9 @@ function ResourceCreateForm() {
         </Alert>
       ))}
 
-      {/* <Form.Group>
-        <select aria-label="dialect" name="country_filter" id="country_filter" required onChange={handleChange}>
-          <option value={country_filter} defaultValue disabled>Dialect</option>
+      <Form.Group>
+        <Form.Control as="select"  aria-label="dialect" name="country_filter" id="country_filter" required onChange={handleChange}>
+          <option value={country_filter} selected disabled>Dialect</option>
           <option value="mixed">Mixed</option>
           <option value="argentina">Argentina</option>
           <option value="bolivia">Bolivia</option>
@@ -149,7 +149,7 @@ function ResourceCreateForm() {
           <option value="spain">Spain</option>
           <option value="uruguay">Uruguay</option>
           <option value="venezuela">Venezuela</option>
-       </select>
+       </Form.Control>
       </Form.Group>
       {errors?.country_filter?.map((message, idx) => (
         <Alert variant="warning" key={idx}>
@@ -158,14 +158,14 @@ function ResourceCreateForm() {
       ))}
 
       <Form.Group>
-        <select aria-label="Level" name="difficulty_level_filter" id="difficulty_level_filter" required onChange={handleChange}>
-          <option value={difficulty_level_filter} defaultValue disabled>Level</option>
+        <Form.Control as="select" aria-label="Level" name="difficulty_level_filter" id="difficulty_level_filter" required onChange={handleChange}>
+          <option value={difficulty_level_filter} selected disabled>Level</option>
           <option value="beginner">Beginner</option>
           <option value="intermediate">Intermediate</option>
           <option value="advanced">Advanced</option>
           <option value="easy_native">Easy Native</option>
           <option value="adv_native">Advanced Native</option>
-       </select>
+       </Form.Control>
       </Form.Group>
       {errors?.difficulty_level_filter?.map((message, idx) => (
         <Alert variant="warning" key={idx}>
@@ -174,17 +174,17 @@ function ResourceCreateForm() {
       ))}
 
       <Form.Group>
-        <select aria-label="Resource Type" name="resource_type_filter"  id="resource_type_filter" required onChange={handleChange}>
-          <option value={resource_type_filter} defaultValue disabled>Resource Type</option>
+        <Form.Control as="select" aria-label="Resource Type" name="resource_type_filter"  id="resource_type_filter" required onChange={handleChange}>
+          <option value={resource_type_filter} selected disabled>Resource Type</option>
           <option value="podcast">Podcast/Audio</option>
           <option value="youtube">YouTube/Video</option>
-       </select>
+       </Form.Control>
       </Form.Group>
       {errors?.content?.map((message, idx) => (
         <Alert variant="warning" key={idx}>
           {message}
         </Alert>
-      ))} */}
+      ))}
 
       <Button
         className={`${btnStyles.Button} ${btnStyles.Blue}`}
