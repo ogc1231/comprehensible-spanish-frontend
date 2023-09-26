@@ -51,6 +51,9 @@ I used [coolors.co](https://coolors.co/ffffff-f8f8f8-e9e9ed-cfced3-212529-000000
 - As a general site user  if the keywords I am searching for don't exist I will be told that no results were found, so i can adjust my search keyword. `(SHOULD HAVE)`
 - As a general site user I can see how long ago a resource was created, so I know when it was created/updated. `(SHOULD HAVE)`
 - As a general user I can see the profile of who created a resource, so I can view their profile and the other resources they have created. `(COULD HAVE)`
+- As a general site user I can filter the resources by dialect, so I see the resources that suit my needs. `(COULD HAVE)`
+- As a general site user I can filter the resources by difficulty level, so I see the resources that suit my needs. `(COULD HAVE)`
+- As a general site user I can filter the resources by media type, so I see the resources that suit my needs. `(COULD HAVE)`
 - As a general sit user I can switch on dark mode, so choose which colour layout I prefer. `(WON'T HAVE)`
 
 
@@ -73,6 +76,8 @@ I used [coolors.co](https://coolors.co/ffffff-f8f8f8-e9e9ed-cfced3-212529-000000
 - As a authenticated site user I can unfavourite a resource, so that it is removed from my list of favourites. `(SHOULD HAVE)`
 - As a authenticated site user I view resources I have added, so can access theme easily to edit or delete or add comments. `(SHOULD HAVE)`
 - As a authenticated site user I can edit my profile so that I can change my profile picture, username and password. `(SHOULD HAVE)`
+- As a authenticated site user I can submit a contact form, so I request or provide information to the site admins. `(COULD HAVE)`
+- As a authenticated site user I receive confirmation my contact form has been submitted, so I know my query has been sent. `(COULD HAVE)`
 - As a authenticated site user I can reset my password, so I can log into my account if I forget the password. `(WON'T HAVE)`
 - As a authenticated site user I can delete my account, so that my account can not be accessed anymore. `(WON'T HAVE)`
 - As a authenticated site user I can add books and other types of resources, so I can share these useful resources with other users. `(WON'T HAVE)`
