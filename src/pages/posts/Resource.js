@@ -47,7 +47,7 @@ const Resource = (props) => {
   const handleDelete = async () => {
     try {
       await axiosRes.delete(`/resources/${id}/`);
-      history.goBack();
+      history.push("/resources");
     } catch (err) {
       console.log(err);
     }

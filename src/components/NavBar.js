@@ -33,6 +33,7 @@ const NavBar = () => {
     } catch (err) {
       console.log(err);
     }
+    setShow(false);
   };
 
   const addResourceIcon = (
