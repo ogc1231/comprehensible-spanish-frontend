@@ -1,32 +1,14 @@
-# COMPREHENSIBLE SPANISH FRONTEND
+# COMPREHENSIBLE SPANISH RESOURCES - FRONTEND
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+This is the website for Comprehensible Spanish Resources, a user curated directory of Spanish Language resources to suit your needs whatever your level. The aim of this website to is provide a place where Spanish learners can find Comprehensible Spanish content that suits their needs whatever their level with resources ranging from those specifically designed for beginners to Advanced Native content all in one place. The advantage of this website is that users can upload resources which they have found useful and share them with other learners. The resources can also be filtered by dialect so users can hear the different accents of 20 different Spanish speaking countries, Puerto Rico & The Canary Islands.
 
-In this section, you will include a few paragraphs providing an overview of your project.
-Essentially, this part is your "sales pitch".
+The objective of this website was to create an Interactive Front-End application with REACT.js that consumes API data. 
 
-At this stage, you should have a name for your project so use it!
-Don't introduce the project as a "portfolio project" for the diploma.
+[Live link to website](https://comp-spanish-frontend-811d88a7f64a.herokuapp.com/)
 
-In this section, describe what the project hopes to accomplish, who it is intended to target, and how it will be useful to the target audience.
+[Backend API repository ](https://github.com/ogc1231/comprensible-spanish-api)
 
-Consider adding a mockup image using the "Am I Responsive" website.
-Here's your deployed site as an example:
-https://ui.dev/amiresponsive?url=https://comp-spanish-frontend-811d88a7f64a.herokuapp.com
-
-Screenshots for the README and testing should not be inside of `assets/` or `static/` image folders.
-(reminder: `assets/` and `static/` are for files used on the live site, not documentation)
-Consider adding a new folder called `documentation`, and add the amiresponsive screenshot inside of that folder.
-To add the image into your README, use this format:
-(assuming you have a new folder called `documentation` with an image called "mockup.png")
-
-![screenshot](documentation/mockup.png)
-
-Note: Markdown files (.md) should not contain HTML elements like `img`, `br`, `div`, `a`, etc, only Markdown formatting.
-Find out more about using Markdown elements here:
-https://pandao.github.io/editor.md/en.html
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+![screenshot]()
 
 ## UX
 ### Colour Scheme
@@ -58,13 +40,6 @@ I used [coolors.co](https://coolors.co/ffffff-f8f8f8-e9e9ed-cfced3-212529-000000
 - [canva](https://www.canva.com/) was used to create the difficulty level icons.
 
 ## User Stories
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, list all of your user stories for the project.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ### New Site Users
 
 - As a new site user, I would like to ____________, so that I can ____________.
@@ -419,12 +394,14 @@ Consider adding any helpful links or notes to help remind you in the future, if 
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
-- Title for future feature #1
-    - Any additional notes about this feature.
-- Title for future feature #2
-    - Any additional notes about this feature.
-- Title for future feature #3
-    - Any additional notes about this feature.
+- Reset Password by Email
+    - User can reset their password by emaill if they can't login
+- Delete Account 
+    - User can delete their own account if needed.
+- Dark Mode
+    - User can switch between normal and dark colour schemes based on preference.
+- Other Resource Types
+    - User can add other resources such as books
 
 ## Tools & Technologies Used
 
@@ -433,15 +410,14 @@ Consider adding any helpful links or notes to help remind you in the future, if 
 - [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) used for an enhanced responsive layout.
 - [CSS Grid](https://www.w3schools.com/css/css_grid.asp) used for an enhanced responsive layout.
 - [JavaScript](https://www.javascript.com) used for user interaction on the site.
-- [React](https://react.dev/) used for user interaction on the site.
+- [React](https://react.dev/) used for user interaction with components on the site.
 - [Python](https://www.python.org) used as the back-end programming language.
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [GitHub](https://github.com) used for secure online code storage.
-- [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
 - [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
-- [Bootstrap](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
+- [React Bootstrap](https://react-bootstrap.netlify.app/) used as the front-end CSS framework for modern responsiveness and pre-built components.
 - [Django](https://www.djangoproject.com) used as the Python framework for the site.
-- [Django REST Framework](https://www.django-rest-framework.org/) used build the api.
+- [Django REST Framework](https://www.django-rest-framework.org/) used build the backend api.
 - [PostgreSQL](https://www.postgresql.org) used as the relational database management.
 - [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
@@ -500,32 +476,9 @@ Using this approach, I was able to apply the MoSCow prioritization and labels to
 For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Deployment
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-**IMPORTANT:**
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 The live deployed application can be found deployed on [Heroku](https://comp-spanish-frontend-811d88a7f64a.herokuapp.com).
 
-### ElephantSQL Database
-
-This project uses [ElephantSQL](https://www.elephantsql.com) for the PostgreSQL Database.
-
-To obtain your own Postgres Database, sign-up with your GitHub account, then follow these steps:
-- Click **Create New Instance** to start a new database.
-- Provide a name (this is commonly the name of the project: comprehensible-spanish-frontend).
-- Select the **Tiny Turtle (Free)** plan.
-- You can leave the **Tags** blank.
-- Select the **Region** and **Data Center** closest to you.
-- Once created, click on the new database name, where you can view the database URL and Password.
-
 ### Heroku Deployment
-
 This project uses [Heroku](https://www.heroku.com), a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
 
 Deployment steps are as follows, after account setup:
