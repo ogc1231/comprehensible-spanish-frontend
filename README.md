@@ -136,11 +136,11 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 ## Features
 ### Existing Features
 
-- **Favicon**
+- **Favicon/Logo**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-![screenshot](documentation/feature03.png)
+![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/logo-favicon.png)
 
 - **Home Page Logged Out**
 
