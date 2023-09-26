@@ -122,6 +122,12 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | Mobile | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/wireframes/profile_mobile_wireframe.png) |
 | Desktop | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/wireframes/profile_wireframe.png) |
 
+### Contact Page Wireframes
+| Size | Screenshot |
+| --- | --- |
+| Mobile | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/wireframes/contact_mobile_wireframe.png) |
+| Desktop | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/wireframes/contact_wireframe.png) |
+
 ### Modal Wireframes
 | Size | Screenshot |
 | --- | --- |
