@@ -430,6 +430,66 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - Other Resource Types
     - User can add other resources such as books
 
+
+## Re-useable components and helpers
+### `NavBar.js`
+The `NavBar` component is a reuseable component outside of the switch used on all pages the website to display the main page links to users, the links shown in the `NavBar` are dependent on wether the user is logged in or out. 
+
+### `Asset.js (spinner)`
+The `Asset` component is a reuseable component to display a spinner, an image, or a message based on the props passed to it. 
+
+- If the `spinner` prop is provided and set to `true`, a spinner from the "react-bootstrap" library will be displayed.
+
+The `Asset` component uses some further styling, which is defined in the `Asset.module.css` file. This component has been used widely in the application to display the loading spinner, while fetching more data from the API.
+
+### `Avatar.js`
+The `Avatar` component provides a reuseable component, mainly used in the app for the user profiles.
+
+- The component accepts a `src` prop which stands for the image source URL for the avatar.
+- It has a default height of `45` pixels for the image which can be overridden with the `height` prop. In the app, it gets overwritten on a few places.
+- The width of the image is set to be the same as its height, ensuring the image maintains a square shape.
+- An optional `text` prop can be passed to display a label or description alongside the avatar image.
+
+The styling comes from the `Avatar.module.css` file.
+
+### `ModalDelete.js`
+
+The `ModalDelete` component is used in three places of the application, when deleting a resource, comemnts or wheh logging out.
+It uses the following elements
+
+- **Hidden or Visible**: It uses the `show` prop to determine if the modal should be displayed or hidden.
+  
+- **Confirmation Prompt**: The modal displays the question to the user – "Are you sure you want to delete this comment/resource?" or "Are you sure you want to log out?" – ensuring the user is aware of the consequenses when deleting a comment/resource or logging out. It also help to prevent accidently deletion or log out.
+
+- **User Actions**:
+  - **Cancel**: A "Cancel" button allows the user to dismiss the modal without performing any action. This triggers the `handleClose` callback when clicked and the user will stay on the detail element (match or gun object), where he came from.
+  - **Delete/Log out**: The "Delete/Log out" button confirms the users intention to delete/logout. Clicking this button triggers the `onConfirm` callback and will delete the object or log out the user. `onConfirm` is handleSignOut log out and handleDelete for resources and comments.
+
+### `MoreDropdown.js`
+
+The `MoreDropdown` component, provides a dropdown menu represented by the three dots (`...`), visible on any content, where a user respectively the owner of an object, can edit it. On the profile the users can use the dropdown to access edit profile, change username and change password. On a resource created by the user the dropdown provides access to edit resource and delete resource. On a comment made by the user the dropdown has the options of edit or delete comment.
+
+- **ThreeDots**: This is a custom toggle for the dropdown menu. The use of `React.forwardRef` ensures that the dropdown gets access to the DOM for positioning.
+  
+- **Dropdown Toggle**: It uses the `ThreeDots` component as the toggle button for the dropdown.
+  
+- **Dropdown Menu Resource**: This contains two items
+  1. Edit: Represented by a pencil icon, when clicked, it redirects to edit resource page.
+  2. Delete: Represented by a trash can icon, when clicked, it triggers the `handleDelete` function.
+
+  - **Dropdown Menu Comment**: This contains two items
+  1. Edit: Represented by a pencil icon, when clicked, it triggers the `handleEdit` function.
+  2. Delete: Represented by a trash can icon, when clicked, it triggers the `handleDelete` function.
+
+  - **Dropdown Menu Profile**: This contains three items:
+  1. Edit profile: Represented by a pencil icon, when clicked, it redirects to chnage profile image page
+  2. Change username: Represented by a bin icon, when clicked, it redirects to change usrename page
+  2. Change password: Represented by a key icon, when clicked, it redirects to change password page
+
+### `NotFound.js`
+
+The `NotFound` component is used to inform users that the page they're trying to access doesn't exist or cannot be found when they are redirect to a wrong they search for a non existent url.
+
 ## Tools & Technologies Used
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
