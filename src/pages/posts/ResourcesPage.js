@@ -113,15 +113,18 @@ function ResourcesPage({ message, filter = "" }) {
         {hasLoaded ? (
           <>
             {resources.results.length ? (
-              <InfiniteScroll className={styles.ResourceLayout}
-                children={resources.results.map((resource) => (
-                  <Resource key={resource.id} {...resource} setResources={setResources} className={styles.ResourcesContainer}/>
-                ))}
+              <InfiniteScroll 
+                className={styles.ResourceLayout}
+                
                 dataLength={resources.results.length}
                 loader={<Asset spinner />}
                 hasMore={!!resources.next}
                 next={() => fetchMoreData(resources, setResources)}
-              />
+              >
+                {resources.results.map((resource) => (
+                  <Resource key={resource.id} {...resource} setResources={setResources} className={styles.ResourcesContainer}/>
+                ))}
+              </InfiniteScroll>
             ) : (
               <Container className={`${appStyles.Content} ${ntstyles.NoResults} ${styles.ResourcesContainer}`}>
                 <Asset src={NoResults} message={message} />

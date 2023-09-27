@@ -82,14 +82,19 @@ function ProfilePage() {
       <hr />
       {profileResources.results.length ? (
         <InfiniteScroll
-          children={profileResources.results.map((resource) => (
-            <Resource key={resource.id} {...resource} setResources={setProfileResources} />
-          ))}
           dataLength={profileResources.results.length}
           loader={<Asset spinner />}
           hasMore={!!profileResources.next}
           next={() => fetchMoreData(profileResources, setProfileResources)}
-        />
+          >
+          {profileResources.results.map((resource) => (
+          <Resource 
+            key={resource.id}
+            {...resource}
+            setResources={setProfileResources} 
+          />
+          ))}
+          </InfiniteScroll>
       ) : (
         <Asset
           src={NoResults}

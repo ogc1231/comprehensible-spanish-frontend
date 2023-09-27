@@ -38,7 +38,7 @@ const Comment = (props) => {
     setShow(false);
     
   };
-
+  // eslint-disable-next-line
   const showDeleteModal = (event) => {
     setShow(true);
   };
