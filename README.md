@@ -467,7 +467,7 @@ It uses the following elements
 
 ### `MoreDropdown.js`
 
-The `MoreDropdown` component, provides a dropdown menu represented by the three dots (`...`), visible on any content, where a user respectively the owner of an object, can edit it. On the profile the users can use the dropdown to access edit profile, change username and change password. On a resource created by the user the dropdown provides access to edit resource and delete resource. On a comment made by the user the dropdown has the options of edit or delete comment.
+The `MoreDropdown` component, provides a dropdown menu represented by three vertical dots visible on any content, only to the owner of a resource, comment or profile , can edit it. On the profile the users can use the dropdown to access edit profile, change username and change password. On a resource created by the user the dropdown provides access to edit resource and delete resource. On a comment made by the user the dropdown has the options of edit or delete comment.
 
 - **ThreeDots**: This is a custom toggle for the dropdown menu. The use of `React.forwardRef` ensures that the dropdown gets access to the DOM for positioning.
   
@@ -489,6 +489,15 @@ The `MoreDropdown` component, provides a dropdown menu represented by the three 
 ### `NotFound.js`
 
 The `NotFound` component is used to inform users that the page they're trying to access doesn't exist or cannot be found when they are redirect to a wrong they search for a non existent url.
+
+## Custom Hooks
+The following custom hooks are used in this project
+
+### `useClickOutsideToggle.js` 
+The `useClickOutsideToggle` is a custom hook, which allows the collapsed navbar burger menu to expand and close on clicking outside the menu or on the selction of a link in the navbar.
+
+### `useRedirect.js` 
+The `useRedirect` is a custom hook, which redirects non-autherised users anyway from pages which are only meant to be avaiable to autherised users such as the edit profile page and edit resource page. It also redirects autherised users anyway from pages which are only meant to be avaiable to non-autherised users such sign up and sign in pages.
 
 ## Tools & Technologies Used
 
