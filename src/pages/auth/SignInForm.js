@@ -29,9 +29,17 @@ function SignInForm() {
 
   const [errors, setErrors] = useState({});
 
+  const [validated, setValidated] = useState(false);
+
   const history = useHistory();
   const handleSubmit = async (event) => {
     event.preventDefault();
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+    setValidated(true);
 
     try {
       const { data } = await axios.post("/dj-rest-auth/login/", signInData);
@@ -55,7 +63,7 @@ function SignInForm() {
       <Col className="my-auto py-2 p-md-2" md={6}>
         <Container className={`${appStyles.Content} p-4`}>
           <h2 className={styles.Header}>sign in</h2>
-          <Form onSubmit={handleSubmit}>
+          <Form noValidate validated={validated} onSubmit={handleSubmit}>
             <Form.Group controlId="username">
               <Form.Label className="d-none">Username</Form.Label>
               <Form.Control
@@ -104,7 +112,7 @@ function SignInForm() {
         </Container>
         <Container className={`mt-3 ${appStyles.Content}`}>
           <Link className={styles.Link} to="/signup">
-            <p>{`Don't have an account? <span className={styles.LinkSpan}>Sign up now!</span>`}</p>
+            Don&apos;t have an account?<span className={styles.LinkSpan}>Sign up now!</span>
           </Link>
         </Container>
       </Col>
