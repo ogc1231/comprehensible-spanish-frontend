@@ -552,25 +552,25 @@ export const useRedirect = (userAuthStatus) => {
 
 ## Agile Development Process
 ### GitHub Projects
-[GitHub Projects](https://github.com/ogc1231/comprensible-spanish-api/projects) served as an Agile tool for this project.
+[GitHub Projects](https://github.com/users/ogc1231/projects/6) served as an Agile tool for this project.
 
 Through it, issues, and milestone tasks were planned and tracked using the basic Kanban board.
 
-![screenshot](https://github.com/ogc1231/comprensible-spanish-api/blob/main/documentation/readme-assets/KANBAN.png)
+![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/projects.png)
 
 ### GitHub Issues
-[GitHub Issues](https://github.com/ogc1231/comprensible-spanish-api/issues) served as an another Agile tool.
+[GitHub Issues](https://github.com/ogc1231/comprehensible-spanish-frontend/issues) served as an another Agile tool.
 
 There, I used my own **templates** to manage issues.
 
-![screenshot](https://github.com/ogc1231/comprensible-spanish-api/blob/main/documentation/readme-assets/issues.png)
+![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/issues.png)
 
 ### GitHub Milestones
-[GitHub Milestones](https://github.com/ogc1231/comprensible-spanish-api/milestones) served as an another Agile tool.
+[GitHub Milestones](https://github.com/ogc1231/comprehensible-spanish-frontend/milestones) served as an another Agile tool.
 
 There, I used my own **milestones** to group issues.
 
-![screenshot](https://github.com/ogc1231/comprensible-spanish-api/blob/main/documentation/readme-assets/milestones.png)
+![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/milestones.png)
 
 ### MoSCoW Prioritization
 I decomposed my issues to help prioritise and implement them.
