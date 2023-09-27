@@ -25,9 +25,9 @@ function ResourceCreateForm() {
     desc: "",
     image: "",
     resource_url: "",
-    country_filter: "",
-    difficulty_level_filter: "",
-    resource_type_filter: "",
+    country_filter: "Dialect",
+    difficulty_level_filter: "Level",
+    resource_type_filter: "Resource Type",
   });
   const { title, desc, image, resource_url, country_filter, difficulty_level_filter, resource_type_filter } = resourceData;
 
