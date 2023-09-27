@@ -18,6 +18,7 @@ const NavBar = () => {
   const setCurrentUser = useSetCurrentUser();
 
   const { expanded, setExpanded, ref } = useClickOutsideToggle();
+  
   // eslint-disable-next-line
   const showDeleteModal = (event) => {
     setShow(true);
