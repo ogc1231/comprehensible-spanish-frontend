@@ -496,11 +496,171 @@ The following custom hooks are used in this project
 ### `useClickOutsideToggle.js` 
 The `useClickOutsideToggle` is a custom hook, which allows the collapsed navbar burger menu to expand and close on clicking outside the menu or on the selction of a link in the navbar.
 
+```jsx
+import { useEffect, useRef, useState } from "react";
+
+
+const useClickOutsideToggle = () => {
+  const [expanded, setExpanded] = useState(false);
+  const ref = useRef(null);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        setExpanded(false);
+      }
+    };
+
+    document.addEventListener("mouseup", handleClickOutside);
+    return () => {
+      document.removeEventListener("mouseup", handleClickOutside);
+    };
+  }, [ref]);
+
+  return { expanded, setExpanded, ref };
+};
+
+export default useClickOutsideToggle;
+```
+
 ### `useRedirect.js` 
 The `useRedirect` is a custom hook, which redirects non-autherised users anyway from pages which are only meant to be avaiable to autherised users such as the edit profile page and edit resource page. It also redirects autherised users anyway from pages which are only meant to be avaiable to non-autherised users such sign up and sign in pages.
 
-## Tools & Technologies Used
+```jsx
+import axios from "axios";
+import { useEffect } from "react";
+import { useHistory } from "react-router";
 
+
+export const useRedirect = (userAuthStatus) => {
+  const history = useHistory();
+
+  useEffect(() => {
+    const handleMount = async () => {
+      try {
+        await axios.post("/dj-rest-auth/token/refresh/");
+        // if user is logged in, the code below will run
+        if (userAuthStatus === "loggedIn") {
+          history.push("/");
+        }
+      } catch (err) {
+        // if user is not logged in, the code below will run
+        if (userAuthStatus === "loggedOut") {
+          history.push("/");
+        }
+      }
+    };
+
+    handleMount();
+  }, [history, userAuthStatus]);
+};
+```
+
+## Agile Development Process
+### GitHub Projects
+[GitHub Projects](https://github.com/ogc1231/comprensible-spanish-api/projects) served as an Agile tool for this project.
+
+Through it, issues, and milestone tasks were planned and tracked using the basic Kanban board.
+
+![screenshot](https://github.com/ogc1231/comprensible-spanish-api/blob/main/documentation/readme-assets/KANBAN.png)
+
+### GitHub Issues
+[GitHub Issues](https://github.com/ogc1231/comprensible-spanish-api/issues) served as an another Agile tool.
+
+There, I used my own **templates** to manage issues.
+
+![screenshot](https://github.com/ogc1231/comprensible-spanish-api/blob/main/documentation/readme-assets/issues.png)
+
+### GitHub Milestones
+[GitHub Milestones](https://github.com/ogc1231/comprensible-spanish-api/milestones) served as an another Agile tool.
+
+There, I used my own **milestones** to group issues.
+
+![screenshot](https://github.com/ogc1231/comprensible-spanish-api/blob/main/documentation/readme-assets/milestones.png)
+
+### MoSCoW Prioritization
+I decomposed my issues to help prioritise and implement them.
+Using this approach, I was able to apply the MoSCow prioritization and labels to my user stories within the Issues tab.
+
+- **Must Have**: guaranteed to be delivered
+- **Should Have**: adds significant value, but not vital
+- **Could Have**: has small impact if left out
+- **Won't Have**: not a priority for this iteration
+
+## Testing
+
+For all testing, please refer to the [TESTING.md](TESTING.md) file.
+
+#### Heroku Deployment
+
+This project uses [Heroku](https://www.heroku.com), a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
+
+Deployment steps are as follows, after account setup:
+
+- Select **New** in the top-right corner of your Heroku Dashboard, and select **Create new app** from the dropdown menu.
+- Your app name must be unique, and then choose a region closest to you (EU or USA), and finally, select **Create App**.
+- No environment variables are required
+
+Heroku needs two additional files in order to deploy properly.
+- package.json file
+- Procfile
+
+The **package.json** file gets automatically built, when you install a package via the `npm install` command
+
+The **Procfile** must contain the following command:
+- `web: serve -s build`
+
+For Heroku deployment, follow these steps to connect your own GitHub repository to the newly created app:
+
+Either:
+- Select **Automatic Deployment** from the Heroku app.
+
+Or:
+- In the Terminal/CLI, connect to Heroku using this command: `heroku login -i`
+- Set the remote for Heroku: `heroku git:remote -a app_name` (replace *app_name* with your app name)
+- After performing the standard Git `add`, `commit`, and `push` to GitHub, you can now type:
+	- `git push heroku main`
+
+The project should now be connected and deployed to Heroku!
+
+### Local Deployment
+
+This project can be cloned or forked in order to make a local copy on your own system. Depending on your local setup, npm needs to be installed. Do also make sure, that all required packages as mentioned in the `package.json` file are installed on your local machine.
+
+Depending on the node version you are using on the local environment, a workaround is needed to start the server via the `npm start` command.
+
+Before starting the server, the following command `nvm install 16 && nvm use 16` has to be entered, which tells nvm (node version manager) which version to use.
+
+#### Cloning
+
+You can clone the repository by following these steps:
+
+1. Go to the [GitHub repository](https://github.com/ogc1231/comprehensible-spanish-frontend) 
+2. Locate the Code button above the list of files and click it 
+3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash or Terminal
+5. Change the current working directory to the one where you want the cloned directory
+6. In your IDE Terminal, type the following command to clone my repository:
+	- `git clone https://github.com/ogc1231/comprehensible-spanish-frontend`
+7. Press Enter to create your local clone.
+
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/rpf13/sportsshooting_react)
+
+Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed.
+A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
+
+#### Forking
+
+By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
+You can fork this repository by using the following steps:
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/ogc1231/comprehensible-spanish-frontend)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
+
+
+## Tools & Technologies Used
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
 - [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) used for an enhanced responsive layout.
@@ -518,78 +678,6 @@ The `useRedirect` is a custom hook, which redirects non-autherised users anyway 
 - [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
 - [Cloudinary](https://cloudinary.com) used for online static file storage.
-
-## Agile Development Process
-
-### GitHub Projects
-
-[GitHub Projects](https://github.com/ogc1231/comprehensible-spanish-frontend/projects) served as an Agile tool for this project.
-It isn't a specialized tool, but with the right tags and project creation/issue assignments, it can be made to work.
-
-Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Consider adding a basic screenshot of your Projects Board.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-![screenshot](documentation/gh-projects.png)
-
-### GitHub Issues
-
-[GitHub Issues](https://github.com/ogc1231/comprehensible-spanish-frontend/issues) served as an another Agile tool.
-There, I used my own **User Story Template** to manage user stories.
-
-It also helped with milestone iterations on a weekly basis.
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Consider adding a screenshot of your Open and Closed Issues.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- [Open Issues](https://github.com/ogc1231/comprehensible-spanish-frontend/issues)
-
-    ![screenshot](documentation/gh-issues-open.png)
-
-- [Closed Issues](https://github.com/ogc1231/comprehensible-spanish-frontend/issues?q=is%3Aissue+is%3Aclosed)
-
-    ![screenshot](documentation/gh-issues-closed.png)
-
-### MoSCoW Prioritization
-
-I've decomposed my Epics into stories prior to prioritizing and implementing them.
-Using this approach, I was able to apply the MoSCow prioritization and labels to my user stories within the Issues tab.
-
-- **Must Have**: guaranteed to be delivered (*max 60% of stories*)
-- **Should Have**: adds significant value, but not vital (*the rest ~20% of stories*)
-- **Could Have**: has small impact if left out (*20% of stories*)
-- **Won't Have**: not a priority for this iteration
-
-## Testing
-
-For all testing, please refer to the [TESTING.md](TESTING.md) file.
-
-## Deployment
-The live deployed application can be found deployed on [Heroku](https://comp-spanish-frontend-811d88a7f64a.herokuapp.com).
-
-To deploy to Heroku, follow these steps:
-
-- Fork or clone this repository in GitHub.
-- If you have also cloned and deployed your own version of the Spanish Comprehensible Resource Django REST Framework API, you will need to ensure the value of `axios.defaults.baseURL` in `src/api/axiosDefaults.js` is set to the base URL for your API. Pull to your local development environment and push back to GitHub if necessary; otherwise, leave as is to use the original Spanish Comprehensible Resource API.
-- Log in to Heroku.
-- Select 'Create new app' from the 'New' menu at the top right.
-- Enter a name for the app and select the appropriate region.
-- Select 'Create app'.
-- Select the 'Deploy' tab at the top.
-- Select 'GitHub' from the deployment method options to confirm you wish to deploy using GitHub. You may be asked to enter your GitHub password.
-- Find the 'Connect to GitHub' section and use the search box to locate your repo.
-- Select 'Connect' when found.
-- Optionally choose the main branch under 'Automatic Deploys' and select 'Enable Automatic Deploys' if you wish your deployed site to be automatically redeployed every time you push changes to GitHub.
-- Find the 'Manual Deploy' section, choose 'main' as the branch to deploy and select 'Deploy Branch'.
-
-When deployment is complete, you will be given a link to the deployed site.
 
 ## Credits
 ### Content
