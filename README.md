@@ -499,7 +499,6 @@ The `useClickOutsideToggle` is a custom hook, which allows the collapsed navbar 
 ```jsx
 import { useEffect, useRef, useState } from "react";
 
-
 const useClickOutsideToggle = () => {
   const [expanded, setExpanded] = useState(false);
   const ref = useRef(null);
@@ -509,13 +508,11 @@ const useClickOutsideToggle = () => {
         setExpanded(false);
       }
     };
-
     document.addEventListener("mouseup", handleClickOutside);
     return () => {
       document.removeEventListener("mouseup", handleClickOutside);
     };
   }, [ref]);
-
   return { expanded, setExpanded, ref };
 };
 
@@ -529,7 +526,6 @@ The `useRedirect` is a custom hook, which redirects non-autherised users anyway 
 import axios from "axios";
 import { useEffect } from "react";
 import { useHistory } from "react-router";
-
 
 export const useRedirect = (userAuthStatus) => {
   const history = useHistory();
@@ -549,7 +545,6 @@ export const useRedirect = (userAuthStatus) => {
         }
       }
     };
-
     handleMount();
   }, [history, userAuthStatus]);
 };
