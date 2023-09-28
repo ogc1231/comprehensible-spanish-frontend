@@ -347,6 +347,7 @@ All previously closed/fixed bugs can be tracked [here](https://github.com/ogc123
 | [BUG 4: Comment State Not Updating on Delete (SOLVED)](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/46) | Solved |
 | [BUG 5: Add Resource Form Not Focusable in Chrome (SOLVED)](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/47) | Solved |
 | [BUG 6: Log Out Modal Showing on Sign In (SOLVED)](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/48) | Solved |
+| [BUG 7: Can't perform a React state update on an unmounted component (SOLVED)](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/54) | Solved |
 
 ## Unfixed Bugs
 | Bug | Status |
