@@ -2,9 +2,81 @@
 Return back to the [README.md](README.md) file.
 
 ## Automated Testing
+
 I have conducted a series of automated tests on my application.
 
-I fully acknowledge and understand that, in a real-world scenario, an extensive set of additional tests would be more comprehensive.
+I have tested the `DeleteModal`, the `NavBar` and the `NotFound` component via jest unit test.
+
+- [DeleteModal Unit Test](src/components/__tests__/DeleteModal.test.js)
+- [NavBar Unit Test](src/components/__tests__/NavBar.test.js)
+- [NotFound](src/components/__tests__/NotFound.test.js)
+
+I fully acknowledge and understand that, in a real-world scenario, an extensive set of additional tests would be more comprehensive. However, I wanted to include a few example tests to showcase the use of jest in a React app. It turned out to be quite difficult, if more complex components containing lots of states, are tested.
+
+### JEST Unit Testing
+
+I have used [jest](https://jestjs.io) for the java script unit testing. In order to run the tests, I ran the following command in the terminal each time:
+
+`npm test`
+
+All testcases have been successfully executed and passed:
+
+![jest testresults]()
+
+The `NavBar` and the `NotFound` component got tested via the automated unit testing.
+
+`NavBar`
+```jsx
+import { render, screen, fireEvent } from "@testing-library/react";
+import { BrowserRouter as Router } from "react-router-dom";
+import { CurrentUserProvider } from "../../contexts/CurrentUserContext";
+import NavBar from "../NavBar";
+
+test("renders NavBar", () => {
+  render(
+    <Router>
+      <NavBar />
+    </Router>
+  );
+
+  const signInLink = screen.getByRole("link", { name: "Sign in" });
+  expect(signInLink).toBeInTheDocument();
+});
+
+test("renders link to the user profile for a logged in user", async () => {
+  render(
+    <Router>
+      <CurrentUserProvider>
+        <NavBar />
+      </CurrentUserProvider>
+    </Router>
+  );
+
+  const profileAvatar = await screen.findByText("Profile");
+  expect(profileAvatar).toBeInTheDocument();
+});
+```
+`NotFound`
+```jsx
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import NotFound from "../NotFound";
+
+test("renders NotFound component with correct message", () => {
+  render(<NotFound />);
+
+  // Check if the image is rendered
+  const image = screen.getByRole("img");
+  expect(image).toBeInTheDocument();
+
+  // Check if the correct message is rendered (i is for case insensitive)
+  const message = screen.getByText(
+    /The page you're looking for doesn't exist/i
+  );
+  expect(message).toBeInTheDocument();
+});
+```
+
 
 ### ESLint Validation
 I have used the recommended [JShint Validator](https://eslint.org/) to validate all of my JS files.
@@ -17,7 +89,7 @@ All JavaScript code was validated using the integrated ESLint JavaScript validat
 ### CSS Validation
 I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
 
-The css was copied from name.module.css and pasted directly into the validator and shows no errors. However when the live site link was used the validator showed parse errors caused by Boostrap and Fontawesome.
+The css was copied from `name`.module.css and pasted directly into the validator and shows no errors. However when the live site link was used the validator showed parse errors caused by Boostrap and Fontawesome.
 
 | File | Screenshot | Notes |
 | --- | --- | --- |
@@ -260,6 +332,8 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Unauthenticated Users Tries to access non existent URL | Redirect The page you're looking for doesn't exist | Pass | |
 
 ## User Story Testing
+I've tested my users to make sure they all work as stated.
+
 | User Story | Screenshot |
 | --- | --- |
 | As a general site user I can view a navbar from every page, so that I can navigate easily between pages. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/navbar_logged_out.png) |
@@ -309,7 +383,6 @@ Defensive programming was manually tested with the below user acceptance testing
 | As a general site user I can see what Media Type the resource is easily, so that I have the content that suits my needs. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/youtube_tag.png) | 
 | As a general site user I can see what Media Type the resource is easily, so that I have the content that suits my needs. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/podcast_tag.png) | 
 
-
 ### GitHub **Issues**
 **Closed Issues**
 | Issue | Status |
@@ -350,7 +423,6 @@ Defensive programming was manually tested with the below user acceptance testing
 | [USER STORY 38: Dialect Tags](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/39) | Closed |
 | [USER STORY 39: Level Tags](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/40) | Closed |
 | [USER STORY 40: Media Type Tags](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/41) | Closed |
-
 
 **Open Issues**
 | Issue | Status |
