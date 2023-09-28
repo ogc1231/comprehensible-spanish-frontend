@@ -304,37 +304,14 @@ All previously closed/fixed bugs can be tracked [here](https://github.com/ogc123
 
 | Bug | Status |
 | --- | --- |
-| [JS Uncaught ReferenceError: `foobar` is undefined/not defined](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/1) | Closed |
-| [Python `'ModuleNotFoundError'` when trying to import module from imported package](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/2) | Closed |
-| [Django `TemplateDoesNotExist` at /appname/path appname/template_name.html](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/3) | Closed |
-
-**Open Issues**
-Any remaining open issues can be tracked [here](https://github.com/ogc1231/comprehensible-spanish-frontend/issues).
-
-| Bug | Status |
-| --- | --- |
-| [JS `'let'` or `'const'` or `'template literal syntax'` or `'arrow function syntax (=>)'` is available in ES6 (use `'esversion: 11'`) or Mozilla JS extensions (use moz).](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/4) | Open |
-| [Python `E501 line too long` (93 > 79 characters)](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/5) | Open |
+| [BUG 2: Modal Not Closing On Confirmation (SOLVED)](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/44) | Closed |
+| [BUG 4: Comment State Not Updating on Delete (SOLVED)](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/46) | Closed |
+| [BUG 5: Add Resource Form Not Focusable in Chrome (SOLVED)](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/47) | Open |
+| [BUG 6: Log Out Modal Showing on Sign In (SOLVED)](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/48) | Closed |
 
 ## Unfixed Bugs
-- On devices smaller than 375px, the page starts to have `overflow-x` scrolling.
+| Bug | Status |
+| --- | --- |
+| [BUG 1: Dropdowns Don't Show State in Resource Edit](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/43) | Open |
+| [BUG 3: Favourites State Not Updating](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/45) | Open |
 
-    ![screenshot](documentation/unfixed-bug01.png)
-
-    - Attempted fix: I tried to add additional media queries to handle this, but things started becoming too small to read.
-
-- For PP3, when using a helper `clear()` function, any text above the height of the terminal does not clear, and remains when you scroll up.
-
-    ![screenshot](documentation/unfixed-bug02.png)
-
-    - Attempted fix: I tried to adjust the terminal size, but it only resizes the actual terminal, not the allowable area for text.
-
-- When validating HTML with a semantic `section` element, the validator warns about lacking a header `h2-h6`. This is acceptable.
-
-    ![screenshot](documentation/unfixed-bug03.png)
-
-    - Attempted fix: this is a known warning and acceptable, and my section doesn't require a header since it's dynamically added via JS.
-
-If you legitimately cannot find any unfixed bugs or warnings, then use the following sentence:
-
-There are no remaining bugs that I am aware of.
