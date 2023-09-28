@@ -12,7 +12,6 @@ The objective of this website was to create an Interactive Front-End application
 
 ## UX
 ### Colour Scheme
-
 - `#F08080` used for main background colour.
 - `#212529` used for main text colour.
 - `#2142B2` used for main button colour.
@@ -35,7 +34,7 @@ I used [coolors.co](https://coolors.co/ffffff-f8f8f8-e9e9ed-cfced3-212529-000000
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/coolors2.png)
 
 ### Typography
-- [Readex Pro](https://fonts.google.com/specimen/Readex+Pro) was used for all text.
+- [Readex Pro](https://fonts.google.com/specimen/Readex+Pro) was used for all text with a sans-serif backup font.
 - [fontawesome](https://fontawesome.com/) was used for all icons excluding difficulty level icons.
 - [canva](https://www.canva.com/) was used to create the difficulty level icons.
 
@@ -45,49 +44,51 @@ I used [coolors.co](https://coolors.co/ffffff-f8f8f8-e9e9ed-cfced3-212529-000000
 - As a general site user I can navigate through pages quickly, so that I can view content seamlessly without page refresh. `(MUST HAVE)`
 - As a general site user I can view the details of an individual resource, so that I can learn more about it. `(MUST HAVE)`
 - As a general site user I can view all resources that have been created by all users, so that I can discover new resources or accents and learn more about them. `(MUST HAVE)`
+- As a general site user I can open the resource's URL, so that I can view/listen to the content. `(MUST HAVE)`
 - As a general site user I can view most the popular resources ordered by most favourited/popular first, so that I can see what is the most popular content and learn more about them. `(SHOULD HAVE)`
 - As a general site user I can search for resources with keywords, so that I can find the resources I am most interested in. `(SHOULD HAVE)`
 - As a general site user I can keep scrolling through the resources on the site which are loaded for me automatically, so that I don't have to click on "next page" for a smoother user experience. `(SHOULD HAVE)`
 - As a general site user  if the keywords I am searching for don't exist I will be told that no results were found, so i can adjust my search keyword. `(SHOULD HAVE)`
+- As a general site user I can view a homepage, so that can easily understand the purpose of the website. `(SHOULD HAVE)`
 - As a general site user I can see how long ago a resource was created, so I know when it was created/updated. `(SHOULD HAVE)`
 - As a general user I can see the profile of who created a resource, so I can view their profile and the other resources they have created. `(COULD HAVE)`
 - As a general site user I can filter the resources by dialect, so I see the resources that suit my needs. `(COULD HAVE)`
 - As a general site user I can filter the resources by difficulty level, so I see the resources that suit my needs. `(COULD HAVE)`
 - As a general site user I can filter the resources by media type, so I see the resources that suit my needs. `(COULD HAVE)`
+- As a general site user I can filter the resources by dialect, so I see the resources that suit my needs. `(COULD HAVE)`
+- As a general site user I can filter the resources by difficulty level, so I see the resources that suit my needs. `(COULD HAVE)`
+- As a general site user I can filter the resources by media type, so I see the resources that suit my needs. `(COULD HAVE)`
+- As a general site user I can see what dialect the resource is easily, so that I have the content that suits my needs. `(COULD HAVE)`
+- As a general site user I can see what level the resource is easily, so that I have the content that suits my needs. `(COULD HAVE)`
+- As a general site user I can see what Media Type the resource is easily, so that I have the content that suits my needs. `(COULD HAVE)`
 - As a general sit user I can switch on dark mode, so choose which colour layout I prefer. `(WON'T HAVE)`
 
 
 ### New Site Users
 - As a new site user I can create a new account, so that I can access all the features for authenticated users. `(MUST HAVE)`
 - As a new site user I can see sign in and sign up options, so that I can sign in/sign up when I want. `(MUST HAVE)`
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
 
 ### Authenticated Site Users
 - As a authenticated site user I can sign into the website, so that I can access the full functionality for authenticated users. `(MUST HAVE)`
 - As a authenticated site user I can tell if I am logged in or not, so that I can log in if I need to. `(MUST HAVE)`
 - As a authenticated site user I can maintain my logged-in status until I choose to log out, so that my user experience is not compromised. `(MUST HAVE)`
+- As a authenticated site user I can log out of my account, so that my data is safe. `(MUST HAVE)`
 - As a authenticated site user I can view my own and others user's avatars, so that I can easily identify users of the application. `(MUST HAVE)`
 - As a authenticated site user I can create resources, so that I can share them with other Spanish Learners. `(MUST HAVE)`
 -  As a authenticated site user I can edit my resource image, title, description, URL, type, dialect & difficulty so that I can make corrections or update my resource after it was created. `(MUST HAVE)`
 - As a authenticated site user I can delete my own resource if it doesn't belong in the list of resources i.e not in Spanish. `(MUST HAVE)`
+- As a authenticated site user I can edit my profile so that I can change my profile picture, username and password. `(MUST HAVE)`
 - As a authenticated site user I can favourite a resource, so that it is added to my list of favourites for easy access in the future. `(SHOULD HAVE)`
 - As a authenticated site user I can unfavourite a resource, so that it is removed from my list of favourites. `(SHOULD HAVE)`
 - As a authenticated site user I view resources I have added, so can access theme easily to edit or delete or add comments. `(SHOULD HAVE)`
-- As a authenticated site user I can edit my profile so that I can change my profile picture, username and password. `(SHOULD HAVE)`
+- As a authenticated site user I can confirm deletion of a comment or resource, so that I don't accidentally delete something. `(SHOULD HAVE)`
+- As a authenticated site user I can confirm my log out, so that I don't log out accidentally. `(SHOULD HAVE)`
 - As a authenticated site user I can submit a contact form, so I request or provide information to the site admins. `(COULD HAVE)`
 - As a authenticated site user I receive confirmation my contact form has been submitted, so I know my query has been sent. `(COULD HAVE)`
 - As a authenticated site user I can reset my password, so I can log into my account if I forget the password. `(WON'T HAVE)`
 - As a authenticated site user I can delete my account, so that my account can not be accessed anymore. `(WON'T HAVE)`
 - As a authenticated site user I can add books and other types of resources, so I can share these useful resources with other users. `(WON'T HAVE)`
-
-### Site Admin
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
+- As a authenticated site user I can see confirmation messages on submission of a form, so that I know the action has successfully worked. `(WON'T HAVE)`
 
 ## Wireframes
 To follow best practice, wireframes were developed for mobile and desktop sizes to act as a design guide for the website.
