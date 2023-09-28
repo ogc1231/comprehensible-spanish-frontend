@@ -50,7 +50,6 @@ function ResourcesPage({ message, filter = "" }) {
   return (
     
     <Row className="h-100">
-      
       <Col className={`py-2 pd-2 p-lg-2 mt-2 ${styles.ResourceCont}`} lg={10}>
         <i className={`fas fa-search ${styles.SearchIcon}`} />
         <Form

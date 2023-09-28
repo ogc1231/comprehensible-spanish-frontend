@@ -84,13 +84,13 @@ const Resource = (props) => {
       console.log(err);
     }
   };
+  
   // eslint-disable-next-line
   const showDeleteModal = (event) => {
     setShow(true);
   };
 
   const [show, setShow] = useState(false);
-
 
   return (
     <>

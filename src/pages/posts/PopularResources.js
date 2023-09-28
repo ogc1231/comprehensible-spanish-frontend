@@ -6,7 +6,6 @@ import Asset from "../../components/Asset";
 import PopularResource from './PopularResource';
 import styles from "../../styles/PopularResources.module.css";
 
-
 const PopularResources = () => {
     const [resourceData, setResourceData] = useState({
         pageResources: { results: []},

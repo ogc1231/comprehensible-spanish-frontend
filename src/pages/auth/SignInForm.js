@@ -16,7 +16,6 @@ import { useRedirect } from "../../hooks/useRedirect";
 import signin from "../../assets/signin.jpg";
 import { setTokenTimestamp } from "../../utils/utils";
 
-
 function SignInForm() {
   const setCurrentUser = useSetCurrentUser();
   useRedirect("loggedIn");

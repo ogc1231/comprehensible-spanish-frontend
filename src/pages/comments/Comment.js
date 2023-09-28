@@ -35,7 +35,6 @@ const Comment = (props) => {
     } catch (err) {
       console.log(err);
     }
-    
   };
   // eslint-disable-next-line
   const showDeleteModal = (event) => {

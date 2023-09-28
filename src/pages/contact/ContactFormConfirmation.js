@@ -7,7 +7,6 @@ import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import { useRedirect } from "../../hooks/useRedirect";
 
-
 const ContactFormConfirmation = () => {
   useRedirect("loggedOut");
   const [count, setCount] = useState(10);

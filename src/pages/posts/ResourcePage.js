@@ -36,10 +36,8 @@ function ResourcePage() {
       }
     };
     
-
     handleMount();
   }, [id]);
-
 
   return (
     <Row className="h-100 pt-4">

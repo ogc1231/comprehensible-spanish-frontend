@@ -12,7 +12,6 @@ import { useHistory, useParams } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import Alert from "react-bootstrap/Alert";
 
-
 function ResourceEditForm() {
 
   const [errors, setErrors] = useState({});
@@ -89,7 +88,6 @@ function ResourceEditForm() {
       }
     }
   };
-
 
   const textFields = (
     <div className="text-center">

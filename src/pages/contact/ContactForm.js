@@ -12,7 +12,6 @@ import Container from "react-bootstrap/Container";
 import Alert from "react-bootstrap/Alert";
 import { axiosReq } from "../../api/axiosDefaults";
 
-
 const ContactForm = () => {
   useRedirect("loggedOut");
   const [contactFormData, setContactFormData] = useState({

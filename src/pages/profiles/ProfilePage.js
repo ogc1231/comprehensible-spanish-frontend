@@ -19,8 +19,6 @@ import NoResults from "../../assets/no-results.png";
 import { ProfileEditDropdown } from "../../components/MoreDropdown";
 import PopularResources from "../posts/PopularResources";
 
-
-
 function ProfilePage() {
   const [hasLoaded, setHasLoaded] = useState(false);
   const [profileResources, setProfileResources] = useState({ results: [] });

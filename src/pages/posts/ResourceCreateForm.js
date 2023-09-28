@@ -74,7 +74,6 @@ function ResourceCreateForm() {
     }
   };
 
-
   const textFields = (
     <div className="text-center">
       <Form.Group>
