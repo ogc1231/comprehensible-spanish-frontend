@@ -262,16 +262,56 @@ Defensive programming was manually tested with the below user acceptance testing
 ## User Story Testing
 | User Story | Screenshot |
 | --- | --- |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature01.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature02.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature03.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature04.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature05.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature06.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature07.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature08.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature09.png) |
-| repeat for all remaining user stories | x |
+| As a general site user I can view a navbar from every page, so that I can navigate easily between pages. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/navbar_logged_out.png) |
+| As a general site user I can navigate through pages quickly, so that I can view content seamlessly without page refresh.| ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/navbar_logged_out.png) |
+| As a new site user I can create a new account, so that I can access all the features for authenticated users. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/signup_page.png) |
+| As a authenticated site I can sign into the website, so that I can access the full functionality for authenticated users. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/signin_page.png) |
+| As a authenticated site user I can tell if I am logged in or not, so that I can log in if I need to. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/navbar_logged_in.png) |
+| As a authenticated site I can maintain my logged-in status until I choose to log out, so that my user experience is not compromised. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/home_signed_in.png) |
+| As a new site user I can see sign in and sign up options, so that I can sign in/sign up when I want. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/home_signed_out.png) |
+| As a authenticated site I can view my own and others user's avatars, so that I can easily identify users of the application. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/avatar.png) |
+| As a authenticated site user I can create resources, so that I can share them with other Spanish Learners. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/add_resource_laptop.png) |
+| As a general site user I can view the details of an individual resource, so that I can learn more about it. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/iresource_laptop.png) |
+| As a general site user I can view all resources that have been created by all users, so that I can discover new resources or accents and learn more about them. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/resources_out.png) |
+| As a authenticated site user I can favourite a resource, so that it is added to my list of favourites for easy access in the future. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/favourites_page.png) |
+|  | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/add_to_favourites_logged_in.PNG) |
+| As a authenticated site user I can unfavourite a resource, so that it is removed from my list of favourites. | ![screenshot]() |
+|  | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/remove_from_favourites.PNG) |
+| As a general site user I can view most the popular resources ordered by most favourited/popular first, so that I can see what is the most popular content and learn more about them. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/popular_resources.png) |
+| As a general site user I can search for resources with keywords, so that I can find the resources I am most interested in. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/search_bar.png) | 
+
+|  | ![screenshot]() | 
+|  | ![screenshot]() |
+|  | ![screenshot]() | 
+|  | ![screenshot]() | 
+
+|  | ![screenshot]() |
+|  | ![screenshot]() | 
+|  | ![screenshot]() | 
+|  | ![screenshot]() |
+|  | ![screenshot]() | 
+|  | ![screenshot]() | 
+|  | ![screenshot]() |
+|  | ![screenshot]() | 
+|  | ![screenshot]() | 
+|  | ![screenshot]() |
+|  | ![screenshot]() | 
+|  | ![screenshot]() | 
+
+|  | ![screenshot]() |
+|  | ![screenshot]() | 
+|  | ![screenshot]() | 
+|  | ![screenshot]() |
+|  | ![screenshot]() | 
+|  | ![screenshot]() | 
+
+|  | ![screenshot]() |
+|  | ![screenshot]() | 
+|  | ![screenshot]() | 
+|  | ![screenshot]() |
+|  | ![screenshot]() | 
+|  | ![screenshot]() | 
+
 
 ### GitHub **Issues**
 **Closed Issues**
@@ -292,7 +332,6 @@ Defensive programming was manually tested with the below user acceptance testing
 | [USER STORY 13: Unfavourite A Resource](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/13) | Closed |
 | [USER STORY 14: Most Popular Resources](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/14) | Closed |
 | [USER STORY 15: Search Resources](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/15) | Closed |
-
 | [USER STORY 16: Infinite scroll](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/16) | Closed |
 | [USER STORY 17: No Results Found](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/18) | Closed |
 | [USER STORY 18: Edit Own Resource](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/19) | Closed |
