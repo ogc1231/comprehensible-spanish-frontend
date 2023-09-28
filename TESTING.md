@@ -58,22 +58,22 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | Page | Device | Screenshot | Notes |
 | --- | --- | --- | --- |
 | Home | iPhone 11 (DevTools) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/home_iphone11.PNG) | Works as expected |
-| Home | Ipad Pro (DevTools - Portrait) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/home_ipadpro.PNG) | Works as expected |
+| Home | Ipad Pro (DevTools - Portrait) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/home_ipadpro.PNG) | Too much bottom margin |
 | Home | Razer Blade 15 | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/home_laptop.png) | Works as expected |
 | Home | Standard Office Monitor | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/home_monitor.png) | Works as expected |
 
 | Sign In | iPhone 11 (DevTools) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signin_iphone11.PNG) | Works as expected |
-| Sign In | Ipad Pro (DevTools - Portrait) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signin_ipadpro.PNG) | Works as expected |
+| Sign In | Ipad Pro (DevTools - Portrait) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signin_ipadpro.PNG) | Too much top/bottom margin |
 | Sign In | Razer Blade 15 | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signin_laptop.png) | Works as expected |
 | Sign In | Standard Office Monitor | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signin_monitor.png) | Works as expected |
 
 | Sign Up | iPhone 11 (DevTools) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signup_iphone11.PNG) | Works as expected |
-| Sign Up | Ipad Pro (DevTools - Portrait) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signup_ipadpro.PNG) | Works as expected |
+| Sign Up | Ipad Pro (DevTools - Portrait) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signup_ipadpro.PNG) | Too much top/bottom margin |
 | Sign Up | Razer Blade 15 | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signup_laptop.png) | Works as expected |
 | Sign Up | Standard Office Monitor | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signup_monitor.png) | Works as expected |
 
 | Add Resource | iPhone 11 (DevTools) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/add_resource_iphone11.PNG) | Works as expected |
-| Add Resource | Ipad Pro (DevTools - Portrait) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/add_resource_ipadpro.PNG) | Works as expected |
+| Add Resource | Ipad Pro (DevTools - Portrait) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/add_resource_ipadpro.PNG) | Too much bottom margin |
 | Add Resource | Razer Blade 15 | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/add_resource_laptop.png) | Works as expected |
 | Add Resource | Standard Office Monitor | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/add_resource_monitor.png) | Works as expected |
 
