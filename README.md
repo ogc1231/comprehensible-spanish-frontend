@@ -683,6 +683,7 @@ You can fork this repository by using the following steps:
 | [Pablo Embarach](https://github.com/PEmbarach/coffeeie/blob/main/src/pages/contact/ContactForm.js) | contact form | design |
 | [Anthony Rocco Albanese](https://github.com/tony-albanese/nonnas-kitchen/blob/main/src/components/ModalAlert.jsx) | Delete/logout modal | design |
 | [Code Institute](https://codeinstitute.net/ie/) | navbar & popular resources | design |
+| [Ian Meigh](https://gist.github.com/ianmeigh/8e603b91a38d7829d959402bfcf29d3d) | all js | eslint validation |
 
 ### Media
 | Source | Location | Type | Notes |
