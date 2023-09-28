@@ -2,13 +2,6 @@
 Return back to the [README.md](README.md) file.
 
 ## Code Validation
-### HTML
-I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
-
-| Page | W3C URL | Screenshot | Notes |
-| --- | --- | --- | --- |
-| index.html | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcomp-spanish-frontend-811d88a7f64a.herokuapp.com%2F) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/App.module.png) | Pass: No Errors |
-
 ### CSS
 I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
 
@@ -45,7 +38,6 @@ All JavaScript code was validated using the integrated ESLint JavaScript validat
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/eslint.PNG)
 
-
 ## Browser Compatibility
 I've tested my deployed project on multiple browsers to check for compatibility issues. Development was carried out using Mozilla Firefox as web browser
 
@@ -63,12 +55,12 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 ## Responsiveness
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
-| Device | Screenshot | Notes |
-| --- | --- | --- |
-| Mobile (DevTools) | ![screenshot](documentation/responsive-mobile.png) | Works as expected |
-| Tablet (DevTools) | ![screenshot](documentation/responsive-tablet.png) | Works as expected |
-| Razer Blade 15 | ![screenshot](documentation/responsive-desktop.png) | Works as expected |
-| 2K Monitor | ![screenshot](documentation/responsive-4k.png) | Noticeable scaling issues |
+| Page | Device | Screenshot | Notes |
+| --- | --- | --- | --- |
+| Home | iPhone 11 (DevTools) | ![screenshot](documentation/responsive-mobile.png) | Works as expected |
+| Home | Ipad Pro (DevTools - Portrait) | ![screenshot](documentation/responsive-tablet.png) | Works as expected |
+| Home | Razer Blade 15 | ![screenshot](documentation/responsive-desktop.png) | Works as expected |
+| Home | Standard Office Monitor | ![screenshot](documentation/responsive-4k.png) | Works as expected |
 
 ## Lighthouse Audit
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
