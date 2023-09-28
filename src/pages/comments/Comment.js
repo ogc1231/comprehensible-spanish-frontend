@@ -35,7 +35,6 @@ const Comment = (props) => {
     } catch (err) {
       console.log(err);
     }
-    setShow(false);
     
   };
   // eslint-disable-next-line

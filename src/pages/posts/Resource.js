@@ -51,7 +51,6 @@ const Resource = (props) => {
     } catch (err) {
       console.log(err);
     }
-    setShow(false);
   };
 
   const handleFavourite = async () => {
