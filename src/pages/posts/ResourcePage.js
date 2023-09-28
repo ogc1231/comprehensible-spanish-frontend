@@ -35,6 +35,7 @@ function ResourcePage() {
         console.log(err);
       }
     };
+    
 
     handleMount();
   }, [id]);
