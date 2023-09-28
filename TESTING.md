@@ -47,14 +47,19 @@ All JavaScript code was validated using the integrated ESLint JavaScript validat
 
 
 ## Browser Compatibility
-I've tested my deployed project on multiple browsers to check for compatibility issues.
+I've tested my deployed project on multiple browsers to check for compatibility issues. Development was carried out using Mozilla Firefox as web browser
 
 | Browser | Screenshot | Notes |
 | --- | --- | --- |
-| Chrome | ![screenshot](documentation/browser-chrome.png) | Works as expected |
-| Firefox | ![screenshot](documentation/browser-firefox.png) | Works as expected |
-| Edge | ![screenshot](documentation/browser-edge.png) | Works as expected |
-
+| Firefox - Homepage | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/firefox.PNG) | Works as expected |
+| Chrome - Homepage | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/chrome.PNG) | Hero section is larger then on Firefox |
+| Edge - Homepage | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/edge.PNG) | Hero section is larger then on Firefox |
+| Firefox - Resources Page | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/firefox_resources.PNG) | Works as expected |
+| Chrome - Resources Page | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/chrome_resources.PNG) | Works as expected |
+| Edge - Resources Page | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/edge_resources.PNG) | Works as expected |
+| Firefox - Profile/modal | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/firefox_profile_modal.PNG) | Works as expected |
+| Chrome - Profile/modal | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/chrome_profile_modal.PNG) | Works as expected |
+| Edge - Profile/modal | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/edge_profile_modal.PNG) | Works as expected |
 ## Responsiveness
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
