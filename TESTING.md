@@ -274,29 +274,32 @@ Defensive programming was manually tested with the below user acceptance testing
 | repeat for all remaining user stories | x |
 
 ### GitHub **Issues**
-**Open Issues**
-| Issue | Status |
-| --- | --- |
-| [USER STORY 23: Reset Password by Email](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/24) | Open |
-| [USER STORY 24: Delete Account ](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/25) | Open |
-| [USER STORY 25: Dark Mode](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/26) | Open |
-| [USER STORY 26: Add books and Other Resources](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/27) | Open |
-| [USER STORY 41: Confirmation Toast Messages](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/42) | Open |
-
 **Closed Issues**
 | Issue | Status |
 | --- | --- |
-| [APP 1: Profiles](https://github.com/ogc1231/comprensible-spanish-api/issues/1) | Closed |
+| []() | Closed |
+
+
+**Open Issues**
+| Issue | Status |
+| --- | --- |
+| [USER STORY 41: Confirmation Toast Messages](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/42) | Open |
+| [USER STORY 26: Add books and Other Resources](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/27) | Open |
+| [USER STORY 25: Dark Mode](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/26) | Open |
+| [USER STORY 24: Delete Account](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/25) | Open |
+| [USER STORY 23: Reset Password by Email](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/24) | Open |
 
 **Milestones**
 Milestones were used to group issues.
 
 | Milestone | Status |
 | --- | --- |
-| [Documentation & Testing](https://github.com/ogc1231/comprensible-spanish-api/milestone/1) | Closed |
+| [MVP Release](https://github.com/ogc1231/comprensible-spanish-api/milestone/3) | Closed |
+| [Second Iteration](https://github.com/ogc1231/comprehensible-spanish-frontend/milestone/4) | Closed |
+| [Third Iteration](https://github.com/ogc1231/comprehensible-spanish-frontend/milestone/5) | Closed |
+| [Bugs](https://github.com/ogc1231/comprehensible-spanish-frontend/milestone/6) | Open |
 | [Setup & Deployment](https://github.com/ogc1231/comprensible-spanish-api/milestone/2) | Closed |
-| [APP](https://github.com/ogc1231/comprensible-spanish-api/milestone/3) | Open |
-| [Bugs](https://github.com/ogc1231/comprensible-spanish-api/milestone/6) | Closed |
+| [Documentation & Testing](https://github.com/ogc1231/comprensible-spanish-api/milestone/1) | Closed |
 
 ## Bugs
 **Fixed Bugs**
@@ -304,10 +307,10 @@ All previously closed/fixed bugs can be tracked [here](https://github.com/ogc123
 
 | Bug | Status |
 | --- | --- |
-| [BUG 2: Modal Not Closing On Confirmation (SOLVED)](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/44) | Closed |
-| [BUG 4: Comment State Not Updating on Delete (SOLVED)](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/46) | Closed |
-| [BUG 5: Add Resource Form Not Focusable in Chrome (SOLVED)](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/47) | Open |
-| [BUG 6: Log Out Modal Showing on Sign In (SOLVED)](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/48) | Closed |
+| [BUG 2: Modal Not Closing On Confirmation (SOLVED)](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/44) | Solved |
+| [BUG 4: Comment State Not Updating on Delete (SOLVED)](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/46) | Solved |
+| [BUG 5: Add Resource Form Not Focusable in Chrome (SOLVED)](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/47) | Solved |
+| [BUG 6: Log Out Modal Showing on Sign In (SOLVED)](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/48) | Solved |
 
 ## Unfixed Bugs
 | Bug | Status |
