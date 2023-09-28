@@ -41,8 +41,9 @@ The css was copied from name.module.css and pasted directly into the validator a
 ### ESLint Validation
 I have used the recommended [JShint Validator](https://eslint.org/) to validate all of my JS files.
 
-All JavaScript code was validated using the integrated ESLint JavaScript validator.
+All JavaScript code was validated using the integrated ESLint JavaScript validator following this [Guide](https://gist.github.com/ianmeigh/8e603b91a38d7829d959402bfcf29d3d) to validate all of my JS files.
 
+![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/eslint.PNG)
 
 
 ## Browser Compatibility
