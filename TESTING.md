@@ -1,8 +1,20 @@
 # Testing
 Return back to the [README.md](README.md) file.
 
-## Code Validation
-### CSS
+## Automated Testing
+I have conducted a series of automated tests on my application.
+
+I fully acknowledge and understand that, in a real-world scenario, an extensive set of additional tests would be more comprehensive.
+
+### ESLint Validation
+I have used the recommended [JShint Validator](https://eslint.org/) to validate all of my JS files.
+
+All JavaScript code was validated using the integrated ESLint JavaScript validator following this [Guide](https://gist.github.com/ianmeigh/8e603b91a38d7829d959402bfcf29d3d) to validate all of my JS files.
+
+![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/eslint.PNG)
+
+## Manual Testing
+### CSS Validation
 I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
 
 The css was copied from name.module.css and pasted directly into the validator and shows no errors. However when the live site link was used the validator showed parse errors caused by Boostrap and Fontawesome.
@@ -31,13 +43,6 @@ The css was copied from name.module.css and pasted directly into the validator a
 | ResourcesPage.module.css | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/ResourcesPage.module.png) | Pass: No Errors |
 | SignInUpForm.module.css | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/SignInUpForm.module.png) | Pass: No Errors |
 
-### ESLint Validation
-I have used the recommended [JShint Validator](https://eslint.org/) to validate all of my JS files.
-
-All JavaScript code was validated using the integrated ESLint JavaScript validator following this [Guide](https://gist.github.com/ianmeigh/8e603b91a38d7829d959402bfcf29d3d) to validate all of my JS files.
-
-![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/eslint.PNG)
-
 ## Browser Compatibility
 I've tested my deployed project on multiple browsers to check for compatibility issues. Development was carried out using Mozilla Firefox as web browser
 
@@ -52,6 +57,7 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 | Firefox - Profile/modal | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/firefox_profile_modal.PNG) | Works as expected |
 | Chrome - Profile/modal | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/chrome_profile_modal.PNG) | Works as expected |
 | Edge - Profile/modal | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/edge_profile_modal.PNG) | Works as expected |
+
 ## Responsiveness
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
@@ -61,44 +67,34 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | Home | Ipad Pro (DevTools - Portrait) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/home_ipadpro.PNG) | Too much bottom margin |
 | Home | Razer Blade 15 | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/home_laptop.png) | Works as expected |
 | Home | Standard Office Monitor | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/home_monitor.png) | Works as expected |
-
 | Sign In | iPhone 11 (DevTools) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signin_iphone11.PNG) | Works as expected |
 | Sign In | Ipad Pro (DevTools - Portrait) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signin_ipadpro.PNG) | Too much top/bottom margin |
 | Sign In | Razer Blade 15 | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signin_laptop.png) | Works as expected |
 | Sign In | Standard Office Monitor | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signin_monitor.png) | Works as expected |
-
 | Sign Up | iPhone 11 (DevTools) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signup_iphone11.PNG) | Works as expected |
 | Sign Up | Ipad Pro (DevTools - Portrait) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signup_ipadpro.PNG) | Too much top/bottom margin |
 | Sign Up | Razer Blade 15 | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signup_laptop.png) | Works as expected |
 | Sign Up | Standard Office Monitor | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signup_monitor.png) | Works as expected |
-
 | Add Resource | iPhone 11 (DevTools) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/add_resource_iphone11.PNG) | Works as expected |
 | Add Resource | Ipad Pro (DevTools - Portrait) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/add_resource_ipadpro.PNG) | Too much bottom margin |
 | Add Resource | Razer Blade 15 | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/add_resource_laptop.png) | Works as expected |
 | Add Resource | Standard Office Monitor | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/add_resource_monitor.png) | Works as expected |
-
 | Resource | iPhone 11 (DevTools) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/iresource_iphone11.PNG) | Works as expected |
 | Resource | Ipad Pro (DevTools - Portrait) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/iresource_ipadpro.PNG) | Works as expected |
 | Resource | Razer Blade 15 | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/iresource_laptop.png) | Works as expected |
 | Resource | Standard Office Monitor | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/iresource_monitor.png) | Works as expected |
-
 | Profile | iPhone 11 (DevTools) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/profile_iphone11.PNG) | Works as expected |
 | Profile | Ipad Pro (DevTools - Portrait) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/profile_ipadpro.PNG) | Works as expected |
 | Profile | Razer Blade 15 | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/profile_laptop.png) | Works as expected |
 | Profile | Standard Office Monitor | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/profile_monitor.png) | Works as expected |
-
 | Contact Form | iPhone 11 (DevTools) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/contact_iphone11.PNG) | Works as expected |
 | Contact Form | Ipad Pro (DevTools - Portrait) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/contac_ipadpro.PNG) | Works as expected |
 | Contact Form | Razer Blade 15 | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/contact_laptop.png) | Works as expected |
 | Contact Form | Standard Office Monitor | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/contact_monitor.png) | Works as expected |
-
 | Modal | iPhone 11 (DevTools) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/modal_iphone11.PNG) | Works as expected |
 | Modal | Ipad Pro (DevTools - Portrait) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/modal_ipadpro.PNG) | Works as expected |
 | Modal | Razer Blade 15 | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/modal_laptop.png) | Works as expected |
 | Modal | Standard Office Monitor | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/modal_monitor.png) | Works as expected |
-
-
-
 
 ## Lighthouse Audit
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
@@ -277,10 +273,30 @@ Defensive programming was manually tested with the below user acceptance testing
 | As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature09.png) |
 | repeat for all remaining user stories | x |
 
-## Automated Testing
-I have conducted a series of automated tests on my application.
+### GitHub **Issues**
+**Open Issues**
+| Issue | Status |
+| --- | --- |
+| [USER STORY 23: Reset Password by Email](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/24) | Open |
+| [USER STORY 24: Delete Account ](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/25) | Open |
+| [USER STORY 25: Dark Mode](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/26) | Open |
+| [USER STORY 26: Add books and Other Resources](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/27) | Open |
+| [USER STORY 41: Confirmation Toast Messages](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/42) | Open |
 
-I fully acknowledge and understand that, in a real-world scenario, an extensive set of additional tests would be more comprehensive.
+**Closed Issues**
+| Issue | Status |
+| --- | --- |
+| [APP 1: Profiles](https://github.com/ogc1231/comprensible-spanish-api/issues/1) | Closed |
+
+**Milestones**
+Milestones were used to group issues.
+
+| Milestone | Status |
+| --- | --- |
+| [Documentation & Testing](https://github.com/ogc1231/comprensible-spanish-api/milestone/1) | Closed |
+| [Setup & Deployment](https://github.com/ogc1231/comprensible-spanish-api/milestone/2) | Closed |
+| [APP](https://github.com/ogc1231/comprensible-spanish-api/milestone/3) | Open |
+| [Bugs](https://github.com/ogc1231/comprensible-spanish-api/milestone/6) | Closed |
 
 ## Bugs
 **Fixed Bugs**
