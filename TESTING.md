@@ -57,10 +57,48 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 | Page | Device | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | iPhone 11 (DevTools) | ![screenshot](documentation/responsive-mobile.png) | Works as expected |
-| Home | Ipad Pro (DevTools - Portrait) | ![screenshot](documentation/responsive-tablet.png) | Works as expected |
-| Home | Razer Blade 15 | ![screenshot](documentation/responsive-desktop.png) | Works as expected |
-| Home | Standard Office Monitor | ![screenshot](documentation/responsive-4k.png) | Works as expected |
+| Home | iPhone 11 (DevTools) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/home_iphone11.PNG) | Works as expected |
+| Home | Ipad Pro (DevTools - Portrait) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/home_ipadpro.PNG) | Works as expected |
+| Home | Razer Blade 15 | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/home_laptop.png) | Works as expected |
+| Home | Standard Office Monitor | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/home_monitor.png) | Works as expected |
+
+| Sign In | iPhone 11 (DevTools) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signin_iphone11.PNG) | Works as expected |
+| Sign In | Ipad Pro (DevTools - Portrait) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signin_ipadpro.PNG) | Works as expected |
+| Sign In | Razer Blade 15 | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signin_laptop.png) | Works as expected |
+| Sign In | Standard Office Monitor | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signin_monitor.png) | Works as expected |
+
+| Sign Up | iPhone 11 (DevTools) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signup_iphone11.PNG) | Works as expected |
+| Sign Up | Ipad Pro (DevTools - Portrait) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signup_ipadpro.PNG) | Works as expected |
+| Sign Up | Razer Blade 15 | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signup_laptop.png) | Works as expected |
+| Sign Up | Standard Office Monitor | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/signup_monitor.png) | Works as expected |
+
+| Add Resource | iPhone 11 (DevTools) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/add_resource_iphone11.PNG) | Works as expected |
+| Add Resource | Ipad Pro (DevTools - Portrait) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/add_resource_ipadpro.PNG) | Works as expected |
+| Add Resource | Razer Blade 15 | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/add_resource_laptop.png) | Works as expected |
+| Add Resource | Standard Office Monitor | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/add_resource_monitor.png) | Works as expected |
+
+| Resource | iPhone 11 (DevTools) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/iresource_iphone11.PNG) | Works as expected |
+| Resource | Ipad Pro (DevTools - Portrait) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/iresource_ipadpro.PNG) | Works as expected |
+| Resource | Razer Blade 15 | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/iresource_laptop.png) | Works as expected |
+| Resource | Standard Office Monitor | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/iresource_monitor.png) | Works as expected |
+
+| Profile | iPhone 11 (DevTools) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/profile_iphone11.PNG) | Works as expected |
+| Profile | Ipad Pro (DevTools - Portrait) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/profile_ipadpro.PNG) | Works as expected |
+| Profile | Razer Blade 15 | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/profile_laptop.png) | Works as expected |
+| Profile | Standard Office Monitor | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/profile_monitor.png) | Works as expected |
+
+| Contact Form | iPhone 11 (DevTools) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/contact_iphone11.PNG) | Works as expected |
+| Contact Form | Ipad Pro (DevTools - Portrait) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/contac_ipadpro.PNG) | Works as expected |
+| Contact Form | Razer Blade 15 | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/contact_laptop.png) | Works as expected |
+| Contact Form | Standard Office Monitor | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/contact_monitor.png) | Works as expected |
+
+| Modal | iPhone 11 (DevTools) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/modal_iphone11.PNG) | Works as expected |
+| Modal | Ipad Pro (DevTools - Portrait) | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/modal_ipadpro.PNG) | Works as expected |
+| Modal | Razer Blade 15 | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/modal_laptop.png) | Works as expected |
+| Modal | Standard Office Monitor | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/modal_monitor.png) | Works as expected |
+
+
+
 
 ## Lighthouse Audit
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
