@@ -274,43 +274,40 @@ Defensive programming was manually tested with the below user acceptance testing
 | As a general site user I can view the details of an individual resource, so that I can learn more about it. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/iresource_laptop.png) |
 | As a general site user I can view all resources that have been created by all users, so that I can discover new resources or accents and learn more about them. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/resources_out.png) |
 | As a authenticated site user I can favourite a resource, so that it is added to my list of favourites for easy access in the future. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/favourites_page.png) |
-|  | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/add_to_favourites_logged_in.PNG) |
-| As a authenticated site user I can unfavourite a resource, so that it is removed from my list of favourites. | ![screenshot]() |
-|  | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/remove_from_favourites.PNG) |
+| As a authenticated site user I can favourite a resource, so that it is added to my list of favourites for easy access in the future. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/add_to_favourites_logged_in.PNG) |
+| As a authenticated site user I can unfavourite a resource, so that it is removed from my list of favourites. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/remove_from_favourites.PNG) |
 | As a general site user I can view most the popular resources ordered by most favourited/popular first, so that I can see what is the most popular content and learn more about them. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/popular_resources.png) |
 | As a general site user I can search for resources with keywords, so that I can find the resources I am most interested in. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/search_bar.png) | 
-
-|  | ![screenshot]() | 
-|  | ![screenshot]() |
-|  | ![screenshot]() | 
-|  | ![screenshot]() | 
-
-|  | ![screenshot]() |
-|  | ![screenshot]() | 
-|  | ![screenshot]() | 
-|  | ![screenshot]() |
-|  | ![screenshot]() | 
-|  | ![screenshot]() | 
-|  | ![screenshot]() |
-|  | ![screenshot]() | 
-|  | ![screenshot]() | 
-|  | ![screenshot]() |
-|  | ![screenshot]() | 
-|  | ![screenshot]() | 
-
-|  | ![screenshot]() |
-|  | ![screenshot]() | 
-|  | ![screenshot]() | 
-|  | ![screenshot]() |
-|  | ![screenshot]() | 
-|  | ![screenshot]() | 
-
-|  | ![screenshot]() |
-|  | ![screenshot]() | 
-|  | ![screenshot]() | 
-|  | ![screenshot]() |
-|  | ![screenshot]() | 
-|  | ![screenshot]() | 
+| As a general site user I can keep scrolling through the resources on the site which are loaded for me automatically, so that I don't have to click on "next page" for a smoother user experience. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/infinite.png) | 
+| As a general site user if the keywords I am searching for don't exist I will be told that no results were found, so i can adjust my search keyword. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/no_results.png) |
+| As a authenticated site user I can edit my resource image, title, description, URL, type, dialect & difficulty so that I can make corrections or update my resource after it was created. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/edit_resource_page.png) | 
+| As a authenticated site user I can delete my own resource if it doesn't belong in the list of resources i.e not in Spanish. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/delete_resource_modal.png) | 
+| As a general site user I can see the date a resource was created, so I know when it was created/updated. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/resource_individual.png) |
+| As a general user I can see the profile of who created a resource, so I can view their profile and the other resources they have created. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/resource_individual.png) | 
+| As a authenticated site user I can edit my profile so that I can change my profile picture, username and password. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/profile_dropdown.png) | 
+| As a authenticated site user I can edit my profile so that I can change my profile picture, username and password. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/edit_profile_image_page.png) |
+| As a authenticated site user I can edit my profile so that I can change my profile picture, username and password. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/edit_profile_password_page.png) | 
+| As a authenticated site user I can edit my profile so that I can change my profile picture, username and password. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/edit_profile_username_page.png) | 
+| As a authenticated site user I view resources I have added, so can access theme easily to edit or delete or add comments. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/profile_page.png) |
+| As a general site user I can filter the resources by dialect, so I see the resources that suit my needs. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/dialect_dropdown.PNG) | 
+| As a general site user I can filter the resources by difficulty level, so I see the resources that suit my needs. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/levels_dropdown.PNG) | 
+| As a general site user I can filter the resources by media type, so I see the resources that suit my needs. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/type_dropdown.PNG) |
+| As a authenticated site user I can submit a contact form, so I request or provide information to the site admins. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/contact_page.png) | 
+| As a authenticated site user I receive confirmation my contact form has been submitted, so I know my query has been sent. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/confirmation_page.png) | 
+| As a authenticated site user I can log out of my account, so that my data is safe. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/logout_modal.png) |
+| As a general site user I can open the resource's URL, so that I can view/listen to the content | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/url.png) | 
+| As a authenticated site user I can confirm deletion of a comment or resource, so that I don't accidentally delete something. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/delete_resource_modal.png) | 
+| As a authenticated site user I can confirm deletion of a comment or resource, so that I don't accidentally delete something. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/delete_comment_modal.png) |
+| As a authenticated site user I can confirm my log out, so that I don't log out accidentally. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/logout_modal.png) | 
+| As a general site user I can view a homepage, so that can easily understand the purpose of the website. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/home_signed_out.png) | 
+| As a general site user I can see what dialect the resource is easily, so that I have the content that suits my needs. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/country_tag.png) |
+| As a general site user I can see what level the resource is easily, so that I have the content that suits my needs. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/beg_tag.png) | 
+| As a general site user I can see what level the resource is easily, so that I have the content that suits my needs. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/inter_tag.png) | 
+| As a general site user I can see what level the resource is easily, so that I have the content that suits my needs. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/adv_tag.png) |
+| As a general site user I can see what level the resource is easily, so that I have the content that suits my needs. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/easy_native_tag(1).png) | 
+| As a general site user I can see what level the resource is easily, so that I have the content that suits my needs. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/adv_native_tag.png) | 
+| As a general site user I can see what Media Type the resource is easily, so that I have the content that suits my needs. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/youtube_tag.png) | 
+| As a general site user I can see what Media Type the resource is easily, so that I have the content that suits my needs. | ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/podcast_tag.png) | 
 
 
 ### GitHub **Issues**
