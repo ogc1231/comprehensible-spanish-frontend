@@ -41,15 +41,9 @@ The css was copied from name.module.css and pasted directly into the validator a
 ### ESLint Validation
 I have used the recommended [JShint Validator](https://eslint.org/) to validate all of my JS files.
 
-All JavaScript code was validated using the integrated ESLint JavaScript validator. This validation was a big help during development, since it pointet clearly out if there was misused import, unused variables or missing semi colons or incorrect formating.
+All JavaScript code was validated using the integrated ESLint JavaScript validator.
 
-| File | Screenshot | Notes |
-| --- | --- | --- |
-| script.js | ![screenshot](documentation/js-validation-script.png) | Unused variables from external files |
-| questions.js | ![screenshot](documentation/js-validation-questions.png) | Pass: No Errors |
-| quiz.js | ![screenshot](documentation/js-validation-quiz.png) | Unused variables from external files |
-| stripe_elements.js | ![screenshot](documentation/js-validation-stripe.png) | Undefined Stripe variable |
-| x | x | x | repeat for all remaining JavaScript files |
+
 
 ## Browser Compatibility
 I've tested my deployed project on multiple browsers to check for compatibility issues.
