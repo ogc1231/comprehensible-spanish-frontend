@@ -1,5 +1,4 @@
 # COMPREHENSIBLE SPANISH RESOURCES - FRONTEND
-
 This is the website for Comprehensible Spanish Resources, a user curated directory of Spanish Language resources to suit your needs whatever your level. The aim of this website to is provide a place where Spanish learners can find Comprehensible Spanish content that suits their needs whatever their level with resources ranging from those specifically designed for beginners to Advanced Native content all in one place. The advantage of this website is that users can upload resources which they have found useful and share them with other learners. The resources can also be filtered by dialect so users can hear the different accents of 20 different Spanish speaking countries, Puerto Rico & The Canary Islands.
 
 The objective of this website was to create an Interactive Front-End application with REACT.js that consumes API data. 
@@ -62,7 +61,6 @@ I used [coolors.co](https://coolors.co/ffffff-f8f8f8-e9e9ed-cfced3-212529-000000
 - As a general site user I can see what level the resource is easily, so that I have the content that suits my needs. `(COULD HAVE)`
 - As a general site user I can see what Media Type the resource is easily, so that I have the content that suits my needs. `(COULD HAVE)`
 - As a general sit user I can switch on dark mode, so choose which colour layout I prefer. `(WON'T HAVE)`
-
 
 ### New Site Users
 - As a new site user I can create a new account, so that I can access all the features for authenticated users. `(MUST HAVE)`
@@ -431,7 +429,6 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - Other Resource Types
     - User can add other resources such as books
 
-
 ## Re-useable components and helpers
 ### `NavBar.js`
 The `NavBar` component is a reuseable component outside of the switch used on all pages the website to display the main page links to users, the links shown in the `NavBar` are dependent on wether the user is logged in or out. 
@@ -454,7 +451,6 @@ The `Avatar` component provides a reuseable component, mainly used in the app fo
 The styling comes from the `Avatar.module.css` file.
 
 ### `ModalDelete.js`
-
 The `ModalDelete` component is used in three places of the application, when deleting a resource, comemnts or wheh logging out.
 It uses the following elements
 
@@ -463,11 +459,10 @@ It uses the following elements
 - **Confirmation Prompt**: The modal displays the question to the user – "Are you sure you want to delete this comment/resource?" or "Are you sure you want to log out?" – ensuring the user is aware of the consequenses when deleting a comment/resource or logging out. It also help to prevent accidently deletion or log out.
 
 - **User Actions**:
-  - **Cancel**: A "Cancel" button allows the user to dismiss the modal without performing any action. This triggers the `handleClose` callback when clicked and the user will stay on the detail element (match or gun object), where he came from.
+  - **Cancel**: A "Cancel" button allows the user to dismiss the modal without performing any action. This triggers the `handleClose` callback when clicked and the user will stay on the detail element (resource, comment or logout), where he came from.
   - **Delete/Log out**: The "Delete/Log out" button confirms the users intention to delete/logout. Clicking this button triggers the `onConfirm` callback and will delete the object or log out the user. `onConfirm` is handleSignOut log out and handleDelete for resources and comments.
 
 ### `MoreDropdown.js`
-
 The `MoreDropdown` component, provides a dropdown menu represented by three vertical dots visible on any content, only to the owner of a resource, comment or profile , can edit it. On the profile the users can use the dropdown to access edit profile, change username and change password. On a resource created by the user the dropdown provides access to edit resource and delete resource. On a comment made by the user the dropdown has the options of edit or delete comment.
 
 - **ThreeDots**: This is a custom toggle for the dropdown menu. The use of `React.forwardRef` ensures that the dropdown gets access to the DOM for positioning.
@@ -483,12 +478,11 @@ The `MoreDropdown` component, provides a dropdown menu represented by three vert
   2. Delete: Represented by a trash can icon, when clicked, it triggers the `handleDelete` function.
 
   - **Dropdown Menu Profile**: This contains three items:
-  1. Edit profile: Represented by a pencil icon, when clicked, it redirects to chnage profile image page
+  1. Edit profile: Represented by a pencil icon, when clicked, it redirects to change profile image page
   2. Change username: Represented by a bin icon, when clicked, it redirects to change usrename page
   2. Change password: Represented by a key icon, when clicked, it redirects to change password page
 
 ### `NotFound.js`
-
 The `NotFound` component is used to inform users that the page they're trying to access doesn't exist or cannot be found when they are redirect to a wrong they search for a non existent url.
 
 ## Custom Hooks
@@ -583,11 +577,9 @@ Using this approach, I was able to apply the MoSCow prioritization and labels to
 - **Won't Have**: not a priority for this iteration
 
 ## Testing
-
 For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 #### Heroku Deployment
-
 This project uses [Heroku](https://www.heroku.com), a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
 
 Deployment steps are as follows, after account setup:
@@ -619,7 +611,6 @@ Or:
 The project should now be connected and deployed to Heroku!
 
 ### Local Deployment
-
 This project can be cloned or forked in order to make a local copy on your own system. Depending on your local setup, npm needs to be installed. Do also make sure, that all required packages as mentioned in the `package.json` file are installed on your local machine.
 
 Depending on the node version you are using on the local environment, a workaround is needed to start the server via the `npm start` command.
@@ -627,7 +618,6 @@ Depending on the node version you are using on the local environment, a workarou
 Before starting the server, the following command `nvm install 16 && nvm use 16` has to be entered, which tells nvm (node version manager) which version to use.
 
 #### Cloning
-
 You can clone the repository by following these steps:
 
 1. Go to the [GitHub repository](https://github.com/ogc1231/comprehensible-spanish-frontend) 
@@ -641,20 +631,18 @@ You can clone the repository by following these steps:
 
 Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/rpf13/sportsshooting_react)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/ogc1231/https://github.com/ogc1231/comprensible-spanish-api)
 
 Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed.
 A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
 
 #### Forking
-
 By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
 You can fork this repository by using the following steps:
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/ogc1231/comprehensible-spanish-frontend)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
-
 
 ## Tools & Technologies Used
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
@@ -698,7 +686,5 @@ You can fork this repository by using the following steps:
 | [Vecteezy](https://www.vecteezy.com/vector-art/19551975-error-page-page-not-found-icon-in-line-style-design-isolated-on-white-background-editable-stroke) | page not found | image | page not found |
 | [Vecteezy](https://www.vecteezy.com/vector-art/421494-upload-icon-vector-illustration) | add resource page | image | image upload |
 
-
 ### Acknowledgements
 - I would like to thank my Code Institute mentors, [Aleksei (Alex) konovalov](https://github.com/lexach91) & [Jubril Akolade](https://github.com/Jubrillionaire) for their support throughout the development of this project.
-

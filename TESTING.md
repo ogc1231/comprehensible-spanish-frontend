@@ -2,26 +2,23 @@
 Return back to the [README.md](README.md) file.
 
 ## Automated Testing
-
 I have conducted a series of automated tests on my application.
 
-I have tested the `DeleteModal`, the `NavBar` and the `NotFound` component via jest unit test.
+I have tested the `NavBar` and the `NotFound` component via jest unit test.
 
-- [DeleteModal Unit Test](src/components/__tests__/DeleteModal.test.js)
 - [NavBar Unit Test](src/components/__tests__/NavBar.test.js)
 - [NotFound](src/components/__tests__/NotFound.test.js)
 
 I fully acknowledge and understand that, in a real-world scenario, an extensive set of additional tests would be more comprehensive. However, I wanted to include a few example tests to showcase the use of jest in a React app. It turned out to be quite difficult, if more complex components containing lots of states, are tested.
 
 ### JEST Unit Testing
-
 I have used [jest](https://jestjs.io) for the java script unit testing. In order to run the tests, I ran the following command in the terminal each time:
 
 `npm test`
 
 All testcases have been successfully executed and passed:
 
-![jest testresults]()
+![jest testresults](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/testing-assets/jest.PNG)
 
 The `NavBar` and the `NotFound` component got tested via the automated unit testing.
 
@@ -56,6 +53,7 @@ test("renders link to the user profile for a logged in user", async () => {
   expect(profileAvatar).toBeInTheDocument();
 });
 ```
+
 `NotFound`
 ```jsx
 import React from "react";
@@ -76,7 +74,6 @@ test("renders NotFound component with correct message", () => {
   expect(message).toBeInTheDocument();
 });
 ```
-
 
 ### ESLint Validation
 I have used the recommended [JShint Validator](https://eslint.org/) to validate all of my JS files.
@@ -462,4 +459,3 @@ All previously closed/fixed bugs can be tracked [here](https://github.com/ogc123
 | --- | --- |
 | [BUG 1: Dropdowns Don't Show State in Resource Edit](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/43) | Open |
 | [BUG 3: Favourites State Not Updating](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/45) | Open |
-
