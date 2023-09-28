@@ -277,7 +277,43 @@ Defensive programming was manually tested with the below user acceptance testing
 **Closed Issues**
 | Issue | Status |
 | --- | --- |
-| []() | Closed |
+| [USER STORY 1: Navigation](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/1) | Closed |
+| [USER STORY 2: Routing](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/2) | Closed |
+| [USER STORY 3: Sign Up](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/3) | Closed |
+| [USER STORY 4: Sign In](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/4) | Closed |
+| [USER STORY 5: Logged in Status](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/5) | Closed |
+| [USER STORY 6: Refreshing Access Tokens](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/6) | Closed |
+| [USER STORY 7: Conditional Rendering](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/7) | Closed |
+| [USER STORY 8: Avatar](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/8) | Closed |
+| [USER STORY 9: Create Resource](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/9) | Closed |
+| [USER STORY 10: View Indivdual Resources](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/10) | Closed |
+| [USER STORY 11: View All Resources Created By All Users](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/11) | Closed |
+| [USER STORY 12: Favourite A Resource](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/12) | Closed |
+| [USER STORY 13: Unfavourite A Resource](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/13) | Closed |
+| [USER STORY 14: Most Popular Resources](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/14) | Closed |
+| [USER STORY 15: Search Resources](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/15) | Closed |
+
+| [USER STORY 16: Infinite scroll](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/16) | Closed |
+| [USER STORY 17: No Results Found](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/18) | Closed |
+| [USER STORY 18: Edit Own Resource](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/19) | Closed |
+| [USER STORY 19: Delete Own Resource](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/20) | Closed |
+| [USER STORY 20: Resource Date](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/21) | Closed |
+| [USER STORY 21: View Resource Owner](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/22) | Closed |
+| [USER STORY 22: Edit Profile](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/23) | Closed |
+| [USER STORY 27: View Own Resources](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/28) | Closed |
+| [USER STORY 28: Dialect Dropdown Filter](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/29) | Closed |
+| [USER STORY 29: Level Dropdown Filter](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/30) | Closed |
+| [USER STORY 30: Media type Dropdown Filter](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/31) | Closed |
+| [USER STORY 31: Contact Form](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/32) | Closed |
+| [USER STORY 32: Confirmation Page](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/33) | Closed |
+| [USER STORY 33: Log Out](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/34) | Closed |
+| [USER STORY 34: Open Resource URL](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/35) | Closed |
+| [USER STORY 35: Confirm Deletion](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/36) | Closed |
+| [USER STORY 36: Confirm Log Out](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/37) | Closed |
+| [USER STORY 37: View a Homepage](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/38) | Closed |
+| [USER STORY 38: Dialect Tags](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/39) | Closed |
+| [USER STORY 39: Level Tags](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/40) | Closed |
+| [USER STORY 40: Media Type Tags](https://github.com/ogc1231/comprehensible-spanish-frontend/issues/41) | Closed |
 
 
 **Open Issues**
