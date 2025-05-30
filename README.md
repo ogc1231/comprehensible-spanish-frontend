@@ -3,8 +3,6 @@ This is the website for Comprehensible Spanish Resources, a user curated directo
 
 The objective of this website was to create an Interactive Front-End application with REACT.js that consumes API data. 
 
-[Live link to website](https://comp-spanish-frontend-811d88a7f64a.herokuapp.com/)
-
 [Backend API repository ](https://github.com/ogc1231/comprensible-spanish-api)
 
 ![screenshot](https://github.com/ogc1231/comprehensible-spanish-frontend/blob/main/documentation/readme-assets/mockup.PNG)
